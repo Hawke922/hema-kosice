@@ -1,11 +1,13 @@
+import Column from './Column/Column';
+
 import classes from './LandingSection.module.css';
 
 const LandingSection = () => {
   return (
     <section className={classes.section}>
-      <div className={`${classes.column} ${classes.red}`}></div>
-      <div className={`${classes.column} ${classes.blue}`}></div>
-      <div className={`${classes.column} ${classes.green}`}></div>
+      <Column imagePath='/images/Serm-1.jpg' type='left'/>
+      <Column imagePath='/images/Serm-105.jpg' type='center'/>
+      <Column imagePath='/images/Serm-99.jpg' type='right'/>
     </section>
   );
 };

@@ -1,0 +1,26 @@
+.column {
+  flex: 1;
+}
+
+.column__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.column__image--active {
+  filter: brightness(0.7);
+}
+
+.column--right {
+  object-position: 100%;
+}
+
+.column--center {
+  object-position: 50%;
+}
+
+.column--left {
+  object-position: 5%;
+}

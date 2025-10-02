@@ -3,20 +3,7 @@
   height: 80vh;
   background-color: #000;
   display: flex;
+  gap: 40px;
 }
 
-.column {
-  flex: 1;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
+/* TODO: responsive gaps */
