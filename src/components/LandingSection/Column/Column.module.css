@@ -1,5 +1,10 @@
 .column {
   flex: 1;
+  position: relative;
+}
+
+.column:hover .column__image {
+  filter: brightness(0.7);
 }
 
 .column__image {
@@ -7,6 +12,16 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(0.4);
+  transition: filter 0.3s ease;
+}
+
+.column__logo {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(1);
+  width: 10rem;
 }
 
 .column__image--active {

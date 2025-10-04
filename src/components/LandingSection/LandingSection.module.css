@@ -3,7 +3,7 @@
   height: 80vh;
   background-color: #000;
   display: flex;
-  gap: 40px;
+  gap: 10px;
 }
 
 /* TODO: responsive gaps */

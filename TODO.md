@@ -1,0 +1,2 @@
+- logo v indexe je shit
+- test ultrawide monitory
