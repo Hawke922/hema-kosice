@@ -13,7 +13,7 @@
 .image {
   width: 100%;
   height: auto;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(-100px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
@@ -21,6 +21,25 @@
 .image.fadeIn {
   opacity: 1;
   transform: translateX(0);
+}
+
+.imageIndexContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.imageIndex {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff80;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.imageIndex--active {
+  background-color: #fff;
 }
 
 .text {

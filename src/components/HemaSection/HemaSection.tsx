@@ -54,7 +54,7 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   }, []);
 
   useEffect(() => {
-    if (!isInViewport || currentImageIndex >= imagePaths.length - 1) {
+    if (!isInViewport) {
       return;
     }
 
@@ -66,14 +66,26 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
       // Change image every 100 pixels of scroll
       if (scrollAccumulator.current > 100) {
         setCurrentImageIndex((prev) => {
-          const nextIndex = prev + 1;
-          if (nextIndex >= imagePaths.length - 1) {
-            // Last image reached, allow normal scrolling
+          let nextIndex = prev;
+
+          // Detect direction from deltaY: positive = scrolling down, negative = scrolling up
+          if (e.deltaY > 0) {
+            nextIndex = Math.min(prev + 1, imagePaths.length - 1);
+          } else {
+            nextIndex = Math.max(prev - 1, 0);
+          }
+
+          const isTryingToScrollBeyondStart = e.deltaY < 0 && prev === 0;
+          const isTryingToScrollBeyondEnd =
+            e.deltaY > 0 && prev === imagePaths.length - 1;
+
+          if (isTryingToScrollBeyondStart || isTryingToScrollBeyondEnd) {
             setTimeout(() => setIsInViewport(false), 100);
           }
 
-          return Math.min(nextIndex, imagePaths.length - 1);
+          return nextIndex;
         });
+
         scrollAccumulator.current = 0;
       }
     };
@@ -81,7 +93,7 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
     window.addEventListener("wheel", handleScroll, { passive: false });
 
     return () => window.removeEventListener("wheel", handleScroll);
-  }, [isInViewport, currentImageIndex, imagePaths.length]);
+  }, [isInViewport, scrollDirection, imagePaths.length]);
 
   useEffect(() => {
     if (scrollDirection === "top") {
@@ -95,12 +107,20 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
     <section ref={sectionRef} className={classes.section}>
       <div className={classes.imageContainer}>
         <img
-          className={`${classes.image} ${
-            scrollDirection !== null ? classes.fadeIn : ""
-          }`}
+          className={classes.image}
           src={imagePaths[currentImageIndex]}
           alt={`HEMA action ${currentImageIndex + 1}`}
         />
+        <div className={classes.imageIndexContainer}>
+          {imagePaths.map((path, index) => (
+            <div
+              key={path}
+              className={`${classes.imageIndex} ${
+                classes[currentImageIndex === index ? "imageIndex--active" : ""]
+              }`}
+            />
+          ))}
+        </div>
       </div>
       <p className={classes.text}>
         Historical European Martial Arts (HEMA) is the study and practice of
