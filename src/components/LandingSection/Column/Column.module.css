@@ -3,10 +3,6 @@
   position: relative;
 }
 
-.column:hover .column__image {
-  filter: brightness(0.7);
-}
-
 .column__image {
   width: 100%;
   height: 100%;
