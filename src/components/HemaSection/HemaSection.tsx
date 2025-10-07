@@ -1,4 +1,7 @@
 import { useEffect, useState, useRef } from "react";
+
+import { useDirectionalIntersection } from "../../hooks/useDirectionalIntersection";
+
 import classes from "./HemaSection.module.css";
 
 type HemaSectionProps = {
@@ -9,86 +12,47 @@ const SCROLL_THRESHOLD = 100;
 
 const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isIntersecting, setIsIntersecting] = useState(false);
-  const [scrollDirectionOnEntry, setScrollDirectionOnEntry] = useState<
-    "top" | "bottom" | null
-  >(null);
 
-  const sectionRef = useRef<HTMLElement>(null);
   const scrollAccumulatorRef = useRef(0);
-  const lastTopRef = useRef<number | null>(null);
+
+  const {
+    targetRef: sectionRef,
+    isIntersecting,
+    entryDirection,
+  } = useDirectionalIntersection();
 
   useEffect(() => {
-    const section = sectionRef.current;
+    if (!isIntersecting || !entryDirection) return;
 
-    if (!section) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry) return;
-
-        let lastTop = lastTopRef.current;
-        const visible = entry.isIntersecting;
-        const currentTop = entry.boundingClientRect.top;
-
-        if (visible && !isIntersecting) {
-          if (lastTop !== null) {
-            if (currentTop < lastTop) {
-              setScrollDirectionOnEntry("top");
-            } else {
-              setScrollDirectionOnEntry("bottom");
-            }
-          } else {
-            setScrollDirectionOnEntry(null);
-          }
-        }
-
-        setIsIntersecting(visible);
-        lastTop = currentTop;
-      },
-      { threshold: [0], rootMargin: "-50% 0px -50% 0px" }
-    );
-
-    observer.observe(section);
-
-    return () => observer.disconnect();
-  }, [isIntersecting]);
-
-  useEffect(() => {
-    if (!isIntersecting || !scrollDirectionOnEntry) return;
-
-    if (scrollDirectionOnEntry === "top") {
+    if (entryDirection === "top") {
       setCurrentImageIndex(0);
-    } else if (scrollDirectionOnEntry === "bottom") {
+    } else if (entryDirection === "bottom") {
       setCurrentImageIndex(imagePaths.length - 1);
     }
-  }, [isIntersecting, scrollDirectionOnEntry, imagePaths.length]);
+  }, [isIntersecting, entryDirection, imagePaths.length]);
 
   useEffect(() => {
     if (!isIntersecting) return;
-
     const handleWheel = (e: WheelEvent) => {
       const atStart = currentImageIndex === 0;
       const atEnd = currentImageIndex === imagePaths.length - 1;
-      const scrollingUp = e.deltaY < 0;
-      const scrollingDown = e.deltaY > 0;
 
-      const tryingPastStart = atStart && scrollingUp;
-      const tryingPastEnd = atEnd && scrollingDown;
+      const isScrollingUp = e.deltaY < 0;
+      const isScrollingDown = e.deltaY > 0;
 
-      if (tryingPastStart || tryingPastEnd) {
-        return;
-      }
+      if ((atStart && isScrollingUp) || (atEnd && isScrollingDown)) return;
 
       e.preventDefault();
 
       scrollAccumulatorRef.current += Math.abs(e.deltaY);
 
       if (scrollAccumulatorRef.current >= SCROLL_THRESHOLD) {
-        setCurrentImageIndex((prev) => {
-          if (scrollingDown) return Math.min(prev + 1, imagePaths.length - 1);
-          return Math.max(prev - 1, 0);
-        });
+        setCurrentImageIndex((prev) =>
+          isScrollingDown
+            ? Math.min(prev + 1, imagePaths.length - 1)
+            : Math.max(prev - 1, 0)
+        );
+
         scrollAccumulatorRef.current = 0;
       }
     };
