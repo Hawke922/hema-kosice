@@ -5,17 +5,18 @@ type HemaSectionProps = {
   imagePaths: string[];
 };
 
+const SCROLL_THRESHOLD = 100;
+
 const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isInViewport, setIsInViewport] = useState(false);
-  const [scrollDirection, setScrollDirection] = useState<
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const [scrollDirectionOnEntry, setScrollDirectionOnEntry] = useState<
     "top" | "bottom" | null
   >(null);
 
   const sectionRef = useRef<HTMLElement>(null);
-  const scrollAccumulator = useRef(0);
-
-  const lastY = useRef<number | null>(null);
+  const scrollAccumulatorRef = useRef(0);
+  const lastTopRef = useRef<number | null>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -23,27 +24,27 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
     if (!section) return;
 
     const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-
+      ([entry]) => {
         if (!entry) return;
 
-        const isVisible = entry.isIntersecting;
-        const currentY = entry.boundingClientRect.top;
+        let lastTop = lastTopRef.current;
+        const visible = entry.isIntersecting;
+        const currentTop = entry.boundingClientRect.top;
 
-        if (isVisible && !isInViewport) {
-          if (lastY.current !== null) {
-            if (currentY < lastY.current) {
-              setScrollDirection("top");
+        if (visible && !isIntersecting) {
+          if (lastTop !== null) {
+            if (currentTop < lastTop) {
+              setScrollDirectionOnEntry("top");
             } else {
-              setScrollDirection("bottom");
+              setScrollDirectionOnEntry("bottom");
             }
+          } else {
+            setScrollDirectionOnEntry(null);
           }
         }
 
-        setIsInViewport(isVisible);
-
-        lastY.current = currentY;
+        setIsIntersecting(visible);
+        lastTop = currentTop;
       },
       { threshold: [0], rootMargin: "-50% 0px -50% 0px" }
     );
@@ -51,57 +52,51 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
     observer.observe(section);
 
     return () => observer.disconnect();
-  }, []);
+  }, [isIntersecting]);
 
   useEffect(() => {
-    if (!isInViewport) {
-      return;
-    }
+    if (!isIntersecting || !scrollDirectionOnEntry) return;
 
-    const handleScroll = (e: WheelEvent) => {
+    if (scrollDirectionOnEntry === "top") {
+      setCurrentImageIndex(0);
+    } else if (scrollDirectionOnEntry === "bottom") {
+      setCurrentImageIndex(imagePaths.length - 1);
+    }
+  }, [isIntersecting, scrollDirectionOnEntry, imagePaths.length]);
+
+  useEffect(() => {
+    if (!isIntersecting) return;
+
+    const handleWheel = (e: WheelEvent) => {
+      const atStart = currentImageIndex === 0;
+      const atEnd = currentImageIndex === imagePaths.length - 1;
+      const scrollingUp = e.deltaY < 0;
+      const scrollingDown = e.deltaY > 0;
+
+      const tryingPastStart = atStart && scrollingUp;
+      const tryingPastEnd = atEnd && scrollingDown;
+
+      if (tryingPastStart || tryingPastEnd) {
+        return;
+      }
+
       e.preventDefault();
 
-      scrollAccumulator.current += Math.abs(e.deltaY);
+      scrollAccumulatorRef.current += Math.abs(e.deltaY);
 
-      // Change image every 100 pixels of scroll
-      if (scrollAccumulator.current > 100) {
+      if (scrollAccumulatorRef.current >= SCROLL_THRESHOLD) {
         setCurrentImageIndex((prev) => {
-          let nextIndex = prev;
-
-          // Detect direction from deltaY: positive = scrolling down, negative = scrolling up
-          if (e.deltaY > 0) {
-            nextIndex = Math.min(prev + 1, imagePaths.length - 1);
-          } else {
-            nextIndex = Math.max(prev - 1, 0);
-          }
-
-          const isTryingToScrollBeyondStart = e.deltaY < 0 && prev === 0;
-          const isTryingToScrollBeyondEnd =
-            e.deltaY > 0 && prev === imagePaths.length - 1;
-
-          if (isTryingToScrollBeyondStart || isTryingToScrollBeyondEnd) {
-            setTimeout(() => setIsInViewport(false), 100);
-          }
-
-          return nextIndex;
+          if (scrollingDown) return Math.min(prev + 1, imagePaths.length - 1);
+          return Math.max(prev - 1, 0);
         });
-
-        scrollAccumulator.current = 0;
+        scrollAccumulatorRef.current = 0;
       }
     };
 
-    window.addEventListener("wheel", handleScroll, { passive: false });
+    window.addEventListener("wheel", handleWheel, { passive: false });
 
-    return () => window.removeEventListener("wheel", handleScroll);
-  }, [isInViewport, scrollDirection, imagePaths.length]);
-
-  useEffect(() => {
-    if (scrollDirection === "top") {
-      setCurrentImageIndex(0);
-    } else if (scrollDirection === "bottom") {
-      setCurrentImageIndex(imagePaths.length - 1);
-    }
-  }, [scrollDirection, imagePaths.length]);
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, [isIntersecting, currentImageIndex, imagePaths.length]);
 
   return (
     <section ref={sectionRef} className={classes.section}>

@@ -1,6 +1,7 @@
 .section {
   display: flex;
   align-items: center;
+  margin: 18rem 0;
 }
 
 .imageContainer {

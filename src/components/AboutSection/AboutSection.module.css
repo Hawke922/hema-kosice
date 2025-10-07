@@ -6,11 +6,10 @@
 }
 
 .header {
-  padding: 4rem 0;
+  padding: 4.5rem 0;
 }
 
 .text {
-  padding-bottom: 12rem;
   text-align: center;
   font-size: 1.2rem;
   max-width: 800px;
