@@ -1,17 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 
-export type EntryDirection = "top" | "bottom" | null;
+type EntryDirection = "top" | "bottom" | null;
 
-export function useDirectionalIntersection() {
-  const targetRef = useRef<HTMLElement | null>(null);
+type UseDirectionalIntersectionOptions = {
+  rootMargin?: string;
+  threshold?: number | number[];
+};
+
+export function useDirectionalIntersection<T extends HTMLElement>({
+  rootMargin = "-50% 0px -50% 0px",
+  threshold = 0,
+}: UseDirectionalIntersectionOptions = {}) {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [entryDirection, setEntryDirection] = useState<EntryDirection>(null);
+
+  const targetRef = useRef<T | null>(null);
   const lastTopRef = useRef<number | null>(null);
   const wasIntersectingRef = useRef(false);
 
   useEffect(() => {
     const node = targetRef.current;
-
     if (!node) return;
 
     const observer = new IntersectionObserver(
@@ -21,36 +29,24 @@ export function useDirectionalIntersection() {
         const currentTop = entry.boundingClientRect.top;
         const lastTop = lastTopRef.current;
 
-        // Transition: not intersecting -> intersecting
         if (visible && !wasIntersectingRef.current) {
           if (lastTop !== null) {
-            if (currentTop < lastTop) {
-              setEntryDirection("top");
-            } else if (currentTop > lastTop) {
-              setEntryDirection("bottom");
-            } else {
-              setEntryDirection(null);
-            }
+            setEntryDirection(currentTop < lastTop ? "top" : "bottom");
           } else {
             setEntryDirection(null);
           }
-        }
-
-        if (!visible && wasIntersectingRef.current) {
-          // Leaving viewport; allow direction recalculation next time
         }
 
         setIsIntersecting(visible);
         wasIntersectingRef.current = visible;
         lastTopRef.current = currentTop;
       },
-      { threshold: [0], rootMargin: "-50% 0px -50% 0px" }
+      { rootMargin, threshold }
     );
 
     observer.observe(node);
-
     return () => observer.disconnect();
-  }, []);
+  }, [ rootMargin, threshold]);
 
   return { targetRef, isIntersecting, entryDirection };
 }
