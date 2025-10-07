@@ -8,9 +8,10 @@ type ColumnProps = {
   imagePath: string;
   type: "left" | "center" | "right";
   buttonLabel: string;
+  targetSection: string;
 };
 
-const Column = ({ imagePath, type, buttonLabel }: ColumnProps) => {
+const Column = ({ imagePath, type, buttonLabel, targetSection }: ColumnProps) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
@@ -33,6 +34,7 @@ const Column = ({ imagePath, type, buttonLabel }: ColumnProps) => {
         label={buttonLabel}
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
+        targetSection={targetSection}
       />
     </div>
   );

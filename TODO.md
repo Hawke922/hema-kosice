@@ -1,2 +1,2 @@
 - logo v indexe je shit
-- test ultrawide monitory
+- remove animation lib if not necessary

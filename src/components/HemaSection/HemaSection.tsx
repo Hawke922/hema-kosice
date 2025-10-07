@@ -63,7 +63,7 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   }, [isIntersecting, currentImageIndex, imagePaths.length]);
 
   return (
-    <section ref={sectionRef} className={classes.section}>
+    <section ref={sectionRef} className={classes.section} id="hema">
       <div className={classes.imageContainer}>
         <img
           className={classes.image}
