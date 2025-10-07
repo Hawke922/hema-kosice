@@ -1,6 +1,24 @@
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 18rem;
+}
+
+.image-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .image {
   max-width: 20rem;
+}
+
+.text {
+  max-width: 60rem;
+  text-align: center;
 }
