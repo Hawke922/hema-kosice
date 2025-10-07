@@ -117,7 +117,11 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
           ))}
         </div>
       </div>
-      <p className={classes.text}>
+      <p
+        className={`${classes.text} ${
+          isIntersecting ? classes["text--visible"] : ""
+        }`}
+      >
         Historical European Martial Arts (HEMA) is the study and practice of
         martial techniques from Europe, primarily from the Middle Ages to the
         early modern period. It encompasses a wide range of fighting styles,

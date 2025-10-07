@@ -1,21 +1,17 @@
 .section {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 18rem 0;
+  gap: 4.5rem;
 }
 
 .imageContainer {
   max-width: 800px;
-  flex: 1;
-  overflow: hidden;
 }
 
 .image {
   width: 100%;
-  height: auto;
-  opacity: 1;
-  transform: translateX(-100px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .image.fadeIn {
@@ -30,16 +26,16 @@
 }
 
 .imageIndex {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 2.5rem;
+  height: 0.15rem;
   background-color: #ffffff80;
   margin: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, width 0.3s ease;
 }
 
 .imageIndex--active {
   background-color: #fff;
+  width: 3.5rem;
 }
 
 .text {
@@ -47,4 +43,12 @@
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 600px;
+  opacity: 0;
+  transform: translateY(4rem);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.text--visible {
+  opacity: 1;
+  transform: translateY(0);
 }
