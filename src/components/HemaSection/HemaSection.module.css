@@ -1,7 +1,6 @@
 .section {
   display: flex;
   align-items: center;
-  background-color: #000;
 }
 
 .imageContainer {

@@ -4,11 +4,11 @@ import HemaSection from "./components/HemaSection/HemaSection";
 import JoinSection from "./components/JoinSection/JoinSection";
 import TeamSection from "./components/TeamSection/TeamSection";
 
-import "./App.css";
+import classes from "./App.module.css";
 
 function App() {
   return (
-    <>
+    <main className={classes["main-wrapper"]}>
       <LandingSection />
       <AboutSection />
       <HemaSection
@@ -21,7 +21,7 @@ function App() {
       />
       <JoinSection />
       <TeamSection />
-    </>
+    </main>
   );
 }
 
