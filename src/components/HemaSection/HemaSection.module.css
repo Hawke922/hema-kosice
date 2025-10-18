@@ -4,14 +4,13 @@
   justify-content: center;
   margin: 18rem 0;
   gap: 4.5rem;
-}
-
-.imageContainer {
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .image {
-  width: 100%;
+  flex: 2;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .image.fadeIn {
@@ -19,30 +18,37 @@
   transform: translateX(0);
 }
 
-.imageIndexContainer {
+.textContainer {
+  min-width: 0;
+  max-width: 800px;
+  display: flex;
+  flex: 1;
+}
+
+.indexContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 10px;
 }
 
-.imageIndex {
-  width: 2.5rem;
-  height: 0.15rem;
+.index {
+  height: 4rem;
+  width: 0.15rem;
   background-color: #ffffff80;
   margin: 5px;
-  transition: background-color 0.3s ease, width 0.3s ease;
+  transition: background-color 0.3s ease, height 0.3s ease;
 }
 
-.imageIndex--active {
+.index--active {
   background-color: #fff;
-  width: 3.5rem;
+  height: 6rem;
 }
 
 .text {
   flex: 1;
   font-size: 1.2rem;
   line-height: 1.6;
-  max-width: 600px;
   opacity: 0;
   transform: translateY(4rem);
   transition: opacity 0.6s ease, transform 0.6s ease;
