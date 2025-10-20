@@ -1,35 +1,21 @@
 import { useEffect, useState, useRef } from "react";
 
-import { useDirectionalIntersection } from "../../hooks/useDirectionalIntersection";
-
 import classes from "./HemaSection.module.css";
 
 type HemaSectionProps = {
   imagePaths: string[];
 };
 
-const SCROLL_THRESHOLD = 100;
+const SCROLL_THRESHOLD = 150;
 
 const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const scrollAccumulatorRef = useRef(0);
 
-  const { targetRef, isIntersecting, entryDirection } =
-    useDirectionalIntersection<HTMLDivElement>();
-
   useEffect(() => {
-    if (!isIntersecting || !entryDirection) return;
-
-    if (entryDirection === "top") {
-      setCurrentImageIndex(0);
-    } else {
-      setCurrentImageIndex(imagePaths.length - 1);
-    }
-  }, [isIntersecting, entryDirection, imagePaths.length]);
-
-  useEffect(() => {
-    if (!isIntersecting) return;
+    if (!isHovered) return;
 
     const handleWheel = (e: WheelEvent) => {
       const isAtStart = currentImageIndex === 0;
@@ -58,7 +44,7 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
     window.addEventListener("wheel", handleWheel, { passive: false });
 
     return () => window.removeEventListener("wheel", handleWheel);
-  }, [isIntersecting, currentImageIndex, imagePaths.length]);
+  }, [isHovered, currentImageIndex, imagePaths.length]);
 
   return (
     <section className={classes.section} id="hema">
@@ -67,19 +53,21 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
         src={imagePaths[currentImageIndex]}
         alt={`HEMA action ${currentImageIndex + 1}`}
       />
-      <div ref={targetRef} className={classes.textContainer}>
-        <p
-          className={`${classes.text} ${
-            isIntersecting ? classes["text--visible"] : ""
-          }`}
-        >
+      <div
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className={`${classes["text-container"]} ${
+          isHovered ? classes["text-container--hovered"] : ""
+        }`}
+      >
+        <p className={classes.text}>
           Historical European Martial Arts (HEMA) is the study and practice of
           martial techniques from Europe, primarily from the Middle Ages to the
           early modern period. It encompasses a wide range of fighting styles,
           including swordsmanship, grappling, and weapon-based combat, often
           reconstructed from historical manuals and treatises.
         </p>
-        <div className={classes.indexContainer}>
+        <div className={classes["index-container"]}>
           {imagePaths.map((path, index) => (
             <div
               key={path}

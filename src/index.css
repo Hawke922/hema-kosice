@@ -21,14 +21,20 @@
   --text-6xl: 3.75rem; /* 60px */
 
   --border-radius: 5px;
+
+  --color-black: #000;
+  --color-dark-gray: #1c1c1c;
+  --color-gray: #2c2c2c;
+  --color-light-gray: #666;
+  --color-white: #f8f8f8;
 }
 
 body {
   font-family: var(--font-family);
   font-size: var(--text-base);
   line-height: 1.6;
-  color: white;
-  background-color: #000;
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 h1 {

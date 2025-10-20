@@ -6,7 +6,7 @@
   padding: 0.5rem 1rem;
   background: none;
   border: none;
-  color: white;
+  color: var(--color-white);
   cursor: pointer;
   font-family: inherit;
   font-size: 2rem;
@@ -20,7 +20,7 @@
   left: 0;
   width: 0;
   height: 0.15rem;
-  background-color: white;
+  background-color: var(--color-white);
   transition: width 0.3s ease-in-out;
 }
 
