@@ -1,6 +1,7 @@
 .column {
   flex: 1;
   position: relative;
+  padding: 10px 5px;
 }
 
 .column__image {
@@ -9,6 +10,7 @@
   object-fit: cover;
   filter: brightness(0.4);
   transition: filter 0.3s ease;
+  border-radius: var(--border-radius);
 }
 
 .column__logo {

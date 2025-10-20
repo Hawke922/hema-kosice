@@ -2,7 +2,4 @@
   width: 100%;
   height: 80vh;
   display: flex;
-  gap: 10px;
 }
-
-/* TODO: responsive gaps */
