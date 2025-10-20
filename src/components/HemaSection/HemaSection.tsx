@@ -11,13 +11,31 @@ const SCROLL_THRESHOLD = 150;
 const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const scrollAccumulatorRef = useRef(0);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (!isHovered) return;
 
     const handleWheel = (e: WheelEvent) => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+
+        const isMouseInside =
+          e.clientX >= rect.left &&
+          e.clientX <= rect.right &&
+          e.clientY >= rect.top &&
+          e.clientY <= rect.bottom;
+
+        if (!isMouseInside) {
+          setIsHovered(false);
+
+          return;
+        }
+      }
+
       const isAtStart = currentImageIndex === 0;
       const isAtEnd = currentImageIndex === imagePaths.length - 1;
 
@@ -31,11 +49,18 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
       scrollAccumulatorRef.current += Math.abs(e.deltaY);
 
       if (scrollAccumulatorRef.current >= SCROLL_THRESHOLD) {
-        setCurrentImageIndex((prev) =>
-          isScrollingDown
-            ? Math.min(prev + 1, imagePaths.length - 1)
-            : Math.max(prev - 1, 0)
-        );
+        setIsTransitioning(true);
+
+        // SYNC DELAY WITH CSS TRANSITION!!!!!!!
+        setTimeout(() => {
+          setCurrentImageIndex((prev) =>
+            isScrollingDown
+              ? Math.min(prev + 1, imagePaths.length - 1)
+              : Math.max(prev - 1, 0)
+          );
+
+          setIsTransitioning(false);
+        }, 300);
 
         scrollAccumulatorRef.current = 0;
       }
@@ -47,19 +72,28 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   }, [isHovered, currentImageIndex, imagePaths.length]);
 
   return (
-    <section className={classes.section} id="hema">
-      <img
-        className={classes.image}
-        src={imagePaths[currentImageIndex]}
-        alt={`HEMA action ${currentImageIndex + 1}`}
-      />
-      <div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className={`${classes["text-container"]} ${
-          isHovered ? classes["text-container--hovered"] : ""
-        }`}
-      >
+    <section
+      ref={sectionRef}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`${classes.section} ${
+        isHovered ? classes["section--hovered"] : ""
+      }`}
+      id="hema"
+    >
+      <div className={classes["image-container"]}>
+        <img
+          className={classes.image}
+          src={imagePaths[currentImageIndex]}
+          alt={`HEMA action ${currentImageIndex + 1}`}
+        />
+        <div
+          className={`${classes.overlay} ${
+            isTransitioning ? classes["overlay--active"] : ""
+          }`}
+        />
+      </div>
+      <div className={classes.content}>
         <p className={classes.text}>
           Historical European Martial Arts (HEMA) is the study and practice of
           martial techniques from Europe, primarily from the Middle Ages to the

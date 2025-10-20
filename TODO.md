@@ -1,2 +1,3 @@
 - logo v indexe je shit
 - remove animation lib if not necessary
+- "scroll me" gif/icon on hema section
