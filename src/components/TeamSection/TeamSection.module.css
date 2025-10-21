@@ -17,6 +17,7 @@
 
 .image {
   max-width: 20rem;
+  border-radius: var(--border-radius);
   transition: transform 0.6s ease-out;
 }
 
