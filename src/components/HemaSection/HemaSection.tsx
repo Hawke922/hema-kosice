@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 
+import { useDirectionalIntersection } from "../../hooks/useDirectionalIntersection";
+
 import classes from "./HemaSection.module.css";
 
 type HemaSectionProps = {
@@ -14,10 +16,14 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const scrollAccumulatorRef = useRef(0);
-  const sectionRef = useRef<HTMLElement>(null);
+
+  const { targetRef: sectionRef, isIntersecting } =
+    useDirectionalIntersection();
+
+  const isTargeted = isHovered && isIntersecting;
 
   useEffect(() => {
-    if (!isHovered) return;
+    if (!isTargeted) return;
 
     const handleWheel = (e: WheelEvent) => {
       if (sectionRef.current) {
@@ -51,7 +57,8 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
       if (scrollAccumulatorRef.current >= SCROLL_THRESHOLD) {
         setIsTransitioning(true);
 
-        // SYNC DELAY WITH CSS TRANSITION!!!!!!!
+        // tento timeout je delay na fadein/fadeout effect pre carousel
+        // TREBA SYNCNUT S CSS TRANSITION
         setTimeout(() => {
           setCurrentImageIndex((prev) =>
             isScrollingDown
@@ -69,7 +76,7 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
     window.addEventListener("wheel", handleWheel, { passive: false });
 
     return () => window.removeEventListener("wheel", handleWheel);
-  }, [isHovered, currentImageIndex, imagePaths.length]);
+  }, [isHovered, isIntersecting, currentImageIndex, imagePaths.length]);
 
   return (
     <section
@@ -77,7 +84,7 @@ const HemaSection = ({ imagePaths }: HemaSectionProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`${classes.section} ${
-        isHovered ? classes["section--hovered"] : ""
+        isTargeted ? classes["section--hovered"] : ""
       }`}
       id="hema"
     >
