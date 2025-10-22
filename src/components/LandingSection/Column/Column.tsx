@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Button from "../../_scaffolding/Button/Button";
+import Links from "../Links/Links";
 
 import classes from "./Column.module.css";
 
@@ -11,7 +12,12 @@ type ColumnProps = {
   targetSection: string;
 };
 
-const Column = ({ imagePath, type, buttonLabel, targetSection }: ColumnProps) => {
+const Column = ({
+  imagePath,
+  type,
+  buttonLabel,
+  targetSection,
+}: ColumnProps) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
@@ -36,6 +42,7 @@ const Column = ({ imagePath, type, buttonLabel, targetSection }: ColumnProps) =>
         onMouseLeave={() => setIsActive(false)}
         targetSection={targetSection}
       />
+      {type === "right" && <Links />}
     </div>
   );
 };

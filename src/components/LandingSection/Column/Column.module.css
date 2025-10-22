@@ -1,7 +1,6 @@
 .column {
   flex: 1;
   position: relative;
-  padding: 10px 5px;
 }
 
 .column__image {

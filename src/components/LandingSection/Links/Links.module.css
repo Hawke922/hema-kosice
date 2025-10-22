@@ -1,0 +1,47 @@
+.wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.language-button,
+.link {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 800;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover,
+.language-button:hover {
+  opacity: 1;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+}
+
+.icon {
+  width: 1.5rem;
+  filter: brightness(0) invert(1);
+}
