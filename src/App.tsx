@@ -11,14 +11,7 @@ function App() {
     <main className={classes["main-wrapper"]}>
       <LandingSection />
       <AboutSection />
-      <HemaSection
-        imagePaths={[
-          "/images/Serm-83.jpg",
-          "/images/Serm-102.jpg",
-          "/images/Serm-139.jpg",
-          "/images/Serm-161.jpg",
-        ]}
-      />
+      <HemaSection />
       <TeamSection />
       <JoinSection />
     </main>

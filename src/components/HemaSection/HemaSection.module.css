@@ -56,6 +56,12 @@
   align-items: center;
 }
 
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .text {
   flex: 1;
   line-height: 1.6;
