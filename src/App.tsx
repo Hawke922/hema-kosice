@@ -19,8 +19,8 @@ function App() {
           "/images/Serm-161.jpg",
         ]}
       />
-      <JoinSection />
       <TeamSection />
+      <JoinSection />
     </main>
   );
 }

@@ -50,20 +50,13 @@
   border-radius: var(--border-radius);
 }
 
-.header {
-}
-
 .sub-header {
-}
-
-.sub-header,
-.text {
   opacity: 0;
   transform: translateX(-4rem);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
-.visible {
+.sub-header--visible {
   opacity: 1;
   transform: translateX(0);
 }

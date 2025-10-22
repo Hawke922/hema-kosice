@@ -7,10 +7,6 @@ const JoinSection = () => {
     useDirectionalIntersection<HTMLHeadingElement>({
       rootMargin: "-10% 0px -20% 0px",
     });
-  const { targetRef: paragraphRef, isIntersecting: isParagraphIntersecting } =
-    useDirectionalIntersection<HTMLParagraphElement>({
-      rootMargin: "-25% 0px -30% 0px",
-    });
 
   return (
     <section className={classes.wrapper} id="join">
@@ -29,17 +25,12 @@ const JoinSection = () => {
           <h2
             ref={headerRef}
             className={`${classes["sub-header"]} ${
-              isHeaderIntersecting ? classes.visible : ""
+              isHeaderIntersecting ? classes["sub-header--visible"] : ""
             }`}
           >
             Come in, you're always welcome.
           </h2>
-          <p
-            ref={paragraphRef}
-            className={`${classes.text} ${
-              isParagraphIntersecting ? classes.visible : ""
-            }`}
-          >
+          <p>
             We train every Tuesday and Thursday from 18:00 to 20:00 at the gym
             of Gymnázium Poštová, Poštová 9, Košice. Just come in and join us,
             no prior experience needed.
