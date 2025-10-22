@@ -19,6 +19,12 @@
   transform: translate(-50%, -50%);
   filter: invert(1);
   width: 10rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.column__logo--hidden {
+  opacity: 0;
 }
 
 .column__image--active {

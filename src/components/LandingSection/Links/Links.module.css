@@ -12,6 +12,28 @@
   background-color: var(--color-black);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wrapper--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wrapper--expandable {
+  position: fixed;
+  z-index: 10;
+  flex-direction: column;
+  padding: 0.5rem 0rem;
+  margin: 1rem 2.5rem 0 0;
+  background-color: var(--color-dark-gray);
+  width: 3rem;
+}
+
+.logo {
+  width: 100%;
+  filter: invert(1);
 }
 
 .language-button {

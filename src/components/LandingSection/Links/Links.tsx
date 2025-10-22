@@ -1,8 +1,16 @@
+import { useState } from "react";
+
 import classes from "./Links.module.css";
 
-const Links = () => {
-  return (
-    <div className={classes.wrapper}>
+type LinksProps = {
+  isExpandable: boolean;
+};
+
+const Links = ({ isExpandable }: LinksProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const renderContent = () => (
+    <>
       <a href="#" className={classes.link}>
         2%
       </a>
@@ -29,7 +37,32 @@ const Links = () => {
           className={classes.icon}
         />
       </a>
-    </div>
+    </>
+  );
+
+  return (
+    <>
+      <div
+        className={`${classes.wrapper} ${classes["wrapper--expandable"]} ${
+          isExpanded ? classes["wrapper--expanded"] : ""
+        } ${!isExpandable ? classes["wrapper--hidden"] : ""}`}
+        onMouseEnter={() => setIsExpanded(true)}
+        onMouseLeave={() => setIsExpanded(false)}
+        aria-hidden={!isExpandable}
+      >
+        <img src="/logo-simple.svg" alt="KSC logo" className={classes.logo} />
+        {isExpanded && renderContent()}
+      </div>
+
+      <div
+        className={`${classes.wrapper} ${
+          isExpandable ? classes["wrapper--hidden"] : ""
+        }`}
+        aria-hidden={isExpandable}
+      >
+        {renderContent()}
+      </div>
+    </>
   );
 };
 

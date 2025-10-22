@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { useDirectionalIntersection } from "../../../hooks/useDirectionalIntersection";
+
 import Button from "../../_scaffolding/Button/Button";
 import Links from "../Links/Links";
 
@@ -20,9 +22,16 @@ const Column = ({
 }: ColumnProps) => {
   const [isActive, setIsActive] = useState(false);
 
+  const { targetRef, isIntersecting } =
+    useDirectionalIntersection<HTMLImageElement>({
+      rootMargin: "0px 0px 0px 0px",
+      threshold: 1,
+    });
+
   return (
     <div className={classes.column}>
       <img
+        ref={targetRef}
         className={`${classes.column__image} ${classes[`column--${type}`]} ${
           isActive ? classes["column__image--active"] : ""
         }`}
@@ -31,7 +40,9 @@ const Column = ({
       />
       {type === "center" && (
         <img
-          className={classes.column__logo}
+          className={`${classes.column__logo} ${
+            !isIntersecting ? classes["column__logo--hidden"] : ""
+          }`}
           src="/logo-complex.svg"
           alt="KSC logo"
         />
@@ -42,7 +53,7 @@ const Column = ({
         onMouseLeave={() => setIsActive(false)}
         targetSection={targetSection}
       />
-      {type === "right" && <Links />}
+      {type === "right" && <Links isExpandable={!isIntersecting} />}
     </div>
   );
 };
