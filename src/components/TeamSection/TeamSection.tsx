@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import classes from "./TeamSection.module.css";
+import { useTranslations } from "../../contexts/TranslationContext";
 
 const PROFILE_IMAGE_PATHS = [
   "/images/Serm-24.jpg",
@@ -11,6 +12,8 @@ const PROFILE_IMAGE_PATHS = [
 const TeamSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
+
+  const { translations } = useTranslations();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,19 +34,21 @@ const TeamSection = () => {
   return (
     <section className={classes.wrapper} id="team">
       <img
-        className={`${classes.image} ${fadeOut ? classes["image--fade-out"] : ""}`}
+        className={`${classes.image} ${
+          fadeOut ? classes["image--fade-out"] : ""
+        }`}
         src={PROFILE_IMAGE_PATHS[currentImageIndex]}
         alt="profile-image"
       />
       <div className={classes.content}>
-        <h1 className={classes.header}>Our crew</h1>
+        <h1 className={classes.header}>{translations.team.header}</h1>
         <p className={classes.text}>
-          In our team, we have a mix of experienced professionals and fresh
-          talent. Each member brings unique skills and perspectives,
-          contributing to our collective success. We believe in collaboration,
-          continuous learning, and pushing the boundaries of what's possible.
-          Together, we strive to create innovative solutions that make a
-          difference.
+          {translations.team.content.map((paragraph, i) => (
+            <>
+              <p key={i}>{paragraph}</p>
+              {i !== translations.team.content.length - 1 && <br />}
+            </>
+          ))}
         </p>
       </div>
     </section>

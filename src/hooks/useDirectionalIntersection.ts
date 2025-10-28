@@ -7,10 +7,10 @@ type UseDirectionalIntersectionOptions = {
   threshold?: number | number[];
 };
 
-export function useDirectionalIntersection<T extends HTMLElement>({
+export const useDirectionalIntersection = <T extends HTMLElement>({
   rootMargin = "-50% 0px -50% 0px",
   threshold = 0,
-}: UseDirectionalIntersectionOptions = {}) {
+}: UseDirectionalIntersectionOptions = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [entryDirection, setEntryDirection] = useState<EntryDirection>(null);
 
@@ -46,7 +46,7 @@ export function useDirectionalIntersection<T extends HTMLElement>({
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [ rootMargin, threshold]);
+  }, [rootMargin, threshold]);
 
   return { targetRef, isIntersecting, entryDirection };
-}
+};

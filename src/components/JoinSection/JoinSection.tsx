@@ -1,3 +1,4 @@
+import { useTranslations } from "../../contexts/TranslationContext";
 import { useDirectionalIntersection } from "../../hooks/useDirectionalIntersection";
 
 import classes from "./JoinSection.module.css";
@@ -7,6 +8,8 @@ const JoinSection = () => {
     useDirectionalIntersection<HTMLHeadingElement>({
       rootMargin: "-10% 0px -20% 0px",
     });
+
+  const { translations } = useTranslations();
 
   return (
     <section className={classes.wrapper} id="join">
@@ -20,7 +23,7 @@ const JoinSection = () => {
         />
       </div>
       <div className={classes.content}>
-        <h1 className={classes.header}>Feeling like swordfighting?</h1>
+        <h1 className={classes.header}>{translations.join.header}</h1>
         <div className={classes["text-wrapper"]}>
           <h2
             ref={headerRef}
@@ -28,13 +31,9 @@ const JoinSection = () => {
               isHeaderIntersecting ? classes["sub-header--visible"] : ""
             }`}
           >
-            Come in, you're always welcome.
+            {translations.join.subheader}
           </h2>
-          <p>
-            We train every Tuesday and Thursday from 18:00 to 20:00 at the gym
-            of Gymnázium Poštová, Poštová 9, Košice. Just come in and join us,
-            no prior experience needed.
-          </p>
+          <p>{translations.join.content}</p>
         </div>
       </div>
     </section>

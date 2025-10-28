@@ -1,0 +1,43 @@
+{
+  "landing": {
+    "button": {
+      "hema": "HEMA",
+      "team": "KŠC Team",
+      "join": "Join Us"
+    }
+  },
+  "about": {
+    "title": "Košice Fencing Guild",
+    "content": "At KŠC, we are dedicated to practicing martial traditions of medieval and Renaissance Europe. We train with longswords, sabres, and more — focusing on skill, athletic performance, history, and community. Whether you're a beginner or experienced fencer, you'll find a welcoming place to learn and grow here."
+  },
+  "hema": {
+    "content1": {
+      "header": "What is HEMA?",
+      "paragraph": "HEMA, or Historical European Martial Arts, is the modern revival of Europe's forgotten fighting traditions. It's based on historical manuals and brings centuries-old martial traditions back to life through training and sparring"
+    },
+    "content2": {
+      "header": "Not a Stage Combat",
+      "paragraph": "Unlike choreographed swordfighting you see in movies or historical events, HEMA is a martial art. Every move is rooted in historical sources and tested against a resisting partner. It's not about performing — it's about understanding how real swordplay works."
+    },
+    "content3": {
+      "header": "Protection for the Modern Duelist",
+      "paragraph": "The duels we study were fought in ordinary clothes, not armor, and our gear needs to reflect that. HEMA uses modern protective elements made from puncture-resistant fabrics and durable plastics. It's inspired by history but designed for safety, comfort, and mobility"
+    },
+    "content4": {
+      "header": "The Complete Martial Experience",
+      "paragraph": "HEMA offers the full package of a martial art. We train strength, endurance, coordination, and awareness — but also the mindset to push through the limits. Confidence, skill, and friendships are forged through shared effort."
+    }
+  },
+  "team": {
+    "header": "Our Crew",
+    "content": [
+      "KŠC began as a small group of enthusiasts lead by Slavomír Hubatka back in 2016, training simply out of passion for historical fencing. Like many clubs, we went quiet during the pandemic — but in 2023 we came back stronger, forming an official organization and opening our doors to new members.",
+      "Now, with experienced instructors like Filip 'Joxer' Trcka and a growing community, we're writing the next chapter of our story together. While we're still young in the tournament scene, one of our founding members and head coach Miroslav Medviď ranks among the world's top HEMA fencers — a reminder of how far dedication can go."
+    ]
+  },
+  "join": {
+    "header": "Feeling like swordfighting?",
+    "subheader": "Come in, you are allways welcome!",
+    "content": "We are actively recruiting new members of all skill levels. Groups of beginners are usually formed once or twice a year, so don't hesitate to reach out and express your interest. Training sessions are held couple of times a week, and we provide all the necessary equipment for beginners to get started safely. Whether you're looking to compete or just want to learn a new skill, we are here to provide supportive environment to grow as a fencer."
+  }
+}

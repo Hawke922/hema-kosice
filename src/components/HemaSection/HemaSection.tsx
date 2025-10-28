@@ -3,45 +3,9 @@ import { useEffect, useState, useRef } from "react";
 import { useDirectionalIntersection } from "../../hooks/useDirectionalIntersection";
 
 import classes from "./HemaSection.module.css";
+import { useTranslations } from "../../contexts/TranslationContext";
 
 const SCROLL_THRESHOLD = 100;
-
-const CONTENT = [
-  {
-    imagePath: "/images/Serm-83.jpg",
-    title: "What is HEMA?",
-    text: `Historical European Martial Arts (HEMA) is the study and practice of
-    martial techniques from Europe, primarily from the Middle Ages to the
-    early modern period. It encompasses a wide range of fighting styles,
-    including swordsmanship, grappling, and weapon-based combat, often
-    reconstructed from historical manuals and treatises.`,
-  },
-  {
-    imagePath: "/images/Serm-102.jpg",
-    title: "Practice and Community",
-    text: `HEMA practitioners often train with replica weapons and armor,
-    adhering to safety protocols to minimize the risk of injury. The community
-    is diverse, with enthusiasts ranging from casual hobbyists to serious
-    competitors who participate in tournaments and events worldwide.`,
-  },
-  {
-    imagePath: "/images/Serm-139.jpg",
-    title: "Revival and Popularity",
-    text: `The resurgence of HEMA in recent decades has been driven by a
-    combination of historical interest, academic research, and a passion for
-    martial arts. It offers a unique blend of physical activity, historical
-    study, and cultural appreciation, attracting individuals interested in
-    history, combat sports, and traditional martial arts.`,
-  },
-  {
-    imagePath: "/images/Serm-161.jpg",
-    title: "Cultural Significance",
-    text: `Overall, HEMA is a dynamic and evolving discipline that connects
-    modern practitioners with the martial traditions of Europe's past,
-    fostering a deeper understanding of historical combat techniques and their
-    cultural significance.`,
-  },
-];
 
 const HemaSection = () => {
   const [currentContentIndex, setCurrentContentIndex] = useState(0);
@@ -52,6 +16,31 @@ const HemaSection = () => {
 
   const { targetRef: sectionRef, isIntersecting } =
     useDirectionalIntersection();
+
+  const { translations } = useTranslations();
+
+  const CONTENT = [
+    {
+      imagePath: "/images/Serm-83.jpg",
+      title: translations.hema.content1.header,
+      text: translations.hema.content1.paragraph,
+    },
+    {
+      imagePath: "/images/Serm-161.jpg",
+      title: translations.hema.content2.header,
+      text: translations.hema.content2.paragraph,
+    },
+    {
+      imagePath: "/images/Serm-139.jpg",
+      title: translations.hema.content3.header,
+      text: translations.hema.content3.paragraph,
+    },
+    {
+      imagePath: "/images/Serm-102.jpg",
+      title: translations.hema.content4.header,
+      text: translations.hema.content4.paragraph,
+    },
+  ];
 
   const isTargeted = isHovered && isIntersecting;
 

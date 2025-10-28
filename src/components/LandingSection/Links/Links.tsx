@@ -1,6 +1,6 @@
 import { useState } from "react";
-
 import classes from "./Links.module.css";
+import { useTranslations } from "../../../contexts/TranslationContext";
 
 type LinksProps = {
   isExpandable: boolean;
@@ -8,13 +8,20 @@ type LinksProps = {
 
 const Links = ({ isExpandable }: LinksProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { language, setLanguage } = useTranslations();
+
+  const toggleLanguage = () => {
+    setLanguage(language === "en" ? "sk" : "en");
+  };
 
   const renderContent = () => (
     <>
       <a href="#" className={classes.link}>
         2%
       </a>
-      <button className={classes["language-button"]}>SK</button>
+      <button className={classes["language-button"]} onClick={toggleLanguage}>
+        {language === "en" ? "SK" : "EN"}
+      </button>
       <a
         href="https://www.facebook.com/kosicehema"
         className={classes.link}

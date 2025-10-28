@@ -6,16 +6,14 @@ import TeamSection from "./components/TeamSection/TeamSection";
 
 import classes from "./App.module.css";
 
-function App() {
-  return (
-    <main className={classes["main-wrapper"]}>
-      <LandingSection />
-      <AboutSection />
-      <HemaSection />
-      <TeamSection />
-      <JoinSection />
-    </main>
-  );
-}
+const App = () => (
+  <main className={classes["main-wrapper"]}>
+    <LandingSection />
+    <AboutSection />
+    <HemaSection />
+    <TeamSection />
+    <JoinSection />
+  </main>
+);
 
 export default App;

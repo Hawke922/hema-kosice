@@ -1,0 +1,43 @@
+{
+  "landing": {
+    "button": {
+      "hema": "HEMA",
+      "team": "KŠC tím",
+      "join": "Pridaj sa"
+    }
+  },
+  "about": {
+    "title": "Košický šermiarska cech",
+    "content": "V KŠC sa venujeme praktikovaniu bojových tradícií stredovekej a renesančnej Európy. Trénujeme s dlhými mečmi, šabľami a ďalšími zbraňami — zameriavame sa na zručnosti, atletický výkon, históriu a komunitu. Či už ste začiatočník alebo pokročilý šermiar, tu nájdete priateľské miesto na učenie a rast."
+  },
+  "hema": {
+    "content1": {
+      "header": "Čo je HEMA?",
+      "paragraph": "HEMA, alebo historické európske bojové umenia, je moderné oživenie zabudnutých bojových tradícií Európy. Je založené na historických manuáloch a prináša späť k životu storočia staré bojové tradície prostredníctvom tréningu a sparingu."
+    },
+    "content2": {
+      "header": "Nie je to scénický boj",
+      "paragraph": "Na rozdiel od choreografického šermu, ktorý vidíte vo filmoch alebo historických podujatiach, HEMA je bojové umenie. Každý pohyb je zakorenený v historických zdrojoch a testovaný proti odporujúcemu partnerovi. Nejde o predstavenie — ide o pochopenie toho, ako funguje skutočný šerm."
+    },
+    "content3": {
+      "header": "Ochrana pre moderného duelanta",
+      "paragraph": "Duely, ktoré študujeme, sa bojovali v bežnom oblečení, nie v brnení, a naše vybavenie to musí odrážať. HEMA používa moderné ochranné prvky vyrobené z tkanín odolných proti prepichnutiu a trvanlivých plastov. Je inšpirované históriou, ale navrhnuté pre bezpečnosť, pohodlie a mobilitu."
+    },
+    "content4": {
+      "header": "Kompletný bojový zážitok",
+      "paragraph": "HEMA ponúka kompletný balík bojového umenia. Trénujeme silu, vytrvalosť, koordináciu a uvedomelosť — ale aj myslenie na prekonávanie limitov. Sebavedomie, zručnosti a priateľstvá sa kujú spoločným úsilím."
+    }
+  },
+  "team": {
+    "header": "Náš tím",
+    "content": [
+      "KŠC začal ako malá skupina nadšencov vedená Slavomírom Hubatkom v roku 2016, trénujúc jednoducho z vášne pre historický šerm. Rovnako ako mnohé kluby, počas pandémie sme išli do úzadia — ale v roku 2023 sme sa vrátili silnejší, vytvorili oficiálnu organizáciu a otvorili naše dvere novým členom.",
+      "Teraz, s skúsenými inštruktormi ako Filip 'Joxer' Trcka a rastúcou komunitou, píšeme spolu ďalšiu kapitolu nášho príbehu. Hoci sme v turnajovej scéne stále mladí, jeden z našich zakladajúcich členov a hlavný tréner Miroslav Medviď patrí medzi najlepších HEMA šermiarov na svete — pripomienka toho, ako ďaleko môže zájsť oddanosť."
+    ]
+  },
+  "join": {
+    "header": "Máš chuť na šerm?",
+    "subheader": "Vstúp, si vždy vítaný!",
+    "content": ""
+  }
+}
