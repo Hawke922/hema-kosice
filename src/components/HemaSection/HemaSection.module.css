@@ -1,12 +1,11 @@
 .section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 18rem 0;
-  gap: 2rem;
+  margin: 4rem 1rem;
   max-width: 100%;
   border-radius: var(--border-radius);
-  padding: 1rem 2rem 1rem 1rem;
   background-color: var(--color-dark-gray);
   transition: background-color 0.3s ease;
 }
@@ -25,8 +24,7 @@
 
 .image {
   width: 100%;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   display: block;
 }
 
@@ -39,7 +37,7 @@
   background-color: black;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   pointer-events: none;
 }
 
@@ -51,6 +49,7 @@
   min-width: 0;
   max-width: 800px;
   display: flex;
+  padding: 3rem 1rem;
   flex: 1;
   gap: 2rem;
   align-items: center;
@@ -84,4 +83,26 @@
 .index--active {
   background-color: var(--color-white);
   height: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    flex-direction: row;
+    margin: 18rem 0;
+    padding: 1rem 2rem 1rem 1rem;
+    gap: 2rem;
+  }
+
+  .image {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+
+  .overlay {
+    border-radius: var(--border-radius);
+  }
+
+  .content {
+    padding: 0;
+  }
 }

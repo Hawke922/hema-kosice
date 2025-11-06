@@ -14,11 +14,11 @@
 
 .column__logo {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   filter: invert(1);
-  width: 10rem;
+  width: 7rem;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -31,14 +31,36 @@
   filter: brightness(0.7);
 }
 
-.column--right {
-  object-position: 100%;
+.column__image--right {
+  object-position: 80%;
 }
 
-.column--center {
+.column__image--center {
   object-position: 50%;
 }
 
-.column--left {
-  object-position: 5%;
+.column__image--left {
+  object-position: 20%;
+}
+
+@media (max-width: 768px) {
+  .column__logo {
+    top: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .column__logo {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .column__image--left {
+    object-position: 5%;
+  }
+
+  .column__image--right {
+    object-position: 100%;
+  }
 }

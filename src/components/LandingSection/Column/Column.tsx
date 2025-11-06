@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { useDirectionalIntersection } from "../../../hooks/useDirectionalIntersection";
 
@@ -21,6 +21,7 @@ const Column = ({
   targetSection,
 }: ColumnProps) => {
   const [isActive, setIsActive] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const { targetRef, isIntersecting } =
     useDirectionalIntersection<HTMLImageElement>({
@@ -28,13 +29,24 @@ const Column = ({
       threshold: 1,
     });
 
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <div className={classes.column}>
       <img
         ref={targetRef}
-        className={`${classes.column__image} ${classes[`column--${type}`]} ${
-          isActive ? classes["column__image--active"] : ""
-        }`}
+        className={`${classes.column__image} ${
+          classes[`column__image--${type}`]
+        } ${isActive ? classes["column__image--active"] : ""}`}
         src={imagePath}
         alt="Column"
       />
@@ -53,7 +65,7 @@ const Column = ({
         onMouseLeave={() => setIsActive(false)}
         targetSection={targetSection}
       />
-      {type === "right" && <Links isExpandable={!isIntersecting} />}
+      {type === "right" && <Links isExpandable={!isIntersecting || isMobile} />}
     </div>
   );
 };

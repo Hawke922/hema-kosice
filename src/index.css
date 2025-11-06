@@ -10,6 +10,11 @@
   --font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Arial, sans-serif;
 
+  --mobile: 480px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1200px;
+
   --text-sm: 0.875rem; /* 14px */
   --text-base: 1rem; /* 16px */
   --text-lg: 1.125rem; /* 18px */

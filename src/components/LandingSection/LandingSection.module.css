@@ -1,8 +1,13 @@
 .section {
-  width: 100%;
-  height: 80vh;
+  height: 50vh;
   display: flex;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
   position: relative;
+}
+
+@media (orientation: landscape) {
+  .section {
+    height: 80vh;
+  }
 }

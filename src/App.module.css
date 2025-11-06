@@ -1,5 +1,10 @@
 .main-wrapper {
-    max-width: 1600px;
+  max-width: 1600px;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .main-wrapper {
     margin: 0 20px;
-    justify-self: center;
+  }
 }

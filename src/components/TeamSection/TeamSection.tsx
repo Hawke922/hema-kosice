@@ -42,14 +42,11 @@ const TeamSection = () => {
       />
       <div className={classes.content}>
         <h1 className={classes.header}>{translations.team.header}</h1>
-        <p className={classes.text}>
-          {translations.team.content.map((paragraph, i) => (
-            <>
-              <p key={i}>{paragraph}</p>
-              {i !== translations.team.content.length - 1 && <br />}
-            </>
-          ))}
-        </p>
+        {translations.team.content.map((paragraph, i) => (
+          <p key={i} className={classes.text}>
+            {paragraph}
+          </p>
+        ))}
       </div>
     </section>
   );
