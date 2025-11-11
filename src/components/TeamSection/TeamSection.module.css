@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  margin: 0 1rem 4rem 1rem;
+  gap: var(--gap-medium);
   flex-direction: column;
 }
 
@@ -21,15 +20,13 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin: 1rem;
+  gap: var(--gap-small);
+  margin: 0 var(--gap-small);
 }
 
 @media (min-width: 768px) {
   .wrapper {
     flex-direction: row;
-    gap: 4rem;
-    margin-bottom: 12rem;
     padding: 0;
   }
 
@@ -43,7 +40,6 @@
 @media (min-width: 1024px) {
   .wrapper {
     gap: 8rem;
-    margin-bottom: 18rem;
   }
 
   .image {

@@ -105,8 +105,8 @@ const HemaSection = () => {
       ref={sectionRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`${classes.section} ${
-        isTargeted ? classes["section--hovered"] : ""
+      className={`${classes.wrapper} ${
+        isTargeted ? classes["wrapper--hovered"] : ""
       }`}
       id="hema"
     >

@@ -1,4 +1,6 @@
 import Column from "./Column/Column";
+import About from "./About/About";
+
 import { useTranslations } from "../../contexts/TranslationContext";
 
 import classes from "./LandingSection.module.css";
@@ -28,16 +30,19 @@ const LandingSection = () => {
   const { translations } = useTranslations();
 
   return (
-    <section className={classes.section}>
-      {COLUMNS.map((column) => (
-        <Column
-          key={column.targetSection}
-          imagePath={column.imagePath}
-          type={column.type}
-          buttonLabel={translations.landing.button[column.translationKey]}
-          targetSection={column.targetSection}
-        />
-      ))}
+    <section className={classes.wrapper}>
+      <div className={classes.columns}>
+        {COLUMNS.map((column) => (
+          <Column
+            key={column.targetSection}
+            imagePath={column.imagePath}
+            type={column.type}
+            buttonLabel={translations.landing.button[column.translationKey]}
+            targetSection={column.targetSection}
+          />
+        ))}
+      </div>
+      <About />
     </section>
   );
 };

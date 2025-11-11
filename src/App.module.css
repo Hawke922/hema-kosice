@@ -1,10 +1,14 @@
 .main-wrapper {
   max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin: var(--gap-small);
   justify-self: center;
 }
 
 @media (min-width: 768px) {
   .main-wrapper {
-    margin: 0 20px;
+    gap: var(--gap-large);
   }
 }

@@ -1,16 +1,16 @@
 import LandingSection from "./components/LandingSection/LandingSection";
-import AboutSection from "./components/AboutSection/AboutSection";
 import HemaSection from "./components/HemaSection/HemaSection";
-import JoinSection from "./components/JoinSection/JoinSection";
+import WeaponsSection from "./components/WeaponsSection/WeaponsSection";
 import TeamSection from "./components/TeamSection/TeamSection";
+import JoinSection from "./components/JoinSection/JoinSection";
 
 import classes from "./App.module.css";
 
 const App = () => (
   <main className={classes["main-wrapper"]}>
     <LandingSection />
-    <AboutSection />
     <HemaSection />
+    <WeaponsSection />
     <TeamSection />
     <JoinSection />
   </main>

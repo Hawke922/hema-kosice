@@ -1,16 +1,15 @@
-.section {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 4rem 1rem;
   max-width: 100%;
   border-radius: var(--border-radius);
   background-color: var(--color-dark-gray);
   transition: background-color 0.3s ease;
 }
 
-.section--hovered {
+.wrapper--hovered {
   background-color: var(--color-gray);
   backdrop-filter: blur(10px);
 }
@@ -86,9 +85,8 @@
 }
 
 @media (min-width: 1024px) {
-  .section {
+  .wrapper {
     flex-direction: row;
-    margin: 18rem 0;
     padding: 1rem 2rem 1rem 1rem;
     gap: 2rem;
   }

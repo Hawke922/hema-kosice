@@ -39,5 +39,24 @@
     "header": "Feeling like swordfighting?",
     "subheader": "Come in, you are allways welcome!",
     "content": "We are actively recruiting new members of all skill levels. Groups of beginners are usually formed once or twice a year, so don't hesitate to reach out and express your interest. Training sessions are held couple of times a week, and we provide all the necessary equipment for beginners to get started safely. Whether you're looking to compete or just want to learn a new skill, we are here to provide supportive environment to grow as a fencer."
+  },
+  "weapons": {
+    "header": "Choose your weapon",
+    "swordAndBuckler": {
+      "name": "Sword and Buckler",
+      "description": "A classic medieval combination offering both offense and defense. The buckler provides excellent protection while maintaining mobility and aggressive fighting style."
+    },
+    "longsword": {
+      "name": "Longsword",
+      "description": "The quintessential weapon of HEMA. Versatile and elegant, the longsword can be used for cutting, thrusting, and leverage techniques with both hands."
+    },
+    "sabre": {
+      "name": "Military Sabre",
+      "description": "Fast and dynamic cavalry weapon. Emphasizes swift cutting attacks and aggressive footwork, representing the martial traditions of Eastern European cavalry."
+    },
+    "rapier": {
+      "name": "Rapier",
+      "description": "The gentleman's dueling weapon of the Renaissance. Focused on precise thrusting techniques, footwork, and sophisticated blade control in civilian combat."
+    }
   }
 }
