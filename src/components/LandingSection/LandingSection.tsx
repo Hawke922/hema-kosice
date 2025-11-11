@@ -3,29 +3,41 @@ import { useTranslations } from "../../contexts/TranslationContext";
 
 import classes from "./LandingSection.module.css";
 
+const COLUMNS = [
+  {
+    imagePath: "/images/Serm-1.jpg",
+    type: "left" as const,
+    translationKey: "hema" as const,
+    targetSection: "hema",
+  },
+  {
+    imagePath: "/images/Serm-105.jpg",
+    type: "center" as const,
+    translationKey: "team" as const,
+    targetSection: "team",
+  },
+  {
+    imagePath: "/images/Serm-99.jpg",
+    type: "right" as const,
+    translationKey: "join" as const,
+    targetSection: "join",
+  },
+];
+
 const LandingSection = () => {
   const { translations } = useTranslations();
 
   return (
     <section className={classes.section}>
-      <Column
-        imagePath="/images/Serm-1.jpg"
-        type="left"
-        buttonLabel={translations.landing.button.hema}
-        targetSection="hema"
-      />
-      <Column
-        imagePath="/images/Serm-105.jpg"
-        type="center"
-        buttonLabel={translations.landing.button.team}
-        targetSection="team"
-      />
-      <Column
-        imagePath="/images/Serm-99.jpg"
-        type="right"
-        buttonLabel={translations.landing.button.join}
-        targetSection="join"
-      />
+      {COLUMNS.map((column) => (
+        <Column
+          key={column.targetSection}
+          imagePath={column.imagePath}
+          type={column.type}
+          buttonLabel={translations.landing.button[column.translationKey]}
+          targetSection={column.targetSection}
+        />
+      ))}
     </section>
   );
 };
