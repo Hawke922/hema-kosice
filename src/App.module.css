@@ -1,5 +1,5 @@
 .main-wrapper {
-  max-width: 1600px;
+  max-width: var(--max-width);
   justify-self: center;
 }
 
