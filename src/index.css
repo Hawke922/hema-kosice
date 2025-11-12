@@ -45,6 +45,7 @@
 }
 
 body {
+  overflow-x: hidden; /* just to counter horizontal scrollbar from footer */
   font-family: var(--font-family);
   font-size: var(--text-base);
   line-height: 1.6;

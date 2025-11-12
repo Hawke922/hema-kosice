@@ -58,5 +58,35 @@
       "name": "Rapier",
       "description": "Duelová zbraň džentlmenov renesancie. Zameriava sa na presné bodné techniky, prácu nôh a sofistikovanú kontrolu čepele v civilnom boji."
     }
+  },
+  "footer": {
+    "organization": {
+      "type": "Občianske združenie",
+      "icoLabel": "IČO",
+      "addressLabel": "Sídlo združenia"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "emailLabel": "Email",
+      "phoneLabel": "Telefón"
+    },
+    "training": {
+      "title": "Tréningová hala",
+      "scheduleLabel": "Tréningy"
+    },
+    "documents": {
+      "title": "Dokumenty",
+      "bylaws": "Stanovy združenia",
+      "registration": "Registračný formulár",
+      "tax": "2% z dane"
+    },
+    "partners": {
+      "title": "Partneri a sponzori"
+    },
+    "legal": {
+      "copyright": "Všetky práva vyhradené.",
+      "privacy": "Ochrana osobných údajov",
+      "terms": "Podmienky používania"
+    }
   }
 }

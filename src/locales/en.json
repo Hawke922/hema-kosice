@@ -58,5 +58,35 @@
       "name": "Rapier",
       "description": "The gentleman's dueling weapon of the Renaissance. Focused on precise thrusting techniques, footwork, and sophisticated blade control in civilian combat."
     }
+  },
+  "footer": {
+    "organization": {
+      "type": "Civic Association",
+      "icoLabel": "IČO",
+      "addressLabel": "Headquarters Address"
+    },
+    "contact": {
+      "title": "Contact",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone"
+    },
+    "training": {
+      "title": "Training Hall",
+      "scheduleLabel": "Training"
+    },
+    "documents": {
+      "title": "Documents",
+      "bylaws": "Association Bylaws",
+      "registration": "Registration Form",
+      "tax": "2% Tax Designation"
+    },
+    "partners": {
+      "title": "Partners & Sponsors"
+    },
+    "legal": {
+      "copyright": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    }
   }
 }

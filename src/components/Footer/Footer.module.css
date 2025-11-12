@@ -1,0 +1,143 @@
+.wrapper {
+  width: 100vw;
+  background-color: var(--color-dark-gray);
+  margin-left: calc(-50vw + 50%);
+  padding: var(--gap-medium) 0 var(--gap-small) 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gap-small);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-medium);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.section h4 {
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+  font-size: var(--text-xl);
+}
+
+.label {
+  color: var(--color-light-gray);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--color-light-gray);
+}
+
+.address {
+  color: var(--color-light-gray);
+  font-size: var(--text-base);
+  line-height: 1.5;
+}
+
+.schedule {
+  color: var(--color-light-gray);
+  font-weight: 600;
+}
+
+.link {
+  color: var(--color-light-gray);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.link:hover {
+  color: var(--color-white);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) invert(0.6);
+  transition: filter 0.3s ease;
+}
+
+.link:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.partners-placeholder {
+  color: var(--color-light-gray);
+  font-style: italic;
+  font-size: var(--text-sm);
+}
+
+.bottom {
+  max-width: var(--max-width);
+  margin: var(--gap-medium) auto 0;
+  padding: var(--gap-small) var(--gap-small) 0;
+  border-top: 1px solid var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+  align-items: center;
+}
+
+.copyright {
+  color: var(--color-light-gray);
+  font-size: var(--text-sm);
+  text-align: center;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: var(--text-sm);
+}
+
+.separator {
+  color: var(--color-light-gray);
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+  }
+}
