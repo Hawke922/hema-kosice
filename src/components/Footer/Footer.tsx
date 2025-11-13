@@ -44,7 +44,7 @@ const Footer = () => {
               aria-label="Facebook"
             >
               <img
-                src="/facebook-icon.svg"
+                src={`${import.meta.env.BASE_URL}facebook-icon.svg`}
                 alt="Facebook"
                 className={classes.icon}
               />
@@ -57,7 +57,7 @@ const Footer = () => {
               aria-label="Instagram"
             >
               <img
-                src="/instagram-icon.svg"
+                src={`${import.meta.env.BASE_URL}instagram-icon.svg`}
                 alt="Instagram"
                 className={classes.icon}
               />

@@ -4,9 +4,9 @@ import classes from "./TeamSection.module.css";
 import { useTranslations } from "../../contexts/TranslationContext";
 
 const PROFILE_IMAGE_PATHS = [
-  "/images/Serm-24.jpg",
-  "/images/Serm-38.png",
-  "/images/Serm-65.jpg",
+  `${import.meta.env.BASE_URL}images/Serm-24.jpg`,
+  `${import.meta.env.BASE_URL}images/Serm-38.png`,
+  `${import.meta.env.BASE_URL}images/Serm-65.jpg`,
 ];
 
 const TeamSection = () => {

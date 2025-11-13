@@ -29,7 +29,11 @@ const Links = ({ isExpandable }: LinksProps) => {
         rel="noopener noreferrer"
         aria-label="Facebook"
       >
-        <img src="/facebook-icon.svg" alt="Facebook" className={classes.icon} />
+        <img
+          src={`${import.meta.env.BASE_URL}facebook-icon.svg`}
+          alt="Facebook"
+          className={classes.icon}
+        />
       </a>
       <a
         href="https://www.instagram.com/kosice.hema"
@@ -39,7 +43,7 @@ const Links = ({ isExpandable }: LinksProps) => {
         aria-label="Instagram"
       >
         <img
-          src="/instagram-icon.svg"
+          src={`${import.meta.env.BASE_URL}instagram-icon.svg`}
           alt="Instagram"
           className={classes.icon}
         />
@@ -57,7 +61,11 @@ const Links = ({ isExpandable }: LinksProps) => {
         onMouseLeave={() => setIsExpanded(false)}
         aria-hidden={!isExpandable}
       >
-        <img src="/logo-simple.svg" alt="KSC logo" className={classes.logo} />
+        <img
+          src={`${import.meta.env.BASE_URL}logo-simple.svg`}
+          alt="KSC logo"
+          className={classes.logo}
+        />
         {isExpanded && renderContent()}
       </div>
 

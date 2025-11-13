@@ -55,7 +55,7 @@ const Column = ({
           className={`${classes.column__logo} ${
             !isIntersecting ? classes["column__logo--hidden"] : ""
           }`}
-          src="/logo-complex.svg"
+          src={`${import.meta.env.BASE_URL}logo-complex.svg`}
           alt="KSC logo"
         />
       )}

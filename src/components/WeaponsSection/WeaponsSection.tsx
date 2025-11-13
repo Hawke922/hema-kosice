@@ -16,22 +16,22 @@ const WEAPONS: Weapon[] = [
   {
     id: "sword-buckler",
     translationKey: "swordAndBuckler",
-    imagePath: "/images/Serm-6.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-6.jpg`,
   },
   {
     id: "longsword",
     translationKey: "longsword",
-    imagePath: "/images/Serm-127.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-127.jpg`,
   },
   {
     id: "sabre",
     translationKey: "sabre",
-    imagePath: "/images/Serm-149.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-149.jpg`,
   },
   {
     id: "rapier",
     translationKey: "rapier",
-    imagePath: "/images/Serm-140.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-140.jpg`,
   },
 ];
 

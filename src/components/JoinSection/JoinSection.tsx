@@ -10,7 +10,7 @@ const JoinSection = () => {
       <div className={classes["background-container"]}>
         <img
           className={classes["background-image"]}
-          src="/images/Serm-119.jpg"
+          src={`${import.meta.env.BASE_URL}images/Serm-119.jpg`}
           alt=""
           aria-hidden="true"
           loading="lazy"

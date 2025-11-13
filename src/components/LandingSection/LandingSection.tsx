@@ -7,19 +7,19 @@ import classes from "./LandingSection.module.css";
 
 const COLUMNS = [
   {
-    imagePath: "/images/Serm-1.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-1.jpg`,
     type: "left" as const,
     translationKey: "hema" as const,
     targetSection: "hema",
   },
   {
-    imagePath: "/images/Serm-105.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-105.jpg`,
     type: "center" as const,
     translationKey: "team" as const,
     targetSection: "team",
   },
   {
-    imagePath: "/images/Serm-99.jpg",
+    imagePath: `${import.meta.env.BASE_URL}images/Serm-99.jpg`,
     type: "right" as const,
     translationKey: "join" as const,
     targetSection: "join",

@@ -21,22 +21,22 @@ const HemaSection = () => {
 
   const CONTENT = [
     {
-      imagePath: "/images/Serm-83.jpg",
+      imagePath: `${import.meta.env.BASE_URL}images/Serm-83.jpg`,
       title: translations.hema.content1.header,
       text: translations.hema.content1.paragraph,
     },
     {
-      imagePath: "/images/Serm-161.jpg",
+      imagePath: `${import.meta.env.BASE_URL}images/Serm-161.jpg`,
       title: translations.hema.content2.header,
       text: translations.hema.content2.paragraph,
     },
     {
-      imagePath: "/images/Serm-139.jpg",
+      imagePath: `${import.meta.env.BASE_URL}images/Serm-139.jpg`,
       title: translations.hema.content3.header,
       text: translations.hema.content3.paragraph,
     },
     {
-      imagePath: "/images/Serm-102.jpg",
+      imagePath: `${import.meta.env.BASE_URL}images/Serm-102.jpg`,
       title: translations.hema.content4.header,
       text: translations.hema.content4.paragraph,
     },
