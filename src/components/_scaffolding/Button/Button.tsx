@@ -2,39 +2,23 @@ import classes from "./Button.module.css";
 
 type ButtonProps = {
   label: string;
-  targetSection: string;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
+  onClick: () => void;
 };
 
 const Button = ({
   label,
   onMouseEnter,
   onMouseLeave,
-  targetSection,
+  onClick,
 }: ButtonProps) => {
-  const handleButtonClick = () => {
-    const section = document.getElementById(targetSection);
-
-    if (section) {
-      const sectionRect = section.getBoundingClientRect();
-      const sectionCenter = sectionRect.top + sectionRect.height / 2;
-      const viewportCenter = window.innerHeight / 2;
-      const scrollOffset = window.scrollY + sectionCenter - viewportCenter;
-
-      window.scrollTo({
-        top: scrollOffset,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <button
       className={classes.button}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      onClick={handleButtonClick}
+      onClick={onClick}
     >
       {label}
     </button>

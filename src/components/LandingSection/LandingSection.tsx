@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Column from "./Column/Column";
 import About from "./About/About";
 
@@ -28,6 +29,9 @@ const COLUMNS = [
 
 const LandingSection = () => {
   const { translations } = useTranslations();
+  const [activeColumn, setActiveColumn] = useState<
+    "left" | "center" | "right" | null
+  >(null);
 
   return (
     <section className={classes.wrapper}>
@@ -39,6 +43,14 @@ const LandingSection = () => {
             type={column.type}
             buttonLabel={translations.landing.button[column.translationKey]}
             targetSection={column.targetSection}
+            isActive={activeColumn === column.type}
+            showLogo={
+              activeColumn === null
+                ? column.type === "center"
+                : activeColumn === column.type
+            }
+            onActivate={() => setActiveColumn(column.type)}
+            onDeactivate={() => setActiveColumn(null)}
           />
         ))}
       </div>
