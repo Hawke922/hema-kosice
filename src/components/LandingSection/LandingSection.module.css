@@ -8,10 +8,12 @@
   height: 50vh;
   gap: var(--gap-small);
   position: relative;
+  font-size: 1.5rem;
 }
 
 @media (orientation: landscape) {
   .columns {
     height: 80vh;
+    font-size: 2rem;
   }
 }

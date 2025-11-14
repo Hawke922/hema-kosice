@@ -36,7 +36,7 @@
 
 .column__logo-image {
   filter: invert(1);
-  width: 8rem;
+  width: 6rem;
   opacity: 1;
   transition: opacity 0.3s ease;
 }
@@ -70,15 +70,13 @@
   object-position: 20%;
 }
 
-@media (max-width: 767px) {
-  .column {
-    cursor: pointer;
-  }
-}
-
 @media (min-width: 768px) {
   .column__logo {
     flex: 1;
+  }
+
+  .column__logo-image {
+    width: 8rem;
   }
 
   .column__spacer {
