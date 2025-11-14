@@ -59,6 +59,9 @@ const Links = ({ isExpandable }: LinksProps) => {
         } ${!isExpandable ? classes["wrapper--hidden"] : ""}`}
         onMouseEnter={() => setIsExpanded(true)}
         onMouseLeave={() => setIsExpanded(false)}
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
         aria-hidden={!isExpandable}
       >
         <img
