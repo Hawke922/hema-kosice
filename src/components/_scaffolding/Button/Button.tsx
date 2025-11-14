@@ -17,24 +17,27 @@ const Button = ({
     const section = document.getElementById(targetSection);
 
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const sectionRect = section.getBoundingClientRect();
+      const sectionCenter = sectionRect.top + sectionRect.height / 2;
+      const viewportCenter = window.innerHeight / 2;
+      const scrollOffset = window.scrollY + sectionCenter - viewportCenter;
+
+      window.scrollTo({
+        top: scrollOffset,
+        behavior: "smooth",
+      });
     }
   };
 
   return (
-    <>
-      <button
-        className={classes.button}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        onClick={handleButtonClick}
-      >
-        {label}
-      </button>
-      {/* <button className={classes["button-64"]} role="button">
-        <span className={classes.text}>{label}</span>
-      </button> */}
-    </>
+    <button
+      className={classes.button}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={handleButtonClick}
+    >
+      {label}
+    </button>
   );
 };
 

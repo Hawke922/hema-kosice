@@ -31,13 +31,16 @@
   "team": {
     "header": "Our Crew",
     "content": [
-      "KŠC began as a small group of enthusiasts lead by Slavomír Hubatka back in 2016, training simply out of passion for historical fencing. Like many clubs, we went quiet during the pandemic — but in 2023 we came back stronger, forming an official organization and opening our doors to new members.",
-      "Now, with experienced instructors like Filip 'Joxer' Trcka and a growing community, we're writing the next chapter of our story together. While we're still young in the tournament scene, one of our founding members and head instructor Miroslav Medviď ranks among the world's top HEMA fencers — a reminder of how far dedication can go."
+      "KŠC kicked off as a small but quickly growing crew led by Slavomír Hubatka back in 2016, training simply out of passion for historical fencing. Unfortunately, pandemic paused our momentum and left us with just a handful of active fencers.",
+      "In 2023, with the help of Tomáš Klučár we rebuilt, formalized an official organization and opened up to new members.",
+      "While we're still young in the tournament scene, our head coach and founding member, Miroslav Medviď, stands among the world’s top HEMA fencers — a reflection of exceptional commitment to the craft.",
+      "Now, with experienced instructors like Filip 'Joxer' Trcka and a growing community of enthusiastic prospects, we're writing the next chapter of our story together."
     ]
   },
+
   "join": {
     "header": "Feeling like swordfighting?",
-    "subheader": "Come in, youll be welcome!",
+    "subheader": "Come in, you'll be welcome!",
     "content": "We are actively recruiting new members of all skill levels. Groups of beginners are usually formed once or twice a year, so don't hesitate to reach out and express your interest. Training sessions are held couple of times a week, and we provide all the necessary equipment for beginners to get started safely. Whether you're looking to compete or just want to learn a new skill, we are here to provide supportive environment for you as a fencer."
   },
   "weapons": {
