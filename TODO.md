@@ -1,3 +1,4 @@
 - logo v indexe je shit
 - remove animation lib if not necessary
-- "scroll me" gif/icon on hema section
+- https://www.embla-carousel.com/ <-- refactor hema section
+- text color cannot be just white, add shades of gray
