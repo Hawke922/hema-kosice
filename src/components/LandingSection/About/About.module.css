@@ -7,11 +7,17 @@
 
 .header {
   padding: var(--gap-medium) 0;
-  text-align: center;
+  text-align: left;
 }
 
 .text {
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
   max-width: 800px;
+}
+
+@media (min-width: 768px) {
+  .header, .text {
+    text-align: center;
+  }
 }

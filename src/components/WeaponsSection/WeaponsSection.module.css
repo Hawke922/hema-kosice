@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .images-container {
@@ -41,9 +41,14 @@
   max-width: 600px;
 }
 
+.header {
+  padding-left: 1rem;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     gap: var(--gap-medium);
+    text-align: left;
   }
 
   .images-container {
@@ -53,6 +58,10 @@
 
   .content {
     gap: 1.5rem;
+  }
+
+  .header {
+    padding-left: 0;
   }
 }
 
