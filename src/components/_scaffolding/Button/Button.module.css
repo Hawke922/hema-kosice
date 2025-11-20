@@ -17,6 +17,7 @@
   left: 0;
   width: 0;
   height: 0.15rem;
+  border-radius: var(--border-radius);
   background-color: var(--color-white);
   transition: width 0.3s ease-in-out;
 }

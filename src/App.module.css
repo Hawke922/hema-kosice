@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   gap: 8rem;
-  margin: var(--gap-small);
+  margin: var(--gap-mini);
   justify-self: center;
 }
 
 @media (min-width: 768px) {
   .main-wrapper {
     gap: var(--gap-large);
+    margin: var(--gap-small);
   }
 }
