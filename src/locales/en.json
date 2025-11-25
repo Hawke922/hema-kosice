@@ -62,6 +62,53 @@
       "description": "The gentleman's dueling weapon of the Renaissance. Focused on precise thrusting techniques, footwork, and sophisticated blade control in civilian combat."
     }
   },
+  "faq": {
+    "header": "Frequently Asked Questions",
+    "searchPlaceholder": "Search questions...",
+    "noResults": "No questions found matching your search.",
+    "questions": [
+      {
+        "question": "Do I need any prior experience to join?",
+        "answer": "No prior experience is necessary! We welcome complete beginners and provide all the foundational training you need to start safely.",
+        "keywords": ["beginner", "experience", "start", "new"]
+      },
+      {
+        "question": "What equipment do I need to bring?",
+        "answer": "For beginners, we provide all necessary equipment including protective gear and training weapons. As you progress, you may choose to invest in your own equipment.",
+        "keywords": ["equipment", "gear", "weapon", "protection"]
+      },
+      {
+        "question": "How much does it cost to join?",
+        "answer": "Membership fees vary depending on your commitment level. Contact us for current pricing information and available membership options.",
+        "keywords": ["cost", "price", "fee", "membership", "payment"]
+      },
+      {
+        "question": "Is HEMA dangerous?",
+        "answer": "Like any contact sport, HEMA has inherent risks, but we prioritize safety through proper protective equipment, controlled training environments, and experienced instruction. Injuries are rare when proper protocols are followed.",
+        "keywords": ["safe", "danger", "injury", "risk", "protection"]
+      },
+      {
+        "question": "How often are training sessions?",
+        "answer": "We hold training sessions multiple times per week. The exact schedule varies, so please check our contact section or reach out directly for current training times.",
+        "keywords": ["schedule", "training", "time", "frequency", "when"]
+      },
+      {
+        "question": "Can I try a class before committing?",
+        "answer": "Yes! We encourage prospective members to attend a trial session to experience HEMA firsthand. Contact us to arrange a visit.",
+        "keywords": ["trial", "try", "visit", "test", "before"]
+      },
+      {
+        "question": "What age groups do you accept?",
+        "answer": "We primarily train adults and teenagers (typically 16+). For younger students, please contact us to discuss specific circumstances and possibilities.",
+        "keywords": ["age", "children", "youth", "teen", "adult"]
+      },
+      {
+        "question": "Do you compete in tournaments?",
+        "answer": "Yes, our members have the opportunity to compete in local and international HEMA tournaments. Competition is optional and encouraged for those interested in testing their skills.",
+        "keywords": ["tournament", "compete", "competition", "event"]
+      }
+    ]
+  },
   "footer": {
     "organization": {
       "type": "Civic Association",

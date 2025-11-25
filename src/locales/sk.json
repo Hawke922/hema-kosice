@@ -61,6 +61,59 @@
       "description": "Duelová zbraň džentlmenov renesancie. Zameriava sa na presné bodné techniky, prácu nôh a sofistikovanú kontrolu čepele v civilnom boji."
     }
   },
+  "faq": {
+    "header": "Často kladené otázky",
+    "searchPlaceholder": "Hľadať otázky...",
+    "noResults": "Nenašli sa žiadne otázky zodpovedajúce vášmu hľadaniu.",
+    "questions": [
+      {
+        "question": "Potrebujem nejaké predchádzajúce skúsenosti?",
+        "answer": "Nie, žiadne predchádzajúce skúsenosti nie sú potrebné! Vítame úplných začiatočníkov a poskytujeme všetok potrebný základný tréning na bezpečné začatie.",
+        "keywords": ["začiatočník", "skúsenosti", "začať", "nový"]
+      },
+      {
+        "question": "Aké vybavenie si musím priniesť?",
+        "answer": "Pre začiatočníkov poskytujeme všetko potrebné vybavenie vrátane ochranných prvkov a tréningových zbraní. Ako budete napredovať, môžete sa rozhodnúť investovať do vlastného vybavenia.",
+        "keywords": ["vybavenie", "výstroj", "zbraň", "ochrana"]
+      },
+      {
+        "question": "Koľko stojí členstvo?",
+        "answer": "Členské poplatky sa líšia v závislosti od úrovne záväzku. Kontaktujte nás pre aktuálne cenové informácie a dostupné možnosti členstva.",
+        "keywords": ["cena", "poplatok", "členstvo", "platba", "koľko"]
+      },
+      {
+        "question": "Je HEMA nebezpečné?",
+        "answer": "Ako každý kontaktný šport, HEMA má inherentné riziká, ale prioritizujeme bezpečnosť prostredníctvom správneho ochranného vybavenia, kontrolovaného tréningového prostredia a skúsených inštruktorov. Zranenia sú zriedkavé, keď sú dodržiavané správne protokoly.",
+        "keywords": [
+          "bezpečné",
+          "nebezpečenstvo",
+          "zranenie",
+          "riziko",
+          "ochrana"
+        ]
+      },
+      {
+        "question": "Ako často sú tréningy?",
+        "answer": "Máme tréningy niekoľkokrát do týždňa. Presný rozvrh sa mení, takže prosím skontrolujte našu kontaktnú sekciu alebo nás kontaktujte priamo pre aktuálne tréningové časy.",
+        "keywords": ["rozvrh", "tréning", "čas", "frekvencia", "kedy"]
+      },
+      {
+        "question": "Môžem vyskúšať tréning pred záväzkom?",
+        "answer": "Áno! Povzbudzujeme potenciálnych členov, aby sa zúčastnili skúšobnej hodiny a osobne zažili HEMA. Kontaktujte nás pre dohodnutie návštevy.",
+        "keywords": ["skúška", "vyskúšať", "návšteva", "test", "pred"]
+      },
+      {
+        "question": "Aké vekové skupiny prijímate?",
+        "answer": "Primárne trénujeme dospelých a tínedžerov (typicky 16+). Pre mladších študentov nás prosím kontaktujte pre diskusiu o špecifických okolnostiach a možnostiach.",
+        "keywords": ["vek", "deti", "mládež", "tínedžer", "dospelý"]
+      },
+      {
+        "question": "Súťažíte na turnajoch?",
+        "answer": "Áno, naši členovia majú možnosť súťažiť na miestnych a medzinárodných HEMA turnajoch. Súťaženie je voliteľné a povzbudzujeme tých, ktorí majú záujem testovať svoje schopnosti.",
+        "keywords": ["turnaj", "súťažiť", "súťaž", "podujatie"]
+      }
+    ]
+  },
   "footer": {
     "organization": {
       "type": "Občianske združenie",
