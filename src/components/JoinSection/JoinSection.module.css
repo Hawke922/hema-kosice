@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   position: relative;
+  min-height: 100vh;
 }
 
 .background-container {
@@ -20,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-background-overlay);
+  background: #00000090;
   pointer-events: none;
   border-radius: var(--border-radius);
 }
@@ -29,56 +30,209 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.background-fade {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .content {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 5rem 1rem 3rem 1rem;
+  margin: 3rem 1rem;
+  gap: 2rem;
+  width: 100%;
 }
 
-.text-wrapper {
+.header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 1.5rem;
+  background-color: var(--color-background-overlay);
+  border-radius: var(--border-radius);
+}
+
+.tabs-container {
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.tabs-wrapper {
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 1.25rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: none;
+  color: var(--color-white);
+  border: none;
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-button:hover {
+  color: var(--color-white);
+}
+
+.has-selection .tab-button {
+  color: var(--color-light-gray);
+}
+
+.has-selection .tab-button:hover {
+  color: var(--color-white);
+}
+
+.tab-selected {
+  color: var(--color-white) !important;
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0.5rem;
+  height: 3px;
+  background-color: var(--color-white);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.indicator-left {
+  left: 0.5rem;
+  width: calc(50% - 0.75rem);
+}
+
+.indicator-right {
+  left: calc(50% + 0.25rem);
+  width: calc(50% - 0.75rem);
+}
+
+.indicator-hover {
+  opacity: 1;
+}
+
+.indicator-hidden {
+  opacity: 0;
+}
+
+.detail-content {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: var(--border-radius);
+}
+
+.content-fade-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detail-header {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.detail-text {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  gap: 1.5rem;
+  gap: 1rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.detail-text p {
+  margin: 0;
 }
 
 @media (min-width: 768px) {
-  .background-container::after {
-    background: linear-gradient(to right, #00000068, #00000000 90%);
-  }
-
-  .background-image {
-    object-position: left;
-  }
-
-  .header {
-    display: block;
-  }
-
   .content {
-    margin: 3rem 0 3rem 3rem;
+    margin: 4rem 2rem;
     gap: 3rem;
   }
 
-  .text-wrapper {
-    gap: 2rem;
+  .header {
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
     padding: 2rem;
-    max-width: 500px;
-    background-color: var(--color-background-overlay);
-    border-radius: var(--border-radius);
+  }
+
+  .tabs-container {
+    max-width: 800px;
+  }
+
+  .tab-button {
+    padding: 1.5rem 2rem;
+  }
+
+  .detail-content {
+    padding: 3rem;
+    margin: 3rem auto 0;
+  }
+
+  .detail-header {
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .content {
-    margin: 4rem 0 4rem 4rem;
+    margin: 5rem 4rem;
     gap: 4rem;
   }
 
-  .text-wrapper {
-    max-width: 600px;
+  .header {
+    font-size: 3.5rem;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
   }
 }

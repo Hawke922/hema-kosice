@@ -39,9 +39,26 @@
   },
 
   "join": {
-    "header": "Feeling like swordfighting?",
-    "subheader": "Come in, you'll be welcome!",
-    "content": "We are actively recruiting new members of all skill levels. Groups of beginners are usually formed once or twice a year, so don't hesitate to reach out and express your interest. Training sessions are held couple of times a week, and we provide all the necessary equipment for beginners to get started safely. Whether you're looking to compete or just want to learn a new skill, we are here to provide supportive environment for you as a fencer."
+    "header": "Ready to get started?",
+    "intro": "If you feel like starting fencing, you have two options: either wait for our recruitment event, which we hold once or twice a year, or join our already formed group of advanced fencers. Choose the path that suits you best.",
+    "options": {
+      "beginner": {
+        "title": "Join Beginner Group",
+        "detailTitle": "Perfect Start for Newcomers",
+        "content": [
+          "Our recruitment events are designed for complete beginners who want to start their HEMA journey the right way. We provide all necessary equipment, including protective gear and training weapons, so you can focus on learning the fundamentals.",
+          "During these structured courses, you'll learn proper techniques, safety protocols, and basic combat principles in a supportive environment with fellow beginners. This is the ideal path if you want to build a solid foundation before committing to purchasing your own equipment."
+        ]
+      },
+      "advanced": {
+        "title": "Join Advanced Group",
+        "detailTitle": "Fast-Track for the Committed",
+        "content": [
+          "This path is for those who already have experience with fencing or martial arts, or are absolutely certain that HEMA is their calling. You'll train alongside experienced fencers with full gear and real weapons, not plastic trainers.",
+          "This route requires dedication and a financial commitment—you'll need to purchase your own equipment and weapons as soon as possible (we can provide guidance and help with purchases). It's more challenging, but if you're committed and confident that HEMA is for you, this is the most efficient and fastest way to learn and grow as a fencer."
+        ]
+      }
+    }
   },
   "weapons": {
     "header": "Choose your weapon",

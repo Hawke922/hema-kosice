@@ -38,9 +38,26 @@
     ]
   },
   "join": {
-    "header": "Máš chuť na šerm?",
-    "subheader": "Vstúp, si vždy vítaný!",
-    "content": "Aktívne prijímame nových členov všetkých úrovní. Skupiny začiatočníkov sa zvyčajne tvoria raz alebo dvakrát do roka, takže neváhajte nás kontaktovať a vyjadriť svoj záujem. Tréningy sa konají niekoľkokrát do týždňa a začiatočníkom poskytujeme všetko potrebné vybavenie na bezpečný začiatok. Či už chcete súťažiť alebo sa len naučiť novú zručnosť, sme tu, aby sme vám poskytli podporné prostredie pre váš rozvoj ako šermiara."
+    "header": "Pripravený začať?",
+    "intro": "Ak máš chuť začať šermovať, máš dve možnosti: buď počkaj na našu náborovú akciu, ktorú organizujeme raz alebo dvakrát ročne, alebo sa pridaj k našej už vytvorenej skupine pokročilých šermiarov. Vyber si cestu, ktorá ti vyhovuje.",
+    "options": {
+      "beginner": {
+        "title": "Pridať sa k začiatočníkom",
+        "detailTitle": "Perfektný štart pre nováčikov",
+        "content": [
+          "Naše náborové akcie sú navrhnuté pre úplných začiatočníkov, ktorí chcú začať svoju HEMA cestu správnym spôsobom. Poskytujeme všetko potrebné vybavenie vrátane ochranných prvkov a tréningových zbraní, takže sa môžeš sústrediť na učenie základov.",
+          "Počas týchto štruktúrovaných kurzov sa naučíš správne techniky, bezpečnostné protokoly a základné bojové princípy v podporujúcom prostredí spolu s ostatnými začiatočníkmi. Toto je ideálna cesta, ak chceš vybudovať pevný základ pred tým, ako sa rozhodneš kúpiť si vlastné vybavenie."
+        ]
+      },
+      "advanced": {
+        "title": "Pridať sa k pokročilým",
+        "detailTitle": "Rýchla cesta pre odhodlaných",
+        "content": [
+          "Táto cesta je pre tých, ktorí už majú skúsenosti so šermovaním alebo bojovými umeniami, alebo si sú absolútne istí, že HEMA je ich povolaním. Budeš trénovať po boku skúsených šermiarov s plnou výstrojou a skutočnými zbraňami, nie plastovými tréningovými.",
+          "Táto cesta vyžaduje odhodlanie a finančný záväzok—budeš si musieť zakúpiť vlastné vybavenie a zbrane čo najskôr (môžeme poskytnúť poradenstvo a pomoc s nákupom). Je to náročnejšie, ale ak si odhodlaný a si si istý, že HEMA je pre teba, toto je najefektívnejší a najrýchlejší sposob, ako sa naučiť a rásť ako šermiar."
+        ]
+      }
+    }
   },
   "weapons": {
     "header": "Vyber si svoju zbraň",

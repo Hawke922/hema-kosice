@@ -38,6 +38,7 @@ const FaqSection = () => {
 
       <div className={classes["search-container"]}>
         <input
+          id="faq-search"
           type="text"
           className={classes["search-input"]}
           placeholder={translations.faq.searchPlaceholder}
