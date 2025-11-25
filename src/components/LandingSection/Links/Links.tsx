@@ -69,7 +69,7 @@ const Links = ({ isExpandable }: LinksProps) => {
           alt="KSC logo"
           className={classes.logo}
         />
-        {isExpanded && renderContent()}
+        <div className={classes.content}>{renderContent()}</div>
       </div>
 
       <div
