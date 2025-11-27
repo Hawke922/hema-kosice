@@ -1,7 +1,8 @@
-import { useCallback, useRef, useEffect } from "react";
+import { useCallback, useRef, useEffect, useState } from "react";
 import type { EmblaCarouselType, EmblaEventType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { useTranslations } from "../../contexts/TranslationContext";
+import Chevron from "../_scaffolding/Chevron/Chevron";
 
 import classes from "./HemaSection.module.css";
 
@@ -21,6 +22,7 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
 
 const HemaSection = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   // all this just to programmatically handle opacity of the side slides
   const tweenFactor = useRef(0);
@@ -70,18 +72,25 @@ const HemaSection = () => {
     []
   );
 
+  const onSelect = useCallback((emblaApi: EmblaCarouselType) => {
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, []);
+
   useEffect(() => {
     if (!emblaApi) return;
 
     setTweenFactor(emblaApi);
     tweenOpacity(emblaApi);
+    onSelect(emblaApi);
 
     emblaApi
       .on("reInit", setTweenFactor)
       .on("reInit", tweenOpacity)
+      .on("reInit", onSelect)
       .on("scroll", tweenOpacity)
+      .on("select", onSelect)
       .on("slideFocus", tweenOpacity);
-  }, [emblaApi, tweenOpacity]);
+  }, [emblaApi, tweenOpacity, onSelect]);
 
   const { translations } = useTranslations();
 
@@ -140,32 +149,36 @@ const HemaSection = () => {
               <h3 className={classes.title}>{item.title}</h3>
               <p className={classes.text}>{item.text}</p>
             </div>
+            {selectedIndex === index && (
+              <>
+                <button
+                  className={`${classes.chevron} ${classes["chevron--left"]}`}
+                  onClick={scrollPrev}
+                  aria-label="Previous slide"
+                >
+                  <Chevron direction="left" size={40} />
+                </button>
+                <button
+                  className={`${classes.chevron} ${classes["chevron--right"]}`}
+                  onClick={scrollNext}
+                  aria-label="Next slide"
+                >
+                  <Chevron direction="right" size={40} />
+                </button>
+                <div
+                  className={`${classes["swipe-indicator"]} ${classes["swipe-indicator--left"]}`}
+                >
+                  <Chevron direction="left" size={32} />
+                </div>
+                <div
+                  className={`${classes["swipe-indicator"]} ${classes["swipe-indicator--right"]}`}
+                >
+                  <Chevron direction="right" size={32} />
+                </div>
+              </>
+            )}
           </div>
         ))}
-      </div>
-      <div className={classes.buttons}>
-        <button
-          className={`${classes.button} ${classes["button--prev"]}`}
-          onClick={scrollPrev}
-          aria-label="Previous slide"
-        >
-          <img
-            src={`${import.meta.env.BASE_URL}previous.svg`}
-            alt=""
-            className={classes["button-icon"]}
-          />
-        </button>
-        <button
-          className={`${classes.button} ${classes["button--next"]}`}
-          onClick={scrollNext}
-          aria-label="Next slide"
-        >
-          <img
-            src={`${import.meta.env.BASE_URL}next.svg`}
-            alt=""
-            className={classes["button-icon"]}
-          />
-        </button>
       </div>
     </section>
   );
