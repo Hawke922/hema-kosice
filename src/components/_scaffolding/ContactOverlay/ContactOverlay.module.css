@@ -1,0 +1,108 @@
+.contactOverlay {
+  max-width: 600px;
+  padding: var(--gap-medium) var(--gap-small);
+}
+
+.title {
+  margin: 0 0 var(--gap-small, 1rem) 0;
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+
+.subtitle {
+  margin: 0 0 var(--gap-medium, 2rem) 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small, 1rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small, 1rem);
+  padding: var(--gap-small, 1rem);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius, 8px);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius, 8px);
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contactLabel {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.contactLink {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small, 1rem);
+  margin-top: var(--gap-medium, 2rem);
+  padding-top: var(--gap-medium, 2rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: var(--gap-mini, 0.75rem) var(--gap-small, 1rem);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius, 8px);
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .socialLinks {
+    flex-direction: row;
+  }
+}

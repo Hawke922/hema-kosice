@@ -12,6 +12,12 @@
     "contactButton": "Kontaktujte nás",
     "faqButton": "Máte otázky?"
   },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Kontaktujte nás prostredníctvom ktoréhokoľvek z nasledujúcich kanálov. Sme tu, aby sme odpovedali na vaše otázky a pomohli vám začať vašu cestu v HEMA!",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefón"
+  },
   "hema": {
     "content1": {
       "header": "Čo je HEMA?",
@@ -83,7 +89,8 @@
   "faq": {
     "header": "Často kladené otázky",
     "searchPlaceholder": "Hľadať otázky...",
-    "noResults": "Nenašli sa žiadne otázky zodpovedajúce vášmu hľadaniu.",
+    "noResultsMessage": "Nenašli ste odpoveď na vašu otázku?",
+    "noResultsAction": "Kontaktujte nás!",
     "questions": [
       {
         "question": "Potrebujem nejaké predchádzajúce skúsenosti?",

@@ -3,6 +3,7 @@ import { useTranslations } from "../../../contexts/TranslationContext";
 import { scrollToElement } from "../../../helpers/scroll";
 import Icon from "../../_scaffolding/Icon/Icon";
 import Overlay from "../../_scaffolding/Overlay/Overlay";
+import ContactOverlay from "../../_scaffolding/ContactOverlay/ContactOverlay";
 
 import classes from "./About.module.css";
 
@@ -32,8 +33,7 @@ const About = () => {
       </div>
 
       <Overlay isOpen={isOverlayOpen} onClose={() => setIsOverlayOpen(false)}>
-        <h2>Contact Us</h2>
-        <p>Contact information will go here.</p>
+        <ContactOverlay />
       </Overlay>
     </div>
   );

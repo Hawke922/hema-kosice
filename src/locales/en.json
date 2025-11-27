@@ -12,6 +12,12 @@
     "contactButton": "Contact Us",
     "faqButton": "Have Questions?"
   },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us through any of the following channels. We're here to answer your questions and help you start your HEMA journey!",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone"
+  },
   "hema": {
     "content1": {
       "header": "What is HEMA?",
@@ -84,7 +90,8 @@
   "faq": {
     "header": "Frequently Asked Questions",
     "searchPlaceholder": "Search questions...",
-    "noResults": "No questions found matching your search.",
+    "noResultsMessage": "Didn't find the answer to your question?",
+    "noResultsAction": "Reach out to us!",
     "questions": [
       {
         "question": "Do I need any prior experience to join?",

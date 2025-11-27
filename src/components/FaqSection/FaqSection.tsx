@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useTranslations } from "../../contexts/TranslationContext";
+import Overlay from "../_scaffolding/Overlay/Overlay";
+import ContactOverlay from "../_scaffolding/ContactOverlay/ContactOverlay";
 import classes from "./FaqSection.module.css";
 
 type FaqItem = {
@@ -12,6 +14,7 @@ const FaqSection = () => {
   const { translations } = useTranslations();
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [isContactOverlayOpen, setIsContactOverlayOpen] = useState(false);
 
   const faqItems: FaqItem[] = translations.faq.questions;
 
@@ -59,7 +62,17 @@ const FaqSection = () => {
 
       <div className={classes["faq-list"]}>
         {filteredFaqs.length === 0 ? (
-          <p className={classes["no-results"]}>{translations.faq.noResults}</p>
+          <div className={classes["no-results"]}>
+            <p className={classes["no-results-contact"]}>
+              {translations.faq.noResultsMessage}{" "}
+              <button
+                className={classes["contact-link"]}
+                onClick={() => setIsContactOverlayOpen(true)}
+              >
+                {translations.faq.noResultsAction}
+              </button>
+            </p>
+          </div>
         ) : (
           filteredFaqs.map((item, index) => (
             <div
@@ -97,6 +110,13 @@ const FaqSection = () => {
           ))
         )}
       </div>
+
+      <Overlay
+        isOpen={isContactOverlayOpen}
+        onClose={() => setIsContactOverlayOpen(false)}
+      >
+        <ContactOverlay />
+      </Overlay>
     </section>
   );
 };

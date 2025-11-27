@@ -131,6 +131,31 @@
   font-style: italic;
 }
 
+.no-results-contact {
+  margin-top: var(--gap-small);
+  color: var(--color-white);
+  font-style: normal;
+  opacity: 0.8;
+}
+
+.contact-link {
+  background: none;
+  border: none;
+  font-family: var(--font-family);
+  color: var(--color-white);
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+  padding: 0;
+  opacity: 0.8;
+}
+
+.contact-link:hover {
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   .faq-question {
     font-size: var(--text-xl);
