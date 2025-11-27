@@ -33,7 +33,7 @@
   transform: scale(1) translateY(0);
 }
 
-.closeButton {
+.close-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -53,14 +53,14 @@
   transition: background-color 0.2s ease;
 }
 
-.closeButton:hover {
+.close-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.closeIcon {
+.close-icon {
   transition: transform 0.3s ease;
 }
 
-.closeButton:hover .closeIcon {
+.close-button:hover .close-icon {
   transform: rotate(180deg);
 }

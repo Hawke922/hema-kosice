@@ -57,11 +57,11 @@ const Overlay = ({ isOpen, onClose, children }: OverlayProps) => {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          className={classes.closeButton}
+          className={classes["close-button"]}
           onClick={onClose}
           aria-label="Close overlay"
         >
-          <Icon name="cross" size={24} className={classes.closeIcon} />
+          <Icon name="cross" size={24} className={classes["close-icon"]} />
         </button>
         {children}
       </div>
