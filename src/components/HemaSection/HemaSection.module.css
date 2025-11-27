@@ -62,8 +62,21 @@
   left: var(--gap-small);
 }
 
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.chevron--left:hover .chevron-icon {
+  transform: translateX(-4px);
+}
+
 .chevron--right {
   right: var(--gap-small);
+  transition: transform 0.3s ease;
+}
+
+.chevron--right:hover .chevron-icon {
+  transform: translateX(4px);
 }
 
 .swipe-indicator {

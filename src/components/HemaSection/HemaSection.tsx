@@ -2,7 +2,7 @@ import { useCallback, useRef, useEffect, useState } from "react";
 import type { EmblaCarouselType, EmblaEventType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { useTranslations } from "../../contexts/TranslationContext";
-import Chevron from "../_scaffolding/Chevron/Chevron";
+import Icon from "../_scaffolding/Icon/Icon";
 
 import classes from "./HemaSection.module.css";
 
@@ -156,24 +156,32 @@ const HemaSection = () => {
                   onClick={scrollPrev}
                   aria-label="Previous slide"
                 >
-                  <Chevron direction="left" size={40} />
+                  <Icon name="chevron-left" size={40} />
                 </button>
                 <button
                   className={`${classes.chevron} ${classes["chevron--right"]}`}
                   onClick={scrollNext}
                   aria-label="Next slide"
                 >
-                  <Chevron direction="right" size={40} />
+                  <Icon
+                    name="chevron-right"
+                    size={40}
+                    className={classes["chevron-icon"]}
+                  />
                 </button>
                 <div
                   className={`${classes["swipe-indicator"]} ${classes["swipe-indicator--left"]}`}
                 >
-                  <Chevron direction="left" size={32} />
+                  <Icon
+                    name="chevron-left"
+                    size={32}
+                    className={classes["chevron-icon"]}
+                  />
                 </div>
                 <div
                   className={`${classes["swipe-indicator"]} ${classes["swipe-indicator--right"]}`}
                 >
-                  <Chevron direction="right" size={32} />
+                  <Icon name="chevron-right" size={32} />
                 </div>
               </>
             )}

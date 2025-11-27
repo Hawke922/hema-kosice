@@ -45,7 +45,7 @@
 }
 
 .button:hover .chevron {
-  transform: translateX(4px);
+  transform: translateX(6px);
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,67 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.2s ease;
+}
+
+.overlay.open {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  position: relative;
+  background: var(--color-background, #1a1a1a);
+  border-radius: var(--border-radius, 8px);
+  padding: var(--gap-medium, 2rem);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  opacity: 0;
+  transform: scale(0.95) translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.content.open {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--color-white, #fff);
+  cursor: pointer;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.closeIcon {
+  transition: transform 0.3s ease;
+}
+
+.closeButton:hover .closeIcon {
+  transform: rotate(180deg);
+}
