@@ -51,7 +51,7 @@
     "intro": "If you feel like starting fencing, you have two options: either wait for our recruitment event, which we hold once or twice a year, or join our already formed group of advanced fencers. Choose the path that suits you best.",
     "options": {
       "beginner": {
-        "title": "Join Beginner Group",
+        "title": "Recruitment",
         "detailTitle": "Perfect Start for Newcomers",
         "content": [
           "Our recruitment events are designed for complete beginners who want to start their HEMA journey the right way. We provide all necessary equipment, including protective gear and training weapons, so you can focus on learning the fundamentals.",
@@ -59,7 +59,7 @@
         ]
       },
       "advanced": {
-        "title": "Join Advanced Group",
+        "title": "Advanced Group",
         "detailTitle": "Fast-Track for the Committed",
         "content": [
           "This path is for those who already have experience with fencing or martial arts, or are absolutely certain that HEMA is their calling. You'll train alongside experienced fencers with full gear and real weapons, not plastic trainers.",

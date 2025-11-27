@@ -14,8 +14,8 @@ const App = () => (
       <LandingSection />
       <HemaSection />
       <WeaponsSection />
-      <TeamSection />
       <JoinSection />
+      <TeamSection />
       <FaqSection />
     </main>
     <Footer />

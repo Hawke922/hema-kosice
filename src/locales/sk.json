@@ -50,7 +50,7 @@
     "intro": "Ak máš chuť začať šermovať, máš dve možnosti: buď počkaj na našu náborovú akciu, ktorú organizujeme raz alebo dvakrát ročne, alebo sa pridaj k našej už vytvorenej skupine pokročilých šermiarov. Vyber si cestu, ktorá ti vyhovuje.",
     "options": {
       "beginner": {
-        "title": "Pridať sa k začiatočníkom",
+        "title": "Nábor",
         "detailTitle": "Perfektný štart pre nováčikov",
         "content": [
           "Naše náborové akcie sú navrhnuté pre úplných začiatočníkov, ktorí chcú začať svoju HEMA cestu správnym spôsobom. Poskytujeme všetko potrebné vybavenie vrátane ochranných prvkov a tréningových zbraní, takže sa môžeš sústrediť na učenie základov.",
@@ -58,7 +58,7 @@
         ]
       },
       "advanced": {
-        "title": "Pridať sa k pokročilým",
+        "title": "Pokročilá skupina",
         "detailTitle": "Rýchla cesta pre odhodlaných",
         "content": [
           "Táto cesta je pre tých, ktorí už majú skúsenosti so šermovaním alebo bojovými umeniami, alebo si sú absolútne istí, že HEMA je ich povolaním. Budeš trénovať po boku skúsených šermiarov s plnou výstrojou a skutočnými zbraňami, nie plastovými tréningovými.",
