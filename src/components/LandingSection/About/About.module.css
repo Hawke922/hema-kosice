@@ -18,14 +18,15 @@
 
 .button-container {
   display: flex;
-  gap: var(--gap-medium);
+  flex-direction: column;
+  align-self: start;
   margin-top: var(--gap-small);
 }
 
 .button {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--gap-mini);
   cursor: pointer;
   background: none;
   font: var(--font-family);
@@ -33,13 +34,10 @@
   color: var(--color-white);
   border: none;
   font-size: 1.2rem;
-  padding: var(--gap-mini) var(--gap-small);
+  padding: var(--gap-mini) 0;
   border-radius: var(--border-radius);
   transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: var(--color-gray);
+  text-wrap: nowrap;
 }
 
 .chevron {
@@ -54,5 +52,19 @@
   .header,
   .text {
     text-align: center;
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: var(--gap-medium);
+    align-self: center;
+  }
+
+  .button {
+    padding: var(--gap-mini) var(--gap-small);
+  }
+
+  .button:hover {
+    background-color: var(--color-gray);
   }
 }
