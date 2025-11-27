@@ -8,7 +8,9 @@
   },
   "about": {
     "title": "Košice Fencing Guild",
-    "content": "At KŠC, we are dedicated to practicing martial traditions of medieval and Renaissance Europe. We train with longswords, sabres, and more — focusing on skill, athletic performance, history, and community. Whether you're a beginner or experienced fencer, you'll find a welcoming place to learn and grow here."
+    "content": "At KŠC, we are dedicated to practicing martial traditions of medieval and Renaissance Europe. We train with longswords, sabres, and more — focusing on skill, athletic performance, history, and community. Whether you're a beginner or experienced fencer, you'll find a welcoming place to learn and grow here.",
+    "contactButton": "Contact Us",
+    "faqButton": "Have Questions?"
   },
   "hema": {
     "content1": {

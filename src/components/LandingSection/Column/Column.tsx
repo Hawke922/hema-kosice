@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { useDirectionalIntersection } from "../../../hooks/useDirectionalIntersection";
+import { scrollToElement } from "../../../helpers/scroll";
 
 import Button from "../../_scaffolding/Button/Button";
 import Links from "../Links/Links";
@@ -47,26 +48,10 @@ const Column = ({
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
-  const scrollToSection = () => {
-    const section = document.getElementById(targetSection);
-
-    if (section) {
-      const sectionRect = section.getBoundingClientRect();
-      const sectionCenter = sectionRect.top + sectionRect.height / 2;
-      const viewportCenter = window.innerHeight / 2;
-      const scrollOffset = window.scrollY + sectionCenter - viewportCenter;
-
-      window.scrollTo({
-        top: scrollOffset,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <div
       className={classes.column}
-      onClick={() => isMobile && scrollToSection()}
+      onClick={() => isMobile && scrollToElement(targetSection)}
       onMouseEnter={() => isMobile && onActivate()}
       onMouseLeave={() => isMobile && onDeactivate()}
     >
@@ -95,7 +80,7 @@ const Column = ({
             label={buttonLabel}
             onMouseEnter={onActivate}
             onMouseLeave={onDeactivate}
-            onClick={scrollToSection}
+            onClick={() => scrollToElement(targetSection)}
           />
         </div>
         <div className={classes.column__spacer} />
