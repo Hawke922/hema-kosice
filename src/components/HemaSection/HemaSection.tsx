@@ -156,7 +156,11 @@ const HemaSection = () => {
                   onClick={scrollPrev}
                   aria-label="Previous slide"
                 >
-                  <Icon name="chevron-left" size={40} />
+                  <Icon
+                    name="chevron-left"
+                    size={40}
+                    className={classes["chevron-icon"]}
+                  />
                 </button>
                 <button
                   className={`${classes.chevron} ${classes["chevron--right"]}`}
