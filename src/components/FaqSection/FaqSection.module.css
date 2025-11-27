@@ -41,6 +41,8 @@
 }
 
 .clear-button {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 1rem;
   top: 50%;
@@ -99,8 +101,8 @@
 }
 
 .expand-icon {
-  font-size: var(--text-base);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .expand-icon--rotated {

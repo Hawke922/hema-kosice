@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslations } from "../../contexts/TranslationContext";
 import Overlay from "../_scaffolding/Overlay/Overlay";
 import ContactOverlay from "../_scaffolding/ContactOverlay/ContactOverlay";
+import Icon from "../_scaffolding/Icon/Icon";
 import classes from "./FaqSection.module.css";
 
 type FaqItem = {
@@ -55,7 +56,7 @@ const FaqSection = () => {
             onClick={() => setSearchQuery("")}
             aria-label="Clear search"
           >
-            ✕
+            <Icon name="cross" size={20} />
           </button>
         )}
       </div>
@@ -87,15 +88,15 @@ const FaqSection = () => {
                 aria-expanded={expandedIndex === index}
               >
                 <span>{item.question}</span>
-                <span
+                <Icon
+                  name="chevron-down"
                   className={`${classes["expand-icon"]} ${
                     expandedIndex === index
                       ? classes["expand-icon--rotated"]
                       : ""
                   }`}
-                >
-                  ▼
-                </span>
+                  size={24}
+                />
               </button>
               <div
                 className={`${classes["faq-answer-wrapper"]} ${
