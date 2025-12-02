@@ -4,6 +4,10 @@
       "hema": "HEMA",
       "team": "KŠC Team",
       "join": "Join Us"
+    },
+    "links": {
+      "expandableLabel": "2%",
+      "defaultLabel": "Support us"
     }
   },
   "about": {

@@ -4,6 +4,10 @@
       "hema": "HEMA",
       "team": "KŠC tím",
       "join": "Pridaj sa"
+    },
+    "links": {
+      "expandableLabel": "2%",
+      "defaultLabel": "Podpor nás"
     }
   },
   "about": {

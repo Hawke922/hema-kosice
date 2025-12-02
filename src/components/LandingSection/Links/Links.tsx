@@ -8,7 +8,10 @@ type LinksProps = {
 
 const Links = ({ isExpandable }: LinksProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { language, setLanguage } = useTranslations();
+  const { language, setLanguage, translations } = useTranslations();
+  const linkLabel = isExpandable
+    ? translations.landing.links.expandableLabel
+    : translations.landing.links.defaultLabel;
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "sk" : "en");
@@ -17,7 +20,7 @@ const Links = ({ isExpandable }: LinksProps) => {
   const renderContent = () => (
     <>
       <a href="#" className={classes.link}>
-        2%
+        {linkLabel}
       </a>
       <button className={classes["language-button"]} onClick={toggleLanguage}>
         {language === "en" ? "SK" : "EN"}
