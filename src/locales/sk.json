@@ -90,6 +90,52 @@
       "description": "Duelová zbraň džentlmenov renesancie. Zameriava sa na presné bodné techniky, prácu nôh a sofistikovanú kontrolu čepele v civilnom boji."
     }
   },
+  "support": {
+    "tagline": "Podpor nás",
+    "header": "Pomôž nám 2 % z dane",
+    "description": "Výstroj, prenájom haly aj výjazdy na turnaje niečo stoja. Najviac nám pomôže, keď sa k nám pridáš alebo keď nám venuješ 2 % z dane, ktorú by si aj tak poslal štátu.",
+    "actions": {
+      "join": {
+        "title": "Pridaj sa k cechu",
+        "body": "Každý nový člen posilní tréningy, pokryje prenájom a prinesie viac sparing partnerov.",
+        "cta": "Pridaj sa"
+      },
+      "tax": {
+        "title": "Poukáž 2 % namiesto štátu",
+        "body": "Ak si zamestnanec na Slovensku, vieš priamo podporiť naše občianske združenie a zaplatiť nové chrániče, semináre aj juniorské tréningy.",
+        "expandCta": "Zobraziť postup",
+        "collapseCta": "Skryť postup"
+      }
+    },
+    "steps": {
+      "title": "Ako môže zamestnanec darovať",
+      "intro": "Ak si zamestnanec a zamestnávateľ ti robí ročné zúčtovanie, každý rok na jar stačia tieto kroky.",
+      "items": [
+        {
+          "title": "Vyžiadaj si potvrdenie",
+          "description": "Po ročnom zúčtovaní dane si vypýtaj od mzdovej účtárne “Potvrdenie o zaplatení dane” so sumou zaplatenej dane."
+        },
+        {
+          "title": "Vyplň vyhlásenie",
+          "description": "Stiahni si formulár “Vyhlásenie o poukázaní podielu zaplatenej dane”, prepíš naše údaje nižšie, vyznač 2 % a dokument podpíš.",
+          "link": {
+            "label": "Stiahnuť formulár",
+            "href": "https://www.financnasprava.sk/sk/obcania/dane/2percenta"
+          }
+        },
+        {
+          "title": "Odovzdaj oba dokumenty do 30. apríla",
+          "description": "Doruč podpísané vyhlásenie spolu s potvrdením na svoj daňový úrad (alebo HR, ak to riešia za teba) najneskôr 30. apríla."
+        },
+        {
+          "title": "Daj nám vedieť",
+          "description": "Pošli krátku správu, aby sme vedeli prevod skontrolovať a osobne sa poďakovať."
+        }
+      ]
+    },
+    "contactNote": "Ak si fyzická alebo právnická osoba a chceš darovať,",
+    "contactLinkLabel": "kontaktuj nás."
+  },
   "faq": {
     "header": "Často kladené otázky",
     "searchPlaceholder": "Hľadať otázky...",

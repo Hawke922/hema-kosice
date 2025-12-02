@@ -3,6 +3,7 @@ import HemaSection from "./components/HemaSection/HemaSection";
 import WeaponsSection from "./components/WeaponsSection/WeaponsSection";
 import TeamSection from "./components/TeamSection/TeamSection";
 import JoinSection from "./components/JoinSection/JoinSection";
+import SupportUsSection from "./components/SupportUsSection/SupportUsSection";
 import FaqSection from "./components/FaqSection/FaqSection";
 import Footer from "./components/Footer/Footer";
 
@@ -16,6 +17,7 @@ const App = () => (
       <WeaponsSection />
       <JoinSection />
       <TeamSection />
+      <SupportUsSection />
       <FaqSection />
     </main>
     <Footer />

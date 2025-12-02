@@ -1,6 +1,7 @@
 import { useState } from "react";
 import classes from "./Links.module.css";
 import { useTranslations } from "../../../contexts/TranslationContext";
+import { scrollToElement } from "../../../helpers/scroll";
 
 type LinksProps = {
   isExpandable: boolean;
@@ -19,7 +20,14 @@ const Links = ({ isExpandable }: LinksProps) => {
 
   const renderContent = () => (
     <>
-      <a href="#" className={classes.link}>
+      <a
+        href="#support"
+        className={classes.link}
+        onClick={(event) => {
+          event.preventDefault();
+          scrollToElement("support");
+        }}
+      >
         {linkLabel}
       </a>
       <button className={classes["language-button"]} onClick={toggleLanguage}>

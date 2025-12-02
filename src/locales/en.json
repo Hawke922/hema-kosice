@@ -91,6 +91,52 @@
       "description": "The gentleman's dueling weapon of the Renaissance. Focused on precise thrusting techniques, footwork, and sophisticated blade control in civilian combat."
     }
   },
+  "support": {
+    "tagline": "Support Our Work",
+    "header": "Help Us With 2% Of Your Tax",
+    "description": "HEMA gear, hall rent and travel all add up. The two most impactful ways to help are to train with us or to redirect the 2% of income tax you already pay to the state.",
+    "actions": {
+      "join": {
+        "title": "Join the guild",
+        "body": "Every new member strengthens the club’s skills, covers rent, and keeps training nights alive.",
+        "cta": "Join us"
+      },
+      "tax": {
+        "title": "Designate 2% instead of the state",
+        "body": "If you are employed in Slovakia, you can assign part of your paid income tax to our civic association and directly fund new gear, seminars, and juniors.",
+        "expandCta": "Show instructions",
+        "collapseCta": "Hide instructions"
+      }
+    },
+    "steps": {
+      "title": "How employees can donate",
+      "intro": "If you are employed in Slovakia and your employer does the annual settlement, follow these simple steps each spring.",
+      "items": [
+        {
+          "title": "Ask payroll for confirmation",
+          "description": "After your annual payroll reconciliation ask for “Potvrdenie o zaplatení dane” with the amount of tax paid."
+        },
+        {
+          "title": "Fill in the statement",
+          "description": "Download the employee form “Vyhlásenie o poukázaní podielu zaplatenej dane”, copy our organization data below, mark 2 %, and sign it.",
+          "link": {
+            "label": "Download form",
+            "href": "https://www.financnasprava.sk/sk/obcania/dane/2percenta"
+          }
+        },
+        {
+          "title": "Submit both documents by April 30",
+          "description": "Deliver the signed statement together with the employer confirmation to your local tax office (or HR if they handle it) no later than April 30."
+        },
+        {
+          "title": "Let us know",
+          "description": "Send us a quick note so we can confirm the transfer and thank you personally."
+        }
+      ]
+    },
+    "contactNote": "If you are fyzická or právnická osoba and want to donate,",
+    "contactLinkLabel": "contact us."
+  },
   "faq": {
     "header": "Frequently Asked Questions",
     "searchPlaceholder": "Search questions...",

@@ -1,8 +1,8 @@
 export const siteConfig = {
   organization: {
     legalName: "Košický šermiarsky cech",
-    ico: "[Placeholder IČO]",
-    address: "[Placeholder adresa združenia]",
+    ico: "55616755",
+    address: "Benadova 914/3, 04022 Košice-mestská časť Dargovských hrdinov",
   },
   contact: {
     options: [
