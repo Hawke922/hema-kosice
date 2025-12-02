@@ -91,8 +91,7 @@
     }
   },
   "support": {
-    "tagline": "Podpor nás",
-    "header": "Pomôž nám 2 % z dane",
+    "header": "Podpor nás",
     "description": "Výstroj, prenájom haly aj výjazdy na turnaje niečo stoja. Najviac nám pomôže, keď sa k nám pridáš alebo keď nám venuješ 2 % z dane, ktorú by si aj tak poslal štátu.",
     "actions": {
       "join": {

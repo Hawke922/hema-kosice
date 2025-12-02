@@ -8,13 +8,20 @@ const Footer = () => {
   const { organization, contact, training, documents } = siteConfig;
   const contactOptions = contact.options ?? [];
   const socialLinks = contact.socials ?? [];
+  const scheduleEntries = Array.isArray(training.schedule)
+    ? training.schedule
+    : training.schedule
+    ? [training.schedule]
+    : [];
 
   return (
     <footer className={classes.wrapper}>
       <div className={classes.container}>
         <div className={classes.section}>
-          <h4>{organization.legalName}</h4>
-          <p className={classes.label}>{t.organization.type}</p>
+          <div>
+            <h4>{organization.legalName}</h4>
+            <p className={classes.label}>{t.organization.type}</p>
+          </div>
           <div className={classes["info-group"]}>
             <p>
               {t.organization.icoLabel}: {organization.ico}
@@ -56,11 +63,25 @@ const Footer = () => {
         <div className={classes.section}>
           <h4>{t.training.title}</h4>
           <div className={classes["info-group"]}>
-            <p>{training.hallName}</p>
-            <p className={classes.address}>{training.hallAddress}</p>
-            <p className={classes.schedule}>
-              {t.training.scheduleLabel}: {training.schedule}
-            </p>
+            <p className={classes["hall-name"]}>{training.hallName}</p>
+            <a
+              href={training.mapLink}
+              className={`${classes.address} ${classes.link}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {training.hallAddress}
+            </a>
+            <div>
+              <p className={classes.schedule}>{t.training.scheduleLabel}:</p>
+              <ul className={classes.scheduleList}>
+                {scheduleEntries.map((slot) => (
+                  <li key={slot} className={classes.scheduleItem}>
+                    {slot}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -92,15 +113,6 @@ const Footer = () => {
           © {new Date().getFullYear()} {organization.legalName}.{" "}
           {t.legal.copyright}
         </p>
-        <div className={classes["bottom-links"]}>
-          <a href="#" className={classes.link}>
-            {t.legal.privacy}
-          </a>
-          <span className={classes.separator}>•</span>
-          <a href="#" className={classes.link}>
-            {t.legal.terms}
-          </a>
-        </div>
       </div>
     </footer>
   );

@@ -41,9 +41,14 @@ export const siteConfig = {
     ],
   },
   training: {
-    hallName: "[Placeholder gymnazium]",
-    hallAddress: "[Placeholder adresa telocvicne]",
-    schedule: "[Dni a časy]",
+    hallName: "Gymnázium Opatovská 7",
+    hallAddress: "Opatovská cesta 7, 040 01 Výšné Opátske",
+    mapLink: "https://maps.app.goo.gl/Y6JewRWusogb8Vkx6",
+    schedule: [
+      "Pondelok: 17:00 - 18:30",
+      "Streda: 17:00 - 18:30",
+      "Piatok: 17:00 - 20:00",
+    ],
   },
   documents: {
     bylaws: "/documents/stanovy.pdf",

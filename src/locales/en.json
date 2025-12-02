@@ -92,8 +92,7 @@
     }
   },
   "support": {
-    "tagline": "Support Our Work",
-    "header": "Help Us With 2% Of Your Tax",
+    "header": "Support Us",
     "description": "HEMA gear, hall rent and travel all add up. The two most impactful ways to help are to train with us or to redirect the 2% of income tax you already pay to the state.",
     "actions": {
       "join": {
@@ -198,7 +197,7 @@
     },
     "training": {
       "title": "Training Hall",
-      "scheduleLabel": "Training"
+      "scheduleLabel": "Training Times"
     },
     "documents": {
       "title": "Documents",

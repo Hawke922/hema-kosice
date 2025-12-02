@@ -22,7 +22,6 @@
 
 .section h4 {
   color: var(--color-white);
-  margin-bottom: 0.5rem;
   font-size: var(--text-xl);
 }
 
@@ -35,8 +34,13 @@
 .info-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--gap-mini);
   color: var(--color-light-gray);
+}
+
+.hall-name {
+  font-weight: 600;
+  font-size: var(--text-base);
 }
 
 .address {
@@ -48,6 +52,20 @@
 .schedule {
   color: var(--color-light-gray);
   font-weight: 600;
+}
+
+.scheduleList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--color-light-gray);
+}
+
+.scheduleItem {
+  font-size: var(--text-base);
 }
 
 .link {
@@ -106,13 +124,6 @@
   color: var(--color-light-gray);
   font-size: var(--text-sm);
   text-align: center;
-}
-
-.bottom-links {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  font-size: var(--text-sm);
 }
 
 .separator {

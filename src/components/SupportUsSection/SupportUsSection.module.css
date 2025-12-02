@@ -11,7 +11,8 @@
 .heading {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-mini);
+  gap: var(--gap-small);
+  margin-top: var(--gap-small);
 }
 
 .header {
@@ -33,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--gap-mini);
+  gap: var(--gap-small);
   padding: var(--gap-small);
   border-radius: var(--border-radius);
   background-color: #1f1f1f;
@@ -41,7 +42,9 @@
 }
 
 .card-content {
-  padding: var(--gap-small);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
 }
 
 .card-title {
@@ -91,15 +94,9 @@
   border-radius: var(--border-radius);
   background-color: #151515;
   border: 1px solid var(--color-gray);
-}
-
-.steps-title {
-  margin-bottom: var(--gap-mini);
-}
-
-.steps-intro {
-  color: var(--color-light-gray);
-  margin-bottom: var(--gap-small);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
 }
 
 .steps-list {
@@ -141,13 +138,11 @@
 }
 
 .note {
-  margin-top: var(--gap-mini);
   color: var(--color-light-gray);
 }
 
 .link {
   color: var(--color-white);
-  font-weight: 600;
 }
 
 .linkButton {
@@ -164,6 +159,18 @@
   .wrapper {
     padding: var(--gap-medium);
     gap: var(--gap-medium);
+  }
+
+  .heading {
+    margin-top: 0;
+  }
+
+  .card {
+    gap: 0;
+  }
+
+  .card-content {
+    padding: var(--gap-small);
   }
 
   .description {
