@@ -6,6 +6,8 @@ const Footer = () => {
   const { translations } = useTranslations();
   const t = translations.footer;
   const { organization, contact, training, documents } = siteConfig;
+  const contactOptions = contact.options ?? [];
+  const socialLinks = contact.socials ?? [];
 
   return (
     <footer className={classes.wrapper}>
@@ -25,43 +27,29 @@ const Footer = () => {
         <div className={classes.section}>
           <h4>{t.contact.title}</h4>
           <div className={classes["info-group"]}>
-            <a href={`mailto:${contact.email}`} className={classes.link}>
-              {contact.email}
-            </a>
-            <a
-              href={`tel:${contact.phone.replace(/\s/g, "")}`}
-              className={classes.link}
-            >
-              {contact.phone}
-            </a>
+            {contactOptions.map((option) => (
+              <a key={option.id} href={option.href} className={classes.link}>
+                {option.display}
+              </a>
+            ))}
           </div>
           <div className={classes["social-links"]}>
-            <a
-              href={contact.facebook}
-              className={classes.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-            >
-              <img
-                src={`${import.meta.env.BASE_URL}facebook-icon.svg`}
-                alt="Facebook"
-                className={classes.icon}
-              />
-            </a>
-            <a
-              href={contact.instagram}
-              className={classes.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
-              <img
-                src={`${import.meta.env.BASE_URL}instagram-icon.svg`}
-                alt="Instagram"
-                className={classes.icon}
-              />
-            </a>
+            {socialLinks.map((social) => (
+              <a
+                key={social.id}
+                href={social.href}
+                className={classes.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.alt}
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}${social.icon}`}
+                  alt={social.alt}
+                  className={classes.icon}
+                />
+              </a>
+            ))}
           </div>
         </div>
 
