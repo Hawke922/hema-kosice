@@ -11,19 +11,15 @@ const ContactOverlay = () => {
 
   return (
     <div className={classes["contact-overlay"]}>
-      <h2 className={classes.title}>{translations.contact.title}</h2>
-      <p className={classes.subtitle}>{translations.contact.subtitle}</p>
+      <div className={classes["header-wrapper"]}>
+        <h2>{translations.contact.title}</h2>
+        <p className={classes.subtitle}>{translations.contact.subtitle}</p>
+      </div>
 
       <ul className={classes["contact-list"]}>
-        {contactOptions.map((option) => {
-          const labelFromTranslations = option.labelKey
-            ? translations.contact[
-                option.labelKey as keyof typeof translations.contact
-              ]
-            : undefined;
-
-          return (
-            <li key={option.id} className={classes["contact-item"]}>
+        {contactOptions.map((option) => (
+          <li key={option.id} className={classes["contact-item"]}>
+            <a className={classes["contact-link"]} href={option.href}>
               <div className={classes["icon-wrapper"]}>
                 <img
                   src={`${import.meta.env.BASE_URL}${option.icon}`}
@@ -32,18 +28,16 @@ const ContactOverlay = () => {
                 />
               </div>
               <div className={classes["contact-info"]}>
-                {labelFromTranslations && (
-                  <span className={classes["contact-label"]}>
-                    {labelFromTranslations}
-                  </span>
-                )}
-                <a href={option.href} className={classes["contact-link"]}>
+                <span className={classes["contact-label"]}>
+                  {translations.contact[option.labelKey]}
+                </span>
+                <span className={classes["contact-option"]}>
                   {option.display}
-                </a>
+                </span>
               </div>
-            </li>
-          );
-        })}
+            </a>
+          </li>
+        ))}
       </ul>
 
       <div className={classes["social-links"]}>
