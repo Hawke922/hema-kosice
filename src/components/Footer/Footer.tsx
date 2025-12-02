@@ -75,8 +75,8 @@ const Footer = () => {
             <div>
               <p className={classes.schedule}>{t.training.scheduleLabel}:</p>
               <ul className={classes.scheduleList}>
-                {scheduleEntries.map((slot) => (
-                  <li key={slot} className={classes.scheduleItem}>
+                {scheduleEntries.map((slot, index) => (
+                  <li key={`${slot}-${index}`} className={classes.scheduleItem}>
                     {slot}
                   </li>
                 ))}
