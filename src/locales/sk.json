@@ -17,56 +17,56 @@
     "faqButton": "Máš otázky?"
   },
   "contact": {
-    "title": "Kontaktuj nás",
-    "subtitle": "Kontaktuj nás prostredníctvom ktoréhokoľvek z nasledujúcich kanálov. Sme tu, aby sme odpovedali na tvoje otázky a pomohli ti začať tvoju cestu v HEMA!",
+    "title": "Spoj sa s nami",
+    "subtitle": "Hľadáš tréning, chceš podporiť klub alebo máš návrh na spoluprácu? Ozvi sa a spolu vymyslíme ako na to.",
     "emailLabel": "E-mail",
     "phoneLabel": "Telefón"
   },
   "hema": {
     "content1": {
       "header": "Čo je HEMA?",
-      "paragraph": "HEMA, alebo historické európske bojové umenia, je moderné oživenie zabudnutých bojových tradícií Európy. Je založené na historických manuáloch a prináša späť k životu storočia staré bojové tradície prostredníctvom tréningu a sparingu."
+      "paragraph": "\"HEMA\" je skratka pre historické európske bojové umenia a predstavuje moderné rekreovanie bojových tradícií Európy. Tie sú prostredníctvom tréningu a sparingu oživené na základe hisorických manuálov."
     },
     "content2": {
-      "header": "Nie je to scénický boj",
-      "paragraph": "Na rozdiel od choreografického šermu, ktorý vidíte vo filmoch alebo historických podujatiach, HEMA je bojové umenie. Každý pohyb je zakorenený v historických zdrojoch a testovaný proti odporujúcemu partnerovi. Nejde o predstavenie — ide o pochopenie toho, ako funguje skutočný šerm."
+      "header": "Žiadny scénický boj",
+      "paragraph": "Na rozdiel od choreografického šermu, ktorý môžeš vidieť vo filmoch alebo historických podujatiach, HEMA je bojové umenie. Každá technika je vykonávaná proti odporujúcemu partnerovi. Nejde o predstavenie, ale o pochopenie toho, ako skutočný boj so zbraňou funguje."
     },
     "content3": {
       "header": "Ochrana pre moderného duelanta",
-      "paragraph": "Duely, ktoré študujeme, sa bojovali v bežnom oblečení, nie v brnení, a naše vybavenie to musí odrážať. HEMA používa moderné ochranné prvky vyrobené z tkanín odolných proti prepichnutiu a trvanlivých plastov. Je inšpirované históriou, ale navrhnuté pre bezpečnosť, pohodlie a mobilitu."
+      "paragraph": "Duely, ktoré študujeme, sa bojovali v bežnom oblečení, nie v brnení. Naše vybavenie to musí odrážať. HEMA používa moderné ochranné prvky vyrobené z odolných tkanín a plastov, ktoré sú inšpirované históriou, ale ich účelom je mobilita, pohodlie a bezpečnosť."
     },
     "content4": {
       "header": "Kompletný bojový zážitok",
-      "paragraph": "HEMA ponúka kompletný balík bojového umenia. Trénujeme silu, vytrvalosť, koordináciu a uvedomelosť — ale aj myslenie na prekonávanie limitov. Sebavedomie, zručnosti a priateľstvá sa kujú spoločným úsilím."
+      "paragraph": "HEMA ponúka všetko čo od bojového umenia môžeš očakávať. Trénujeme silu, vytrvalosť a kooridnáciu, ale aj nastavenie mysle na prekonávanie svojich limitov. Spoločne si budujeme sebavedomie, zručnosti a priateľstvá na celý život."
     }
   },
   "team": {
     "header": "Náš tím",
     "content": [
-      "KŠC vznikol ako malá, ale rýchlo rastúca skupina vedená Slavomírom Hubatkom v roku 2016, trénujúc jednoducho z vášne pre historický šerm. Bohužiaľ, pandémia zastavila náš rozvoj a zostali sme len s hŕstkou aktívnych šermiarov.",
-      "V roku 2023, s pomocou Tomáša Klučára, sme sa obnovili, založili oficiálnu organizáciu a otvorili sa novým členom.",
-      "Hoci sme v turnajovej scéne stále mladí, náš hlavný tréner a zakladajúci člen Miroslav Medviď patrí medzi najlepších HEMA šermiarov na svete — odraz výnimočného odhodlania k tomuto umeniu.",
+      "KŠC vznikol ako malá, ale rýchlo rastúca skupina pod vedním Slavomíra Hubatku v roku 2016, trénujúc jednoducho pre to, že ich šerm bavil. Bohužiaľ, pandémia zastavila ďalší rozvoj a skupina prežila len s hŕstkou aktívnych šermiarov.",
+      "V roku 2023 sme sa s pomocou Tomáša Klučára obnovili, založili oficiálne občianske združenie a opäť otvorili brány novým členom.",
+      "Napriek tomu, že na turnajovej scéne zatiaľ nemáme veľké zastúpenie, náš hlavný tréner a zakladajúci člen Miroslav Medviď patrí medzi najlepších HEMA šermiarov na svete.",
       "Teraz, so skúsenými inštruktormi ako Filip 'Joxer' Trcka a rastúcou komunitou nadšených adeptov, píšeme spoločne ďalšiu kapitolu nášho príbehu."
     ]
   },
   "join": {
     "header": "Pripravený začať?",
-    "intro": "Ak máš chuť začať šermovať, máš dve možnosti: buď počkaj na našu náborovú akciu, ktorú organizujeme raz alebo dvakrát ročne, alebo sa pridaj k našej už vytvorenej skupine pokročilých šermiarov. Vyber si cestu, ktorá ti vyhovuje.",
+    "intro": "Ak máš chuť začať šermovať, máš dve možnosti: buď počkaj na náš oficiálny nábor, ktorý organizujeme raz alebo dvakrát ročne, alebo sa pridaj ku skupine pokročilých šermiarov. Vyber si cestu, ktorá ti vyhovuje.",
     "options": {
       "beginner": {
         "title": "Nábor",
-        "detailTitle": "Perfektný štart pre nováčikov",
+        "detailTitle": "Optimálny štart pre nováčikov",
         "content": [
-          "Naše náborové akcie sú navrhnuté pre úplných začiatočníkov, ktorí chcú začať svoju HEMA cestu správnym spôsobom. Poskytujeme všetko potrebné vybavenie vrátane ochranných prvkov a tréningových zbraní, takže sa môžeš sústrediť na učenie základov.",
-          "Počas týchto štruktúrovaných kurzov sa naučíš správne techniky, bezpečnostné protokoly a základné bojové princípy v podporujúcom prostredí spolu s ostatnými začiatočníkmi. Toto je ideálna cesta, ak chceš vybudovať pevný základ pred tým, ako sa rozhodneš kúpiť si vlastné vybavenie."
+          "Naše náborové akcie sú navrhnuté pre tých, ktorí chcú začať svoju HEMA cestu postupne, v kolektíve nováčikov. Na tréningoch budeš mať k dispozícii tréningovú masku a plastovú zbraň, takže sa môžeš sústrediť na učenie základov a vlastnú výstroj si môžeš zaobstarať postupne neskôr.",
+          "Nábory sú zvyčajne organizované na jar a jeseň a o ich termínoch ťa budeme v predstihu informovať na našich sociálnych sieťach. Sleduj nás, aby ti nič neuniklo!"
         ]
       },
       "advanced": {
         "title": "Pokročilá skupina",
         "detailTitle": "Rýchla cesta pre odhodlaných",
         "content": [
-          "Táto cesta je pre tých, ktorí už majú skúsenosti so šermovaním alebo bojovými umeniami, alebo si sú absolútne istí, že HEMA je ich povolaním. Budeš trénovať po boku skúsených šermiarov s plnou výstrojou a skutočnými zbraňami, nie plastovými tréningovými.",
-          "Táto cesta vyžaduje odhodlanie a finančný záväzok—budeš si musieť zakúpiť vlastné vybavenie a zbrane čo najskôr (môžeme poskytnúť poradenstvo a pomoc s nákupom). Je to náročnejšie, ale ak si odhodlaný a si si istý, že HEMA je pre teba, toto je najefektívnejší a najrýchlejší sposob, ako sa naučiť a rásť ako šermiar."
+          "Táto cesta je pre tých, ktorí už majú skúsenosti so šermovaním alebo bojovými umeniami, alebo si sú absolútne istí, že HEMA je pre nich. Budeš trénovať po boku skúsených šermiarov s plnou výstrojou a oceľovými zbraňami.",
+          "Táto cesta vyžaduje odhodlanie a finančný záväzok - budeš si musieť zakúpiť vlastné vybavenie a zbrane čo najskôr (s výberom a nákupom ti samozrejme pomôžeme). Tréningy sa môžu zdať spočiatku náročné, no ak si odhodlaný, toto je najefektívnejší a najrýchlejší spôsob, ako postupovať a rásť ako šermiar."
         ]
       }
     }
@@ -92,7 +92,7 @@
   },
   "support": {
     "header": "Podpor nás",
-    "description": "Výstroj, prenájom haly aj výjazdy na turnaje niečo stoja. Najviac nám pomôže, keď sa k nám pridáš alebo keď nám venuješ 2 % z dane, ktorú by si aj tak poslal štátu.",
+    "description": "Tréningová výstroj a prenájom haly niečo stoja. Najefektívnejšie spôsoby ako nám pomôcť sú pridanie sa do združenia alebo venovanie 2 % z dane, ktorú by si aj tak poslal štátu.",
     "actions": {
       "join": {
         "title": "Pridaj sa k cechu",
@@ -100,15 +100,15 @@
         "cta": "Pridaj sa"
       },
       "tax": {
-        "title": "Poukáž 2 % namiesto štátu",
-        "body": "Ak si zamestnanec na Slovensku, vieš priamo podporiť naše občianske združenie a zaplatiť nové chrániče, semináre aj juniorské tréningy.",
+        "title": "Daruj 2 % z dane z príjmu",
+        "body": "Ak si zamestnanec na Slovensku, vieš takto priamo podporiť naše občianske združenie a zaplatiť nové chrániče, semináre a prenájom.",
         "expandCta": "Zobraziť postup",
         "collapseCta": "Skryť postup"
       }
     },
     "steps": {
-      "title": "Ako môže zamestnanec darovať",
-      "intro": "Ak si zamestnanec a zamestnávateľ ti robí ročné zúčtovanie, každý rok na jar stačia tieto kroky.",
+      "title": "Ako môže zamestnanec darovať 2 % z dane",
+      "intro": "Postup je jednoduchý - ak ti zamestnávateľ robí ročné zúčtovanie, každý rok na jar nasleduj tieto kroky:",
       "items": [
         {
           "title": "Vyžiadaj si potvrdenie",
@@ -116,14 +116,14 @@
         },
         {
           "title": "Vyplň vyhlásenie",
-          "description": "Stiahni si formulár “Vyhlásenie o poukázaní podielu zaplatenej dane”, prepíš naše údaje nižšie, vyznač 2 % a dokument podpíš.",
+          "description": "Stiahni si formulár “Vyhlásenie o poukázaní podielu zaplatenej dane”, vyplň naše údaje a dokument podpíš.",
           "link": {
             "label": "Stiahnuť formulár",
-            "href": "https://www.financnasprava.sk/sk/obcania/dane/2percenta"
+            "href": "https://rozhodni.sk/wp-content/uploads/2023/01/Vyhlasenie2023.pdf"
           }
         },
         {
-          "title": "Odovzdaj oba dokumenty do 30. apríla",
+          "title": "Odovzdaj oba dokumenty na daňový úrad",
           "description": "Doruč podpísané vyhlásenie spolu s potvrdením na svoj daňový úrad (alebo HR, ak to riešia za teba) najneskôr 30. apríla."
         },
         {
