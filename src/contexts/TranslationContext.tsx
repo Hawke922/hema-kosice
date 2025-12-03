@@ -25,7 +25,7 @@ export const TranslationsProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("sk");
 
   return (
     <TranslationsContext.Provider
