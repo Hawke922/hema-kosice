@@ -92,16 +92,16 @@
   },
   "support": {
     "header": "Podpor nás",
-    "description": "Tréningová výstroj a prenájom haly niečo stoja. Najefektívnejšie spôsoby ako nám pomôcť sú pridanie sa do združenia alebo venovanie 2 % z dane, ktorú by si aj tak poslal štátu.",
+    "description": "Tréningová výstroj a prenájom haly niečo stoja. Najefektívnejšie nám vieš pomôcť tým, že sa k nám pridáš alebo že nám venuješ 2 % z dane, ktoré by si aj tak poslal štátu.",
     "actions": {
       "join": {
-        "title": "Pridaj sa k cechu",
-        "body": "Každý nový člen posilní tréningy, pokryje prenájom a prinesie viac sparing partnerov.",
+        "title": "Staň sa členom",
+        "body": "Každý nový člen nám pomáha sa vyvíjať a rásť.",
         "cta": "Pridaj sa"
       },
       "tax": {
         "title": "Daruj 2 % z dane z príjmu",
-        "body": "Ak si zamestnanec na Slovensku, vieš takto priamo podporiť naše občianske združenie a zaplatiť nové chrániče, semináre a prenájom.",
+        "body": "Ako zamestnanec vieš naše občianske združenie podporiť priamo darovaním svojich 2%. Prispeješ nám tým na novú výstroj, semináre či prenájom.",
         "expandCta": "Zobraziť postup",
         "collapseCta": "Skryť postup"
       }

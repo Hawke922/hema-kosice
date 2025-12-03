@@ -97,12 +97,12 @@
     "actions": {
       "join": {
         "title": "Join the guild",
-        "body": "Every new member strengthens the club’s skills, covers rent, and keeps training nights alive.",
+        "body": "Every new member strengthens the club and makes us grow.",
         "cta": "Join us"
       },
       "tax": {
-        "title": "Designate 2% instead of the state",
-        "body": "If you are employed in Slovakia, you can assign part of your paid income tax to our civic association and directly fund new gear, seminars, and juniors.",
+        "title": "Assign 2% of your tax",
+        "body": "If you are employed in Slovakia, you can assign part of your paid income tax to our civic association and directly fund new gear, seminars, and rent.",
         "expandCta": "Show instructions",
         "collapseCta": "Hide instructions"
       }
