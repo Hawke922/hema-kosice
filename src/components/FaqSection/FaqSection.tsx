@@ -7,7 +7,7 @@ import classes from "./FaqSection.module.css";
 
 type FaqItem = {
   question: string;
-  answer: string;
+  answer: string[];
   keywords: string[];
 };
 
@@ -24,7 +24,9 @@ const FaqSection = () => {
 
     const query = searchQuery.toLowerCase();
     const questionMatch = item.question.toLowerCase().includes(query);
-    const answerMatch = item.answer.toLowerCase().includes(query);
+    const answerMatch = item.answer.some((paragraph) =>
+      paragraph.toLowerCase().includes(query)
+    );
     const keywordMatch = item.keywords.some((keyword) =>
       keyword.toLowerCase().includes(query)
     );
@@ -105,7 +107,11 @@ const FaqSection = () => {
                     : ""
                 }`}
               >
-                <div className={classes["faq-answer"]}>{item.answer}</div>
+                <div className={classes["faq-answer"]}>
+                  {item.answer.map((paragraph, paragraphIndex) => (
+                    <p key={paragraphIndex}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             </div>
           ))

@@ -143,44 +143,90 @@
     "noResultsAction": "Reach out to us!",
     "questions": [
       {
-        "question": "Do I need any prior experience to join?",
-        "answer": "No prior experience is necessary! We welcome complete beginners and provide all the foundational training you need to start safely.",
+        "question": "Do I need any prior experience?",
+        "answer": [
+          "If you join through our recruitment group, you don't need any previous experience. Training is adapted to the group and we progress at a pace that suits most people.",
+          "If you decide to join the advanced group, previous experience with fencing or martial arts will help you adapt more quickly to the training routine.",
+          "In any case, enthusiasm, consistency in training, and willingness to learn are what matter most 🙂"
+        ],
         "keywords": ["beginner", "experience", "start", "new"]
       },
       {
-        "question": "What equipment do I need to bring?",
-        "answer": "For beginners, we provide all necessary equipment including protective gear and training weapons. As you progress, you may choose to invest in your own equipment.",
+        "question": "What should I bring to training?",
+        "answer": [
+          "For beginners in the recruitment group, we provide basic equipment – fencing mask, gorget, plastic chest protector, and training weapons. You only need to bring comfortable sports clothing, indoor shoes, and a bottle of water.",
+          "If you decide to join outside the recruitment periods, you'll need to acquire your own gear and weapon as soon as possible. We'll gladly help you choose and buy the right equipment."
+        ],
         "keywords": ["equipment", "gear", "weapon", "protection"]
       },
       {
-        "question": "How much does it cost to join?",
-        "answer": "Membership fees vary depending on your commitment level. Contact us for current pricing information and available membership options.",
+        "question": "How much does membership cost?",
+        "answer": [
+          "Membership fees are 40 EUR per month for beginners in the recruitment group and 20 EUR per month for advanced fencers. We keep fees as low as possible – their purpose is mainly to cover hall rent and equipment maintenance."
+        ],
         "keywords": ["cost", "price", "fee", "membership", "payment"]
       },
       {
+        "question": "How much does the gear cost?",
+        "answer": [
+          "Full HEMA equipment is not cheap – depending on the quality and brand it can easily reach several hundred euros (we strongly recommend not cutting corners on safety gear). The good news is that as a beginner in the recruitment group, you don't have to invest into your own gear right away, since we provide the basic equipment.",
+          "You can buy your own equipment and weapon gradually, as your budget allows."
+        ],
+        "keywords": [
+          "cost",
+          "price",
+          "fee",
+          "payment",
+          "gear",
+          "equipment",
+          "weapon"
+        ]
+      },
+      {
         "question": "Is HEMA dangerous?",
-        "answer": "Like any contact sport, HEMA has inherent risks, but we prioritize safety through proper protective equipment, controlled training environments, and experienced instruction. Injuries are rare when proper protocols are followed.",
+        "answer": [
+          "Like any contact sport, HEMA carries inherent risks. But you don't need to worry – injuries are very rare in beginner training. At first we focus on stance, basic techniques, and conditioning; light sparring with foam weapons is optional.",
+          "As your skills grow and you move to steel weapons, safety becomes an even higher priority. Everyone must wear proper protective gear during contact training and use weapons that meet safety standards."
+        ],
         "keywords": ["safe", "danger", "injury", "risk", "protection"]
       },
       {
-        "question": "How often are training sessions?",
-        "answer": "We hold training sessions multiple times per week. The exact schedule varies, so please check our contact section or reach out directly for current training times.",
+        "question": "How often do you train?",
+        "answer": [
+          "We train three times per week: Monday and Wednesday 17:00–18:30, and Friday 17:00–20:00. We try to balance technical instruction for beginners, advanced fencers, and free sparring.",
+          "The exact schedule can change over the year depending on season, hall availability, and member needs."
+        ],
         "keywords": ["schedule", "training", "time", "frequency", "when"]
       },
       {
-        "question": "Can I try a class before committing?",
-        "answer": "Yes! We encourage prospective members to attend a trial session to experience HEMA firsthand. Contact us to arrange a visit.",
+        "question": "Can I try a trial class?",
+        "answer": [
+          "It depends on the current situation and group capacity. The best option is to contact us directly and arrange a date.",
+          "If joining a training session isn't possible at the moment, we'll at least invite you to visit, show you how things work here, and answer all your questions 🙂"
+        ],
         "keywords": ["trial", "try", "visit", "test", "before"]
       },
       {
         "question": "What age groups do you accept?",
-        "answer": "We primarily train adults and teenagers (typically 16+). For younger students, please contact us to discuss specific circumstances and possibilities.",
-        "keywords": ["age", "children", "youth", "teen", "adult"]
+        "answer": [
+          "We primarily train adults and teenagers (15+). For underage applicants, parental consent is required."
+        ],
+        "keywords": ["age", "youth", "adult"]
       },
       {
         "question": "Do you compete in tournaments?",
-        "answer": "Yes, our members have the opportunity to compete in local and international HEMA tournaments. Competition is optional and encouraged for those interested in testing their skills.",
+        "answer": [
+          "Yes, our members can compete in local and international HEMA tournaments. Competing is optional, but we encourage anyone who feels ready to test their skills."
+        ],
         "keywords": ["tournament", "compete", "competition", "event"]
+      },
+      {
+        "question": "Do you also do shows or demonstrations?",
+        "answer": [
+          "The main focus of KŠC is regular training and developing the fencing skills of our members. From time to time, however, we organize demonstrations at historical events or schools to raise awareness about the sport and attract new members.",
+          "If you are interested in such a demonstration or collaboration, feel free to contact us."
+        ],
+        "keywords": ["show", "demonstration", "event", "presentation"]
       }
     ]
   },

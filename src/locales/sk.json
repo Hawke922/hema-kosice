@@ -143,22 +143,49 @@
     "questions": [
       {
         "question": "Potrebujem nejaké predchádzajúce skúsenosti?",
-        "answer": "Nie, žiadne predchádzajúce skúsenosti nie sú potrebné! Vítame úplných začiatočníkov a poskytujeme všetok potrebný základný tréning na bezpečné začatie.",
+        "answer": [
+          "V prípade, že sa rozhodneš pridať cestou náboru, žiadne predchádzajúce skúsenosti nie sú potrebné. Tréningy sú prispôsobované skupine a napredujeme tempom ktoré vyhovuje väčšine.",
+          "Ak sa však rozhodneš pridať k pokročilej skupine, skúsenosti so šermom alebo bojovými umeniami ti pomôžu rýchlejšie sa prispôsobiť tréningovému režimu.",
+          "V každom prípade, nadšenie, konzistentnosť v trénovaní a ochota učiť sa sú najdôležitejšie 🙂"
+        ],
         "keywords": ["začiatočník", "skúsenosti", "začať", "nový"]
       },
       {
-        "question": "Aké vybavenie si musím priniesť?",
-        "answer": "Pre začiatočníkov poskytujeme všetko potrebné vybavenie vrátane ochranných prvkov a tréningových zbraní. Ako budete napredovať, môžete sa rozhodnúť investovať do vlastného vybavenia.",
+        "question": "Čo si mám so sebou priniesť na tréning?",
+        "answer": [
+          "Pre začiatočníkov (náborová skupina) poskytujeme základné vybavenie - šermiarska maska, nákrčník, plastová ochrana trupu a tréningové zbrane. Stačí si priniesť pohodlné športové oblečenie, obuv a fľašu s vodou.",
+          "Ak sa rozhodneš pridať mimo náborové obdobia, je potrebné si zaobstarať vlastnú výstroj a zbraň čo najskôr. Radi ti pomôžeme s výberom a nákupom správneho vybavenia."
+        ],
         "keywords": ["vybavenie", "výstroj", "zbraň", "ochrana"]
       },
       {
         "question": "Koľko stojí členstvo?",
-        "answer": "Členské poplatky sa líšia v závislosti od úrovne záväzku. Kontaktujte nás pre aktuálne cenové informácie a dostupné možnosti členstva.",
+        "answer": [
+          "Členské poplatky sú 40 EUR mesačne pre začiatočníkov v náborovej skupine a 20 EUR mesačne pre pokročilých šermiarov. Poplatky sa snažíme udržiavať na minime - ich cieľom je pokryť prenájom haly a údržbu vybavenia."
+        ],
         "keywords": ["cena", "poplatok", "členstvo", "platba", "koľko"]
       },
       {
-        "question": "Je HEMA nebezpečné?",
-        "answer": "Ako každý kontaktný šport, HEMA má inherentné riziká, ale prioritizujeme bezpečnosť prostredníctvom správneho ochranného vybavenia, kontrolovaného tréningového prostredia a skúsených inštruktorov. Zranenia sú zriedkavé, keď sú dodržiavané správne protokoly.",
+        "question": "Koľko stojí výstroj?",
+        "answer": [
+          "Kompletná výstroj pre HEMA nie je lacná záležitosť a môže sa vyšplhať na rádovo stovky eur v závislosti od kvality a značky vybavenia (na ktorej neodporúčame šetriť). Dobrá správa však je, že ako začiatočník v náborovej skupine však nemusíš hneď investovať do vlastnej výstroje, keďže základné vybavenie ti poskytneme my. Výstroj a zbraň si teda vieš dokúpiť postupne, podľa svojich možností."
+        ],
+        "keywords": [
+          "cena",
+          "poplatok",
+          "platba",
+          "koľko",
+          "výstroj",
+          "vybavenie",
+          "zbraň"
+        ]
+      },
+      {
+        "question": "Je HEMA nebezpečná?",
+        "answer": [
+          "Ako každý kontaktný šport, HEMA má inherentné riziká. Ale nemusíš sa obávať - na začiatočníckych tréningoch sú zranenia veľmi zriedkavé. Zo začiatku trénujeme postoj a techinky, zlepšujeme si kondíciu a voľné sparringy s penovými zbraňami sú dobrovoľné.",
+          "S pokrokom v zručnostiach a prechodom na oceľové zbrane sa kladie veľký dôraz na bezpečnosť. Všetci šermiarni musia pri kontaktnom tréningu nosiť ochrannú výstroj a používať zbrane spĺňajúce bezpečnostné štandardy."
+        ],
         "keywords": [
           "bezpečné",
           "nebezpečenstvo",
@@ -169,23 +196,38 @@
       },
       {
         "question": "Ako často sú tréningy?",
-        "answer": "Máme tréningy niekoľkokrát do týždňa. Presný rozvrh sa mení, takže prosím skontrolujte našu kontaktnú sekciu alebo nás kontaktujte priamo pre aktuálne tréningové časy.",
+        "answer": [
+          "Tréningy sa konajú trikrát týždenne: pondelok a streda od 17:00 do 18:30 a piatok od 17:00 do 20:00. V tréningoch sa snažíme nájsť rovnováhu medzi technickou výučbou pre začiatočníkov, pokročilých a voľným sparringom. Presný rozvrh je variabilný a môže sa meniť podľa ročného obdobia, dostupnosti tréningovej haly a potrieb členov."
+        ],
         "keywords": ["rozvrh", "tréning", "čas", "frekvencia", "kedy"]
       },
       {
-        "question": "Môžem vyskúšať tréning pred záväzkom?",
-        "answer": "Áno! Povzbudzujeme potenciálnych členov, aby sa zúčastnili skúšobnej hodiny a osobne zažili HEMA. Kontaktujte nás pre dohodnutie návštevy.",
+        "question": "Môžem si vyskúšať skúšobnú hodinu?",
+        "answer": [
+          "Všetko záleží od okolností a momentálnej kapacity skupiny. Najlepšie je nás kontaktovať priamo a dohodnúť si termín. Ak tréning samotný nebude možný, pozveme ťa aspoň na návštevu, kde ti ukážeme ako to u nás vyzerá a zodpovieme všetky tvoje otázky 🙂"
+        ],
         "keywords": ["skúška", "vyskúšať", "návšteva", "test", "pred"]
       },
       {
         "question": "Aké vekové skupiny prijímate?",
-        "answer": "Primárne trénujeme dospelých a tínedžerov (typicky 16+). Pre mladších študentov nás prosím kontaktujte pre diskusiu o špecifických okolnostiach a možnostiach.",
-        "keywords": ["vek", "deti", "mládež", "tínedžer", "dospelý"]
+        "answer": [
+          "Primárne trénujeme dospelých a tínedžerov (15+). Pre neplnoletých uchádzačov je potrebný súhlas rodičov."
+        ],
+        "keywords": ["vek", "deti", "mládež", "dospelý"]
       },
       {
         "question": "Súťažíte na turnajoch?",
-        "answer": "Áno, naši členovia majú možnosť súťažiť na miestnych a medzinárodných HEMA turnajoch. Súťaženie je voliteľné a povzbudzujeme tých, ktorí majú záujem testovať svoje schopnosti.",
+        "answer": [
+          "Áno, naši členovia majú možnosť súťažiť na miestnych a medzinárodných HEMA turnajoch. Súťaženie je voliteľné, ale stále povzbudzujeme tých, ktorí majú záujem testovať svoje schopnosti."
+        ],
         "keywords": ["turnaj", "súťažiť", "súťaž", "podujatie"]
+      },
+      {
+        "question": "Robíte aj vystúpenia alebo ukážky?",
+        "answer": [
+          "Hlavným zameraním KŠC je tréning a rozvoj šermiarskych zručností našich členov. Občas však organizujeme ukážky na historických podujatiach alebo školách, aby sme rošírili povedomie o športe a prilákali nových členov. Ak máš záujem o takéto vystúpenie, kontaktuj nás."
+        ],
+        "keywords": ["vystúpenie", "ukážka", "podujatie", "prezentácia"]
       }
     ]
   },
