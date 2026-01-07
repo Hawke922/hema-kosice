@@ -153,9 +153,17 @@
     border-radius: var(--border-radius);
   }
 
+  .title {
+    font-size: var(--text-3xl);
+  }
+
+  .text {
+    font-size: var(--text-base);
+  }
+
   .text-content {
     position: absolute;
-    width: 50%;
+    width: 60%;
     background-color: var(--color-background-overlay);
     margin: var(--gap-small);
     border-radius: var(--border-radius);
