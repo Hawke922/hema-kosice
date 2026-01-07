@@ -99,13 +99,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        <div className={classes.section}>
-          <h4>{t.partners.title}</h4>
-          <div className={classes.partners}>
-            <p className={classes["partners-placeholder"]}>[loga partnerov]</p>
-          </div>
-        </div>
       </div>
 
       <div className={classes.bottom}>
