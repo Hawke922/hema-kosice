@@ -1,7 +1,6 @@
 .carousel {
-  display: flex;
-  flex-direction: column-reverse;
   overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -114,6 +113,13 @@
 }
 
 .pagination {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-background-overlay);
+  padding: var(--gap-small) var(--gap-medium);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +132,7 @@
   height: 3px;
   width: 24px;
   border-radius: var(--border-radius);
-  background: var(--color-light-gray);
+  background: var(--color-white);
   opacity: 0.6;
   transform-origin: center;
   transition: width 0.35s ease, opacity 0.35s ease, background-color 0.35s ease;
@@ -135,7 +141,6 @@
 .pagination__dash--active {
   width: 58px;
   opacity: 1;
-  background: var(--color-white);
 }
 
 @media (min-width: 1024px) {
