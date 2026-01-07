@@ -14,7 +14,6 @@ type ColumnProps = {
   buttonLabel: string;
   targetSection: string;
   isActive: boolean;
-  showLogo: boolean;
   onActivate: () => void;
   onDeactivate: () => void;
 };
@@ -25,7 +24,6 @@ const Column = ({
   buttonLabel,
   targetSection,
   isActive,
-  showLogo,
   onActivate,
   onDeactivate,
 }: ColumnProps) => {
@@ -65,15 +63,13 @@ const Column = ({
       />
       <div className={classes.column__content}>
         <div className={classes.column__logo}>
-          <img
-            className={`${classes["column__logo-image"]} ${
-              !showLogo || !isIntersecting
-                ? classes["column__logo-image--hidden"]
-                : ""
-            }`}
-            src={`${import.meta.env.BASE_URL}logo-complex.svg`}
-            alt="KSC logo"
-          />
+          {type === "center" && (
+            <img
+              className={classes["column__logo-image"]}
+              src={`${import.meta.env.BASE_URL}logo-complex.svg`}
+              alt="KSC logo"
+            />
+          )}
         </div>
         <div className={classes.column__button}>
           <Button

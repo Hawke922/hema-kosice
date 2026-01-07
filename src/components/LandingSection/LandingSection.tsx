@@ -44,11 +44,6 @@ const LandingSection = () => {
             buttonLabel={translations.landing.button[column.translationKey]}
             targetSection={column.targetSection}
             isActive={activeColumn === column.type}
-            showLogo={
-              activeColumn === null
-                ? column.type === "center"
-                : activeColumn === column.type
-            }
             onActivate={() => setActiveColumn(column.type)}
             onDeactivate={() => setActiveColumn(null)}
           />

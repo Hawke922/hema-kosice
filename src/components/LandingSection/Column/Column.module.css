@@ -41,10 +41,6 @@
   transition: opacity 0.3s ease;
 }
 
-.column__logo-image--hidden {
-  opacity: 0;
-}
-
 .column__button {
   position: relative;
   flex-shrink: 0;
