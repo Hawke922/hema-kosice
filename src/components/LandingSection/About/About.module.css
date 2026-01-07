@@ -51,7 +51,7 @@
 @media (min-width: 768px) {
   .header,
   .text {
-    text-align: center;
+    text-align: justify;
   }
 
   .button-container {

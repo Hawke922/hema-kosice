@@ -9,9 +9,10 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-dark-gray);
+  backdrop-filter: blur(10px);
+  background-color: var(--color-background-overlay);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-light-gray);
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
@@ -30,8 +31,9 @@
   margin: 0;
   padding: 0.5rem 0;
   gap: 0;
-  width: 3rem;
+  width: 2.75rem;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-right: none;
   transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
   overflow: hidden;
 }
@@ -74,7 +76,7 @@
 .language-button,
 .link {
   color: var(--color-white);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   opacity: 0.7;
   transition: opacity 0.3s ease;
@@ -91,7 +93,7 @@
 }
 
 .icon {
-  width: 1.5rem;
+  width: 1.25rem;
   filter: brightness(0) invert(1);
 }
 
