@@ -65,7 +65,9 @@ const Column = ({
         <div className={classes.column__logo}>
           {type === "center" && (
             <img
-              className={classes["column__logo-image"]}
+              className={`${classes["column__logo-image"]} ${
+                isActive ? classes["column__logo-image--active"] : ""
+              }`}
               src={`${import.meta.env.BASE_URL}logo-complex.svg`}
               alt="KSC logo"
             />
