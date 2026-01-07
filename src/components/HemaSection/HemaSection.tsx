@@ -192,6 +192,16 @@ const HemaSection = () => {
           </div>
         ))}
       </div>
+      <div className={classes.pagination} aria-hidden={CONTENT.length <= 1}>
+        {CONTENT.map((_, index) => (
+          <span
+            key={index}
+            className={`${classes["pagination__dash"]} ${
+              index === selectedIndex ? classes["pagination__dash--active"] : ""
+            }`}
+          />
+        ))}
+      </div>
     </section>
   );
 };

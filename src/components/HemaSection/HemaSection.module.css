@@ -1,4 +1,6 @@
 .carousel {
+  display: flex;
+  flex-direction: column-reverse;
   overflow: hidden;
 }
 
@@ -109,6 +111,31 @@
   50% {
     opacity: 0.8;
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-mini);
+  margin-bottom: var(--gap-small);
+}
+
+.pagination__dash {
+  display: block;
+  height: 3px;
+  width: 24px;
+  border-radius: var(--border-radius);
+  background: var(--color-light-gray);
+  opacity: 0.6;
+  transform-origin: center;
+  transition: width 0.35s ease, opacity 0.35s ease, background-color 0.35s ease;
+}
+
+.pagination__dash--active {
+  width: 58px;
+  opacity: 1;
+  background: var(--color-white);
 }
 
 @media (min-width: 1024px) {
