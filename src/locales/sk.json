@@ -42,11 +42,24 @@
   },
   "team": {
     "header": "Náš tím",
+    "historyTitle": "História klubu",
     "content": [
-      "KŠC vznikol ako malá, ale rýchlo rastúca skupina pod vedním Slavomíra Hubatku v roku 2016, trénujúc jednoducho pre to, že ich šerm bavil. Bohužiaľ, pandémia zastavila ďalší rozvoj a skupina prežila len s hŕstkou aktívnych šermiarov.",
-      "V roku 2023 sme sa s pomocou Tomáša Klučára obnovili, založili oficiálne občianske združenie a opäť otvorili brány novým členom.",
-      "Napriek tomu, že na turnajovej scéne zatiaľ nemáme veľké zastúpenie, náš hlavný tréner a zakladajúci člen Miroslav Medviď patrí medzi najlepších HEMA šermiarov na svete.",
-      "Teraz, so skúsenými inštruktormi ako Filip 'Joxer' Trcka a rastúcou komunitou nadšených adeptov, píšeme spoločne ďalšiu kapitolu nášho príbehu."
+      {
+        "id": "slavo",
+        "paragraph": "KŠC vznikol ako malá, ale rýchlo rastúca skupina pod vedním Slavomíra Hubatku v roku 2016, trénujúc jednoducho pre to, že ich šerm bavil. Bohužiaľ, pandémia zastavila ďalší rozvoj a skupina prežila len s hŕstkou aktívnych šermiarov."
+      },
+      {
+        "id": "tomas",
+        "paragraph": "V roku 2023 sme sa s pomocou Tomáša Klučára obnovili, založili oficiálne občianske združenie a opäť otvorili brány novým členom."
+      },
+      {
+        "id": "miro",
+        "paragraph": "Napriek tomu, že na turnajovej scéne zatiaľ nemáme veľké zastúpenie, náš hlavný tréner a zakladajúci člen Miroslav Medviď patrí medzi najlepších HEMA šermiarov na svete."
+      },
+      {
+        "id": "joxer",
+        "paragraph": "Teraz, so skúsenými inštruktormi ako Filip 'Joxer' Trcka a rastúcou komunitou nadšených adeptov, píšeme spoločne ďalšiu kapitolu nášho príbehu."
+      }
     ]
   },
   "join": {
