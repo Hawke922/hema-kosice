@@ -101,4 +101,13 @@
   .wrapper {
     right: 0;
   }
+
+  .wrapper--expandable {
+    width: 3rem;
+  }
+
+  .language-button,
+  .link {
+    font-size: 1rem;
+  }
 }
