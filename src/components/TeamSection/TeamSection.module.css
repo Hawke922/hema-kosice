@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--gap-medium);
   margin: 0 var(--gap-small);
 }
@@ -22,19 +23,30 @@
   gap: var(--gap-small);
 }
 
+.intro {
+  max-width: 800px;
+}
+
+.history-carousel-wrapper {
+  display: flex;
+  align-self: center;
+  gap: var(--gap-small);
+}
+
 .carousel {
   overflow: hidden;
-  max-width: 800px;
 }
 
 .container {
   display: flex;
-  width: 100%;
+  max-width: 600px;
+  height: 520px;
+  flex-direction: column;
 }
 
 .slide {
-  flex: 0 0 100%;
-  padding-right: var(--gap-small);
+  flex: 0 0 auto;
+  padding-bottom: var(--gap-small);
 }
 
 .slide-inner {
@@ -42,29 +54,29 @@
   flex-direction: column;
   background-color: var(--color-dark-gray);
   border-radius: var(--border-radius);
-  height: 100%;
+  height: 440px;
 }
 
 .image {
-  width: 100%;
+  min-width: 300px;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
   object-fit: cover;
 }
 
 .text-content {
   display: flex;
-  flex-direction: column;
   padding: var(--gap-small);
-  gap: var(--gap-small);
+  align-items: center;
 }
 
 .text {
   font-size: var(--text-base);
-  padding-top: var(--gap-small);
 }
 
 .chevron {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   cursor: pointer;
@@ -83,16 +95,11 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.chevron--right {
-  margin-left: auto;
-}
-
-.controls {
+.carousel-controls {
   display: flex;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: var(--gap-small);
-  border-top: 1px solid var(--color-gray);
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-small);
 }
 
 .chevron-icon {
@@ -100,42 +107,95 @@
 }
 
 .chevron--left:hover .chevron-icon {
-  transform: translateX(-4px);
+  transform: translateY(-4px);
 }
 
 .chevron--right:hover .chevron-icon {
-  transform: translateX(4px);
-}
-
-.pagination {
-  position: absolute;
-  bottom: var(--gap-small);
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: var(--gap-mini);
-  padding: var(--gap-mini) var(--gap-small);
-  border-radius: var(--border-radius);
-  background: var(--color-background-overlay);
-}
-
-.pagination__dash {
-  display: block;
-  height: 3px;
-  width: 24px;
-  border-radius: var(--border-radius);
-  background: var(--color-white);
-  opacity: 0.6;
-  transition: width 0.35s ease, opacity 0.35s ease, background-color 0.35s ease;
-}
-
-.pagination__dash--active {
-  width: 58px;
-  opacity: 1;
+  transform: translateY(4px);
 }
 
 .second-section {
-  min-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-small);
+  width: 100%;
+}
+
+.action-carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+  max-width: 1200px;
+  align-self: center;
+}
+
+.action-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.action-container {
+  display: flex;
+  width: 100%;
+}
+
+.action-slide {
+  flex: 0 0 100%;
+}
+
+.action-image {
+  width: 100%;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-small);
+  justify-content: center;
+}
+
+.thumbnail {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: var(--border-radius);
+  outline: 2px solid transparent;
+  transition: opacity 0.2s ease, outline-color 0.2s ease, transform 0.2s ease;
+}
+
+.thumbnail-image {
+  width: 80px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.thumbnail:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.thumbnail--active {
+  opacity: 1;
+  outline-color: var(--color-white);
+}
+
+.social-cta {
+  margin-top: var(--gap-small);
+}
+
+.social-cta a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.social-cta a:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -149,12 +209,6 @@
 
   .image {
     max-width: 40%;
-  }
-
-  .chevron {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 

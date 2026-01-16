@@ -43,6 +43,15 @@
   "team": {
     "header": "Our Crew",
     "historyTitle": "Club history",
+    "intro": "Behind every bout and training session is a small crew of coaches and organizers who keep KŠC running and growing. Here’s a glimpse into where we come from and where we’re headed next.",
+    "action": {
+      "title": "KŠC in Action",
+      "description": "Training, tournaments, seminars, and sparring — this is what KŠC looks like when the masks go on and the steel starts moving. A few snapshots can’t capture the whole atmosphere, but they’ll give you a taste.",
+      "ctaPrefix": "Want to see more? Follow us on",
+      "ctaFacebook": "Facebook",
+      "ctaAnd": "and",
+      "ctaInstagram": "Instagram"
+    },
     "content": [
       {
         "id": "slavo",
