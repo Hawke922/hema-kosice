@@ -42,6 +42,7 @@
   flex-direction: column;
   background-color: var(--color-dark-gray);
   border-radius: var(--border-radius);
+  height: 100%;
 }
 
 .image {

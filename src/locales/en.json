@@ -89,19 +89,19 @@
     "header": "Choose your weapon",
     "swordAndBuckler": {
       "name": "Sword and Buckler",
-      "description": "A classic medieval combination offering both offense and defense. The buckler provides excellent protection while maintaining mobility and aggressive fighting style."
+      "description": "Sword-and-buckler fencing is closest in spirit to rapier-and-dagger principles. With a buckler, however, some techniques work differently, as they are adapted to its specific shape and role in parries and deflections of the opponent's weapon."
     },
     "longsword": {
       "name": "Longsword",
-      "description": "The quintessential weapon of HEMA. Versatile and elegant, the longsword can be used for cutting, thrusting, and leverage techniques with both hands."
+      "description": "Longsword fencing is currently the most widespread HEMA discipline in the world. In our club it forms the core of the training system. The principles you learn with the longsword are universal and become the foundation for mastering other historical weapons."
     },
     "sabre": {
-      "name": "Military Sabre",
-      "description": "Fast and dynamic cavalry weapon. Emphasizes swift cutting attacks and aggressive footwork, representing the martial traditions of Eastern European cavalry."
+      "name": "Sabre",
+      "description": "The sabre brings together the principles of one-handed swordplay. In our club it is the second most common weapon. Technically it is less demanding to pick up than the longsword – more intuitive, but with greater emphasis on tactics. It is an excellent complement to longsword fencing."
     },
     "rapier": {
       "name": "Rapier",
-      "description": "The gentleman's dueling weapon of the Renaissance. Focused on precise thrusting techniques, footwork, and sophisticated blade control in civilian combat."
+      "description": "Rapier fencing is a very distinctive discipline within historical fencing. Most often the rapier is paired with a dagger in the off hand, creating a combination of defense and attack. Both hands work together simultaneously and complement each other throughout the exchange."
     }
   },
   "support": {

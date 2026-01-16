@@ -87,20 +87,20 @@
   "weapons": {
     "header": "Vyber si svoju zbraň",
     "swordAndBuckler": {
-      "name": "Meč a prikrývka",
-      "description": "Klasická stredoveká kombinácia ponúkajúca útok aj obranu. Prikrývka poskytuje vynikajúcu ochranu pri zachovaní mobility a agresívneho bojového štýlu."
+      "name": "Meč a štít",
+      "description": "Šerm s mečom a štítkom má najbližšie k princípom šermu s rapírom a dýkou. Pri použití štítku však niektoré techniky fungujú odlišne, keďže sú prispôsobené jeho špecifickému tvaru a funkcii pri krytoch a odklonoch súperovej zbrane."
     },
     "longsword": {
       "name": "Dlhý meč",
-      "description": "Typická zbraň HEMA. Všestranný a elegantný dlhý meč možno používať na sekanie, bodanie a páky technikami s oboma rukami."
+      "description": "Šerm dlhým mečom je dnes najrozšírenejšia kategória HEMA šermu na svete. V našom klube tvorí jeho výuka jadro tréningového systému. Princípy osvojované pri šerme dlhým mečom sú univerzálne a tvoria základ pre zvládnutie ďalších historických zbraní."
     },
     "sabre": {
-      "name": "Vojenská šabľa",
-      "description": "Rýchla a dynamická kavalérska zbraň. Zdôrazňuje rýchle sekajúce útoky a agresívnu prácu nôh, reprezentujúc bojové tradície východoeurópskej kavalerie."
+      "name": "Šabľa",
+      "description": "Šabľa zhromažďuje princípy šermu vedeného jednou rukou. V našom klube ide o druhý najrozšírenejší spôsob šermu. Technicky je menej náročná na zvládnutie než dlhý meč – je intuitívnejšia, no kladie väčší dôraz na taktiku. Predstavuje skvelý doplnok k šermu dlhým mečom."
     },
     "rapier": {
-      "name": "Rapier",
-      "description": "Duelová zbraň džentlmenov renesancie. Zameriava sa na presné bodné techniky, prácu nôh a sofistikovanú kontrolu čepele v civilnom boji."
+      "name": "Rapír",
+      "description": "Šerm s rapírom je veľmi špecifickou disciplínou historického šermu. Najčastejšie sa k rapíru pridáva dýka do druhej ruky, čím vzniká kombinácia obrany a útoku. Obe ruky pri šerme s týmito zbraňami pracujú súčasne a vzájomne sa dopĺňajú."
     }
   },
   "support": {
