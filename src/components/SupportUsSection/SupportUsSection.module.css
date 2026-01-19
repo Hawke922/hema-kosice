@@ -29,7 +29,6 @@
   padding: var(--gap-small);
   border-radius: var(--border-radius);
   background-color: #1f1f1f;
-  border: 1px solid var(--color-gray);
   position: relative;
   overflow: hidden;
   color: var(--color-white);
