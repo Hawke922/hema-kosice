@@ -6,6 +6,7 @@ import classes from "./TeamSection.module.css";
 import { useTranslations } from "../../contexts/TranslationContext";
 import Icon from "../_scaffolding/Icon/Icon";
 import { siteConfig } from "../../config/site";
+import logoComplex from "/logo-complex.svg";
 
 const PROFILE_IMAGE_BY_ID: Record<string, string> = {
   slavo: `${import.meta.env.BASE_URL}images/slavo.png`,
@@ -182,6 +183,12 @@ const TeamSection = () => {
                       alt={`Club history ${slide.id}`}
                     />
                     <div className={classes["text-content"]}>
+                      <img
+                        src={logoComplex}
+                        alt="KŠC logo watermark"
+                        className={classes["text-watermark"]}
+                        aria-hidden="true"
+                      />
                       <p className={classes.text}>{slide.text}</p>
                     </div>
                   </div>
