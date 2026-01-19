@@ -192,7 +192,7 @@ const TeamSection = () => {
           {historySlides.length > 1 && (
             <div className={classes["carousel-controls"]}>
               <button
-                className={classes.chevron}
+                className={`${classes.chevron} ${selectedIndex === 0 ? classes["chevron--hidden"] : ""}`}
                 onClick={scrollPrev}
                 aria-label="Previous slide"
                 disabled={selectedIndex === 0}
@@ -204,7 +204,11 @@ const TeamSection = () => {
                 />
               </button>
               <button
-                className={classes.chevron}
+                className={`${classes.chevron} ${
+                  selectedIndex === historySlides.length - 1
+                    ? classes["chevron--hidden"]
+                    : ""
+                }`}
                 onClick={scrollNext}
                 aria-label="Next slide"
                 disabled={selectedIndex === historySlides.length - 1}
