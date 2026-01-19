@@ -39,7 +39,7 @@ const TeamSection = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
     align: "start",
-    axis: "y",
+    axis: "x",
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -190,44 +190,44 @@ const TeamSection = () => {
                         aria-hidden="true"
                       />
                       <p className={classes.text}>{slide.text}</p>
+                      {historySlides.length > 1 && index === selectedIndex && (
+                        <>
+                          <button
+                            className={`${classes.chevron} ${classes["chevron--left"]} ${index === 0 ? classes["chevron--hidden"] : ""}`}
+                            onClick={scrollPrev}
+                            aria-label="Previous slide"
+                            disabled={index === 0}
+                          >
+                            <Icon
+                              name="chevron-left"
+                              size={40}
+                              className={classes["chevron-icon"]}
+                            />
+                          </button>
+                          <button
+                            className={`${classes.chevron} ${classes["chevron--right"]} ${
+                              index === historySlides.length - 1
+                                ? classes["chevron--hidden"]
+                                : ""
+                            }`}
+                            onClick={scrollNext}
+                            aria-label="Next slide"
+                            disabled={index === historySlides.length - 1}
+                          >
+                            <Icon
+                              name="chevron-right"
+                              size={40}
+                              className={classes["chevron-icon"]}
+                            />
+                          </button>
+                        </>
+                      )}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          {historySlides.length > 1 && (
-            <div className={classes["carousel-controls"]}>
-              <button
-                className={`${classes.chevron} ${selectedIndex === 0 ? classes["chevron--hidden"] : ""}`}
-                onClick={scrollPrev}
-                aria-label="Previous slide"
-                disabled={selectedIndex === 0}
-              >
-                <Icon
-                  name="chevron-up"
-                  size={40}
-                  className={classes["chevron-icon"]}
-                />
-              </button>
-              <button
-                className={`${classes.chevron} ${
-                  selectedIndex === historySlides.length - 1
-                    ? classes["chevron--hidden"]
-                    : ""
-                }`}
-                onClick={scrollNext}
-                aria-label="Next slide"
-                disabled={selectedIndex === historySlides.length - 1}
-              >
-                <Icon
-                  name="chevron-down"
-                  size={40}
-                  className={classes["chevron-icon"]}
-                />
-              </button>
-            </div>
-          )}
         </div>
       </div>
 

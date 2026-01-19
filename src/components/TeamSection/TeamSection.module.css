@@ -6,7 +6,10 @@
 }
 
 .header {
-  text-align: center;
+  text-align: start;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 var(--gap-small);
 }
 
 .history-wrapper {
@@ -38,20 +41,23 @@
   display: flex;
   max-width: 600px;
   height: 520px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .slide {
-  flex: 0 0 auto;
-  margin-bottom: var(--gap-small);
+  flex: 0 0 100%;
+}
+
+.slide:not(:last-child) {
+  margin-right: var(--gap-small);
 }
 
 .slide-inner {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background-color: #090909;
   border-radius: var(--border-radius);
-  height: 440px;
 }
 
 .image {
@@ -59,21 +65,26 @@
   max-height: 260px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   object-fit: cover;
+  object-position: 80% 30%;
 }
 
 .text-content {
   display: flex;
-  padding: var(--gap-small);
+  padding: 2rem var(--gap-small);
   align-items: flex-start;
   position: relative;
   background-color: transparent;
   overflow: hidden;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .text {
   font-size: var(--text-base);
   position: relative;
   z-index: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .text-watermark {
@@ -91,6 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   cursor: pointer;
@@ -129,11 +141,21 @@
 }
 
 .chevron--left:hover .chevron-icon {
-  transform: translateY(-4px);
+  transform: translateX(-4px);
 }
 
 .chevron--right:hover .chevron-icon {
-  transform: translateY(4px);
+  transform: translateX(4px);
+}
+
+.chevron--left {
+  left: var(--gap-small);
+  bottom: var(--gap-small);
+}
+
+.chevron--right {
+  right: var(--gap-small);
+  bottom: var(--gap-small);
 }
 
 .gallery-wrapper {
@@ -238,8 +260,7 @@
   }
 
   .header {
-    width: 800px;
-    text-align: start;
+    padding: 0;
   }
 
   .intro {
@@ -252,7 +273,6 @@
 
   .container {
     max-width: 600px;
-    height: 520px;
   }
 
   .slide-inner {
@@ -268,11 +288,6 @@
 
   .text-content {
     align-items: center;
-  }
-
-  .carousel-controls {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
+    padding: var(--gap-small);
   }
 }
