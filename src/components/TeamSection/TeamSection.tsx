@@ -102,7 +102,7 @@ const TeamSection = () => {
         });
       });
     },
-    []
+    [],
   );
 
   useEffect(() => {
@@ -139,7 +139,7 @@ const TeamSection = () => {
         actionEmblaApi.scrollTo(index);
       }
     },
-    [actionEmblaApi]
+    [actionEmblaApi],
   );
 
   useEffect(() => {
@@ -155,132 +155,130 @@ const TeamSection = () => {
   }, [actionEmblaApi]);
 
   const facebook = siteConfig.contact.socials.find(
-    (social) => social.id === "facebook"
+    (social) => social.id === "facebook",
   );
   const instagram = siteConfig.contact.socials.find(
-    (social) => social.id === "instagram"
+    (social) => social.id === "instagram",
   );
 
   return (
     <section className={classes.wrapper} id="team">
       <h1 className={classes.header}>{translations.team.header}</h1>
 
-      <div className={classes.sections}>
-        <section className={classes["history-section"]}>
-          <div className={classes.intro}>
-            <h2>{translations.team.historyTitle}</h2>
-            <p>{translations.team.intro}</p>
-          </div>
-          <div className={classes["history-carousel-wrapper"]}>
-            <div className={classes.carousel} ref={emblaRef}>
-              <div className={classes.container}>
-                {historySlides.map((slide, index) => (
-                  <div className={classes.slide} key={index}>
-                    <div className={classes["slide-inner"]}>
-                      <img
-                        className={classes.image}
-                        src={slide.imagePath}
-                        alt={`Club history ${slide.id}`}
-                      />
-                      <div className={classes["text-content"]}>
-                        <p className={classes.text}>{slide.text}</p>
-                      </div>
+      <div className={classes["history-wrapper"]}>
+        <div className={classes.intro}>
+          <h2>{translations.team.historyTitle}</h2>
+          <p>{translations.team.intro}</p>
+        </div>
+        <div className={classes["history-carousel-wrapper"]}>
+          <div className={classes.carousel} ref={emblaRef}>
+            <div className={classes.container}>
+              {historySlides.map((slide, index) => (
+                <div className={classes.slide} key={index}>
+                  <div className={classes["slide-inner"]}>
+                    <img
+                      className={classes.image}
+                      src={slide.imagePath}
+                      alt={`Club history ${slide.id}`}
+                    />
+                    <div className={classes["text-content"]}>
+                      <p className={classes.text}>{slide.text}</p>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-            {historySlides.length > 1 && (
-              <div className={classes["carousel-controls"]}>
-                <button
-                  className={classes.chevron}
-                  onClick={scrollPrev}
-                  aria-label="Previous slide"
-                  disabled={selectedIndex === 0}
-                >
-                  <Icon
-                    name="chevron-up"
-                    size={40}
-                    className={classes["chevron-icon"]}
-                  />
-                </button>
-                <button
-                  className={classes.chevron}
-                  onClick={scrollNext}
-                  aria-label="Next slide"
-                  disabled={selectedIndex === historySlides.length - 1}
-                >
-                  <Icon
-                    name="chevron-down"
-                    size={40}
-                    className={classes["chevron-icon"]}
-                  />
-                </button>
-              </div>
-            )}
           </div>
-        </section>
-
-        <section className={classes["second-section"]}>
-          <div className={classes.intro}>
-            <h2>{teamAction.title}</h2>
-            <p>{teamAction.description}</p>
-          </div>
-
-          <div className={classes["action-carousel-wrapper"]}>
-            <div className={classes["action-carousel"]} ref={actionEmblaRef}>
-              <div className={classes["action-container"]}>
-                {ACTION_IMAGES.map((imagePath, index) => (
-                  <div className={classes["action-slide"]} key={index}>
-                    <img
-                      className={classes["action-image"]}
-                      src={imagePath}
-                      alt={`KŠC in action ${index + 1}`}
-                    />
-                  </div>
-                ))}
-              </div>
+          {historySlides.length > 1 && (
+            <div className={classes["carousel-controls"]}>
+              <button
+                className={classes.chevron}
+                onClick={scrollPrev}
+                aria-label="Previous slide"
+                disabled={selectedIndex === 0}
+              >
+                <Icon
+                  name="chevron-up"
+                  size={40}
+                  className={classes["chevron-icon"]}
+                />
+              </button>
+              <button
+                className={classes.chevron}
+                onClick={scrollNext}
+                aria-label="Next slide"
+                disabled={selectedIndex === historySlides.length - 1}
+              >
+                <Icon
+                  name="chevron-down"
+                  size={40}
+                  className={classes["chevron-icon"]}
+                />
+              </button>
             </div>
+          )}
+        </div>
+      </div>
 
-            <div className={classes.thumbnails}>
+      <div className={classes["gallery-wrapper"]}>
+        <div className={classes.intro}>
+          <h2>{teamAction.title}</h2>
+          <p>{teamAction.description}</p>
+        </div>
+
+        <div className={classes["action-carousel-wrapper"]}>
+          <div className={classes["action-carousel"]} ref={actionEmblaRef}>
+            <div className={classes["action-container"]}>
               {ACTION_IMAGES.map((imagePath, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  className={`${classes.thumbnail} ${
-                    index === actionSelectedIndex
-                      ? classes["thumbnail--active"]
-                      : ""
-                  }`}
-                  onClick={() => scrollToAction(index)}
-                  aria-label={`Show image ${index + 1}`}
-                >
+                <div className={classes["action-slide"]} key={index}>
                   <img
-                    className={classes["thumbnail-image"]}
+                    className={classes["action-image"]}
                     src={imagePath}
-                    alt={`Thumbnail ${index + 1}`}
+                    alt={`KŠC in action ${index + 1}`}
                   />
-                </button>
+                </div>
               ))}
             </div>
           </div>
 
-          <p className={classes["social-cta"]}>
-            {teamAction.ctaPrefix}{" "}
-            {facebook && (
-              <a href={facebook.href} target="_blank" rel="noreferrer">
-                {teamAction.ctaFacebook ?? facebook.label}
-              </a>
-            )}{" "}
-            {teamAction.ctaAnd}{" "}
-            {instagram && (
-              <a href={instagram.href} target="_blank" rel="noreferrer">
-                {teamAction.ctaInstagram ?? instagram.label}
-              </a>
-            )}
-            .
-          </p>
-        </section>
+          <div className={classes.thumbnails}>
+            {ACTION_IMAGES.map((imagePath, index) => (
+              <button
+                key={index}
+                type="button"
+                className={`${classes.thumbnail} ${
+                  index === actionSelectedIndex
+                    ? classes["thumbnail--active"]
+                    : ""
+                }`}
+                onClick={() => scrollToAction(index)}
+                aria-label={`Show image ${index + 1}`}
+              >
+                <img
+                  className={classes["thumbnail-image"]}
+                  src={imagePath}
+                  alt={`Thumbnail ${index + 1}`}
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <p className={classes["social-cta"]}>
+          {teamAction.ctaPrefix}{" "}
+          {facebook && (
+            <a href={facebook.href} target="_blank" rel="noreferrer">
+              {teamAction.ctaFacebook ?? facebook.label}
+            </a>
+          )}{" "}
+          {teamAction.ctaAnd}{" "}
+          {instagram && (
+            <a href={instagram.href} target="_blank" rel="noreferrer">
+              {teamAction.ctaInstagram ?? instagram.label}
+            </a>
+          )}
+          .
+        </p>
       </div>
     </section>
   );
