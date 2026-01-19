@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   gap: var(--gap-medium);
-  margin: 0 var(--gap-small);
 }
 
 .header {
@@ -47,7 +46,7 @@
 
 .slide-inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: var(--color-dark-gray);
   border-radius: var(--border-radius);
   height: 440px;
@@ -206,28 +205,4 @@
 
 .social-cta a:hover {
   text-decoration: none;
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    margin: 0;
-  }
-
-  .slide-inner {
-    flex-direction: row;
-  }
-
-  .image {
-    max-width: 40%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-
-  .slide {
-    flex: 0 0 75%;
-  }
 }
