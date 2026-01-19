@@ -41,7 +41,6 @@
   gap: var(--gap-small);
   margin: 0 var(--gap-small);
   max-width: 800px;
-  width: 100%;
 }
 
 .header {
@@ -64,6 +63,7 @@
 
   .content {
     gap: 1.5rem;
+    width: 100%;
   }
 
   .header {

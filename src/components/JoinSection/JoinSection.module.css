@@ -2,8 +2,8 @@
   display: flex;
   position: relative;
   justify-content: center;
-  padding: var(--gap-small) 0;
-  min-height: 80vh;
+  padding: 2rem var(--gap-small);
+  min-height: 50vh;
 }
 
 .background-container {
@@ -46,6 +46,10 @@
   to {
     opacity: 1;
   }
+}
+
+.header {
+  margin-bottom: 2rem;
 }
 
 .content {
@@ -158,14 +162,11 @@
 @media (min-width: 768px) {
   .wrapper {
     padding: var(--gap-medium) 0;
+    min-height: 80vh;
   }
 
   .content {
     gap: var(--gap-medium);
-  }
-
-  .header {
-    margin-bottom: 2rem;
   }
 
   .tabs-container {

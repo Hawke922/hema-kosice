@@ -20,6 +20,7 @@
   flex-direction: column;
   gap: 2rem;
   max-width: 800px;
+  margin: 0 var(--gap-small);
 }
 
 .history-carousel-wrapper {
@@ -214,7 +215,8 @@
 }
 
 .social-cta {
-  margin-top: var(--gap-small);
+  text-align: center;
+  margin: 0 var(--gap-small);
 }
 
 .social-cta a {
@@ -238,6 +240,10 @@
   .header {
     width: 800px;
     text-align: start;
+  }
+
+  .intro {
+    margin: 0;
   }
 
   .carousel {
