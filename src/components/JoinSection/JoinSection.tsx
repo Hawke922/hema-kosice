@@ -34,9 +34,8 @@ const JoinSection = () => {
         />
       </div>
       <div className={classes.content}>
-        <h1 className={classes.header}>{translations.join.header}</h1>
-
-        <div className={classes["intro-text"]}>
+        <div>
+          <h1 className={classes.header}>{translations.join.header}</h1>
           <p>{translations.join.intro}</p>
         </div>
 
@@ -95,7 +94,7 @@ const JoinSection = () => {
               {translations.join.options[selectedPath].content.map(
                 (paragraph, index) => (
                   <p key={index}>{paragraph}</p>
-                )
+                ),
               )}
             </div>
           </div>

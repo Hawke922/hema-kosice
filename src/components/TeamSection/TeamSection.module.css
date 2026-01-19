@@ -235,6 +235,11 @@
     align-self: center;
   }
 
+  .header {
+    width: 800px;
+    text-align: start;
+  }
+
   .carousel {
     max-width: 600px;
   }
