@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap-small);
-  padding: var(--gap-small);
-  border-radius: var(--border-radius);
-  background: linear-gradient(135deg, #1d1d1d, #111111);
-  box-shadow: var(--box-shadow);
 }
 
 .heading {
@@ -17,11 +13,6 @@
 
 .header {
   font-size: var(--text-5xl);
-}
-
-.description {
-  max-width: 52ch;
-  color: var(--color-white);
 }
 
 .highlights {
@@ -39,6 +30,25 @@
   border-radius: var(--border-radius);
   background-color: #1f1f1f;
   border: 1px solid var(--color-gray);
+  position: relative;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+.cardJoin {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("/images/nabor.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cardTax {
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("/images/event.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .card-content {
@@ -49,10 +59,6 @@
 
 .card-title {
   font-size: var(--text-3xl);
-}
-
-.card-body {
-  color: var(--color-light-gray);
 }
 
 .button {
@@ -68,7 +74,9 @@
   font-size: var(--text-lg);
   padding: var(--gap-mini) 0;
   border-radius: var(--border-radius);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .button:hover,
@@ -90,13 +98,11 @@
 }
 
 .steps {
-  padding: var(--gap-small);
-  border-radius: var(--border-radius);
-  background-color: #151515;
-  border: 1px solid var(--color-gray);
   display: flex;
   flex-direction: column;
   gap: var(--gap-small);
+  max-width: 800px;
+  align-self: center;
 }
 
 .steps-list {
@@ -114,8 +120,6 @@
   padding: var(--gap-small);
   border-radius: var(--border-radius);
   align-items: center;
-  background-color: #1d1d1d;
-  border: 1px solid #2c2c2c;
 }
 
 .step-number {
@@ -131,10 +135,6 @@
 
 .step-heading {
   font-size: var(--text-xl);
-}
-
-.step-description {
-  color: var(--color-light-gray);
 }
 
 .note {
@@ -157,8 +157,13 @@
 
 @media (min-width: 768px) {
   .wrapper {
-    padding: var(--gap-medium);
     gap: var(--gap-medium);
+    max-width: 1000px;
+    align-self: center;
+  }
+
+  .header {
+    font-size: var(--text-6xl);
   }
 
   .heading {
@@ -173,19 +178,11 @@
     padding: var(--gap-small);
   }
 
-  .description {
-    font-size: var(--text-xl);
-  }
-
   .highlights {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .button {
     padding: var(--gap-mini) var(--gap-small);
-  }
-
-  .steps {
-    padding: var(--gap-medium);
   }
 }

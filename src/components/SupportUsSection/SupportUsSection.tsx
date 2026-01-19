@@ -21,7 +21,7 @@ const SupportUsSection = () => {
       </div>
 
       <div className={classes.highlights}>
-        <article className={classes.card}>
+        <article className={`${classes.card} ${classes.cardJoin}`}>
           <div className={classes["card-content"]}>
             <h2 className={classes["card-title"]}>
               {support.actions.join.title}
@@ -38,7 +38,7 @@ const SupportUsSection = () => {
           </button>
         </article>
 
-        <article className={classes.card}>
+        <article className={`${classes.card} ${classes.cardTax}`}>
           <div className={classes["card-content"]}>
             <h2 className={classes["card-title"]}>
               {support.actions.tax.title}
