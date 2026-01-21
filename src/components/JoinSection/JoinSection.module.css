@@ -49,7 +49,7 @@
 }
 
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: var(--gap-small);
 }
 
 .content {
@@ -150,7 +150,7 @@
 }
 
 .detail-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--gap-small);
 }
 
 .detail-text {

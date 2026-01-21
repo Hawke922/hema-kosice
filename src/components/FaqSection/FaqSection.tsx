@@ -40,7 +40,7 @@ const FaqSection = () => {
 
   return (
     <section className={classes.wrapper} id="faq">
-      <h1 className={classes.header}>{translations.faq.header}</h1>
+      <h2 className={classes.header}>{translations.faq.header}</h2>
 
       <div className={classes["search-container"]}>
         <input

@@ -160,8 +160,8 @@
   "faq": {
     "header": "Často kladené otázky",
     "searchPlaceholder": "Hľadať otázky...",
-    "noResultsMessage": "Nenašli ste odpoveď na vašu otázku?",
-    "noResultsAction": "Kontaktujte nás!",
+    "noResultsMessage": "Nenašiel si odpoveď na tvoju otázku?",
+    "noResultsAction": "Kontaktuj nás!",
     "questions": [
       {
         "question": "Potrebujem nejaké predchádzajúce skúsenosti?",

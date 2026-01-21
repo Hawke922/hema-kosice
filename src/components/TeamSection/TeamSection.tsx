@@ -118,7 +118,7 @@ const TeamSection = () => {
     <section className={classes.wrapper} id="team">
       <div className={classes["history-wrapper"]}>
         <div className={classes.intro}>
-          <h1>{translations.team.historyTitle}</h1>
+          <h2>{translations.team.historyTitle}</h2>
           <p>{translations.team.intro}</p>
         </div>
         <div className={classes["history-carousel-wrapper"]}>

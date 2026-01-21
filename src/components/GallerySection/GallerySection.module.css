@@ -15,7 +15,7 @@
 .intro {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--gap-small);
   max-width: 800px;
   margin: 0 var(--gap-small);
 }

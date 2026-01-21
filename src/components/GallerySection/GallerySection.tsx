@@ -58,10 +58,9 @@ const GallerySection = () => {
 
   return (
     <section className={classes.wrapper} id="gallery">
-      <h1 className={classes.header}>{teamAction.title}</h1>
-
       <div className={classes["gallery-wrapper"]}>
         <div className={classes.intro}>
+          <h2 className={classes.header}>{teamAction.title}</h2>
           <p>{teamAction.description}</p>
         </div>
 

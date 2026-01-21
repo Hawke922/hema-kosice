@@ -42,7 +42,7 @@ const WeaponsSection = () => {
 
   return (
     <section className={classes.wrapper} id="weapons">
-      <h1 className={classes.header}>{translations.weapons.header}</h1>
+      <h2 className={classes.header}>{translations.weapons.header}</h2>
       <div className={classes["images-container"]}>
         {WEAPONS.map((weapon) => (
           <div
@@ -63,7 +63,7 @@ const WeaponsSection = () => {
         ))}
       </div>
       <div className={classes.content}>
-        <h2>{translations.weapons[selectedWeapon.translationKey].name}</h2>
+        <h3>{translations.weapons[selectedWeapon.translationKey].name}</h3>
         <p>{translations.weapons[selectedWeapon.translationKey].description}</p>
       </div>
     </section>

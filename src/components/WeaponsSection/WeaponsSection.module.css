@@ -62,7 +62,6 @@
   }
 
   .content {
-    gap: 1.5rem;
     width: 100%;
   }
 
@@ -73,10 +72,6 @@
 }
 
 @media (min-width: 1024px) {
-  .content {
-    gap: 2rem;
-  }
-
   .image-wrapper {
     aspect-ratio: auto;
   }

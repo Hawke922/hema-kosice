@@ -16,7 +16,7 @@ const SupportUsSection = () => {
   return (
     <section className={classes.wrapper} id="support">
       <div className={classes.heading}>
-        <h1 className={classes.header}>{support.header}</h1>
+        <h2>{support.header}</h2>
         <p className={classes.description}>{support.description}</p>
       </div>
 
