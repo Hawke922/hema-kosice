@@ -181,6 +181,29 @@
         "keywords": ["vybavenie", "výstroj", "zbraň", "ochrana"]
       },
       {
+        "question": "Aké zbrane trénujete?",
+        "answer": [
+          "V KŠC sa primárne zameriavame na šerm dlhým mečom a šabľou. Ak sa k nám pridáš počas náboru, prvé mesiace tvojho tréningového programu budú založené na princípoch nemeckej školy boja s dlhým mečom. Našich členov však podporujeme v experimentovaní s rôznymi zbraňami a v našich radoch máme šermiarov, ktorí často trénujú aj so šabľou, rapírom alebo mečom a štítom."
+        ],
+        "keywords": [
+          "zbraň",
+          "typ",
+          "dlhý meč",
+          "šabľa",
+          "rapír",
+          "štít",
+          "meč a štít",
+          "škola"
+        ]
+      },
+      {
+        "question": "Môžem trénovať s vlastnou zbraňou?",
+        "answer": [
+          "Áno, ak máš vlastnú zbraň, môžeš ju priniesť na tréningy. Pri kontaktom šerme však musí spĺňať určité kritériá, jednak kvôli bezpečnosti ale aj kvôli zamedzeniu nadmerného opotrebovania oponentovej zbrane a/alebo výstroje. Ak si nie si istý, radi ti pomôžeme s výberom a kontrolou tvojej zbrane."
+        ],
+        "keywords": ["vlastná", "priniesť", "zbraň", "bezpečnosť"]
+      },
+      {
         "question": "Koľko stojí členstvo?",
         "answer": [
           "Členské poplatky sú 40 EUR mesačne pre začiatočníkov v náborovej skupine a 20 EUR mesačne pre pokročilých šermiarov. Poplatky sa snažíme udržiavať na minime - ich cieľom je pokryť prenájom haly a údržbu vybavenia."

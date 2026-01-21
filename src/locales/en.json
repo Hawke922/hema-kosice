@@ -182,6 +182,31 @@
         "keywords": ["equipment", "gear", "weapon", "protection"]
       },
       {
+        "question": "Which weapons do you train with?",
+        "answer": [
+          "At KŠC we primarily focus on longsword and sabre fencing. If you join us through the recruitment course, the first months of your training program will be based on the principles of the German longsword school.",
+          "We also encourage members to experiment with other weapons, and among our fencers you'll find people who regularly train with sabre, rapier, or sword and buckler."
+        ],
+        "keywords": [
+          "weapon",
+          "type",
+          "longsword",
+          "sabre",
+          "rapier",
+          "shield",
+          "sword and buckler",
+          "school"
+        ]
+      },
+      {
+        "question": "Can I train with my own weapon?",
+        "answer": [
+          "Yes, if you already have your own weapon you can bring it to training. For contact sparring it has to meet certain criteria, both for safety and to avoid excessive wear on your partner's weapon and gear.",
+          "If you're not sure whether your weapon is suitable, we'll gladly help you choose, inspect, or adjust it."
+        ],
+        "keywords": ["own", "bring", "weapon", "safety"]
+      },
+      {
         "question": "How much does membership cost?",
         "answer": [
           "Membership fees are 40 EUR per month for beginners in the recruitment group and 20 EUR per month for advanced fencers. We keep fees as low as possible – their purpose is mainly to cover hall rent and equipment maintenance."
