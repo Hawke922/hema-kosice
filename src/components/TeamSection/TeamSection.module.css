@@ -81,6 +81,7 @@
 
 .text {
   font-size: var(--text-base);
+  color: var(--color-white);
   position: relative;
   z-index: 1;
   overflow-wrap: break-word;

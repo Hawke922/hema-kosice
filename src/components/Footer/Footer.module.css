@@ -21,7 +21,7 @@
 }
 
 .section h4 {
-  color: var(--color-white);
+  color: var(--color-text);
   font-size: var(--text-xl);
 }
 

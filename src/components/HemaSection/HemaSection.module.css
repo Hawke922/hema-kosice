@@ -164,6 +164,7 @@
 
   .text {
     font-size: var(--text-base);
+    color: var(--color-white);
   }
 
   .text-content {
