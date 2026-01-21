@@ -130,11 +130,11 @@
     },
     "steps": {
       "title": "Ako môže zamestnanec darovať 2 % z dane",
-      "intro": "Postup je jednoduchý - ak ti zamestnávateľ robí ročné zúčtovanie, každý rok na jar nasleduj tieto kroky:",
+      "intro": "Postup je jednoduchý. Ak ti zamestnávateľ robí ročné zúčtovanie, každý rok na jar nasleduj tieto kroky:",
       "items": [
         {
           "title": "Vyžiadaj si potvrdenie",
-          "description": "Po ročnom zúčtovaní dane si vypýtaj od mzdovej účtárne “Potvrdenie o zaplatení dane” so sumou zaplatenej dane."
+          "description": "Po ročnom zúčtovaní dane si od zamestnávateľa vypýtaj “Potvrdenie o zaplatení dane” so sumou zaplatenej dane."
         },
         {
           "title": "Vyplň vyhlásenie",
@@ -154,7 +154,7 @@
         }
       ]
     },
-    "contactNote": "Ak si fyzická alebo právnická osoba a chceš darovať,",
+    "contactNote": "Ak odvádzaš daň ako fyzická alebo právnická osoba a potrebuješ pomôcť s darovaním,",
     "contactLinkLabel": "kontaktuj nás."
   },
   "faq": {
