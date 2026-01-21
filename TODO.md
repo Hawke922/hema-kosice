@@ -5,3 +5,4 @@
 - broken en/sk prepinanie na telefone (zuzka)
 - mat header font color (kludne aj #fff) a text font color ( #adbdcc )
 - scrolling na sekcie cez landing treba v niektorych pripadoch fixnut - ak je sekcia dlha vyscrolluje na stred
+- FAQ potrebuje subheader / text
