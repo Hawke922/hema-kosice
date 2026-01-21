@@ -2,3 +2,6 @@
 - remove animation lib if not necessary
 - text color cannot be just white, add shades of gray
 - broken logo v columns ked je viewport siroky ale nizky
+- broken en/sk prepinanie na telefone (zuzka)
+- mat header font color (kludne aj #fff) a text font color ( #adbdcc )
+- scrolling na sekcie cez landing treba v niektorych pripadoch fixnut - ak je sekcia dlha vyscrolluje na stred
