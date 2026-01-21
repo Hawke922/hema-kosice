@@ -98,6 +98,7 @@
 .social-cta {
   text-align: center;
   margin: 0 var(--gap-small);
+  font-size: var(--text-base);
 }
 
 .social-cta a {
