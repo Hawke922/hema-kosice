@@ -160,6 +160,7 @@
   },
   "faq": {
     "header": "Frequently Asked Questions",
+    "description": "Find answers to common questions about training, equipment, and club membership.",
     "searchPlaceholder": "Search questions...",
     "noResultsMessage": "Didn't find the answer to your question?",
     "noResultsAction": "Reach out to us!",

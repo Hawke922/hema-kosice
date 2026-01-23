@@ -9,7 +9,6 @@
   text-align: start;
   max-width: 800px;
   width: 100%;
-  padding: 0 var(--gap-small);
 }
 
 .intro {
@@ -108,11 +107,4 @@
 
 .social-cta a:hover {
   text-decoration: none;
-}
-
-
-@media (min-width: 768px) {
-  .header {
-    padding: 0;
-  }
 }

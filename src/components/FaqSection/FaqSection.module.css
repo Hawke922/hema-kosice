@@ -4,13 +4,16 @@
   gap: var(--gap-medium);
   align-self: center;
   align-items: center;
-  max-width: 900px;
+  max-width: 800px;
   margin-bottom: var(--gap-large);
   padding: 0 var(--gap-small);
 }
 
 .header {
-  max-width: 800px;
+  margin-bottom: var(--gap-small);
+}
+
+.intro {
   width: 100%;
 }
 

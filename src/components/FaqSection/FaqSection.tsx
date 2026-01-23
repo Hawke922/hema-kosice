@@ -25,10 +25,10 @@ const FaqSection = () => {
     const query = searchQuery.toLowerCase();
     const questionMatch = item.question.toLowerCase().includes(query);
     const answerMatch = item.answer.some((paragraph) =>
-      paragraph.toLowerCase().includes(query)
+      paragraph.toLowerCase().includes(query),
     );
     const keywordMatch = item.keywords.some((keyword) =>
-      keyword.toLowerCase().includes(query)
+      keyword.toLowerCase().includes(query),
     );
 
     return questionMatch || answerMatch || keywordMatch;
@@ -40,7 +40,10 @@ const FaqSection = () => {
 
   return (
     <section className={classes.wrapper} id="faq">
-      <h2 className={classes.header}>{translations.faq.header}</h2>
+      <div className={classes.intro}>
+        <h2 className={classes.header}>{translations.faq.header}</h2>
+        <p>{translations.faq.description}</p>
+      </div>
 
       <div className={classes["search-container"]}>
         <input

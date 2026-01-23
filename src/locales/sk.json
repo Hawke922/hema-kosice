@@ -43,7 +43,7 @@
   "team": {
     "header": "Náš tím",
     "historyTitle": "História klubu",
-    "intro": "Za každým súbojom a tréningom stojí malý tím trénerov a organizátorov, ktorí udržiavajú KŠC v chode a pomáhajú mu rásť. Tu je krátky pohľad na to, odkiaľ prichádzame a kam smerujeme.",
+    "intro": "Za kulisami stojí malý tím trénerov a organizátorov, ktorí udržiavajú KŠC v chode a pomáhajú mu rásť. Tu je krátky prehľad toho, odkiaľ prichádzame a kam smerujeme.",
     "action": {
       "title": "KŠC v akcii",
       "description": "Tréningy, turnaje, semináre a sparring – takto vyzerá KŠC, keď si nasadíme masky a meče sa rozhýbu. Niekoľko fotiek nedokáže zachytiť celú atmosféru, ale aspoň ti ju trochu priblíži.",
@@ -159,6 +159,7 @@
   },
   "faq": {
     "header": "Často kladené otázky",
+    "description": "Nájdi odpovede na časté otázky o tréningu, výstroji a členstve v klube.",
     "searchPlaceholder": "Hľadať otázky...",
     "noResultsMessage": "Nenašiel si odpoveď na tvoju otázku?",
     "noResultsAction": "Kontaktuj nás!",
