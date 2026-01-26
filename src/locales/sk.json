@@ -25,19 +25,19 @@
   "hema": {
     "content1": {
       "header": "Čo je HEMA?",
-      "paragraph": "\"HEMA\" je skratka pre historické európske bojové umenia a predstavuje moderné rekreovanie bojových tradícií Európy. Tie sú prostredníctvom tréningu a sparingu oživené na základe hisorických manuálov."
+      "paragraph": "\"HEMA\" je skratka pre Historické európske bojové umenia a predstavuje modernú interpretáciu bojových tradícií Európy. Tie sú prostredníctvom tréningu a sparingu oživené na základe historických manuálov."
     },
     "content2": {
       "header": "Žiaden scénický boj",
-      "paragraph": "Na rozdiel od choreografického šermu, ktorý môžeš vidieť vo filmoch alebo na historických predstaveniach, HEMA je bojové umenie. Každá technika je vykonávaná proti odporujúcemu partnerovi. Nejde o predstavenie, ale o pochopenie toho, ako skutočný boj so zbraňou funguje."
+      "paragraph": "Na rozdiel od choreografického šermu, ktorý môžeš vidieť vo filmoch alebo na historických predstaveniach, HEMA je bojové umenie. Každá technika je vykonávaná proti odporujúcemu súperovi. Nejde o predstavenie, ale o pochopenie toho, ako funguje skutočný boj so zbraňou."
     },
     "content3": {
       "header": "Ochrana moderného duelanta",
-      "paragraph": "Duely, ktoré študujeme, sa bojovali v bežnom oblečení, nie v brnení. Naše vybavenie to musí odrážať. HEMA používa moderné ochranné prvky vyrobené z odolných tkanín a plastov, ktoré sú inšpirované históriou, ale ich účelom je mobilita, pohodlie a bezpečnosť."
+      "paragraph": "Boj, ktorý študujeme, sa konal v bežnom oblečení, nie v brnení. Naše vybavenie to musí odrážať. HEMA používa moderné ochranné prvky vyrobené z odolných látok a plastov, ktoré sú inšpirované históriou, ale ich účelom je mobilita, pohodlie a bezpečnosť."
     },
     "content4": {
       "header": "Kompletný bojový zážitok",
-      "paragraph": "HEMA ponúka všetko čo od bojového umenia môžeš očakávať. Trénujeme silu, vytrvalosť a kooridnáciu, ale aj nastavenie mysle na prekonávanie svojich limitov. Spoločne si budujeme sebavedomie, zručnosti a priateľstvá na celý život."
+      "paragraph": "HEMA ponúka všetko čo od bojového umenia môžeš očakávať. Trénujeme silu, vytrvalosť a koordináciu, ale aj nastavenie mysle na prekonávanie svojich limitov. Spoločne si budujeme sebavedomie, zručnosti a priateľstvá na celý život."
     }
   },
   "team": {
@@ -46,7 +46,7 @@
     "intro": "Za kulisami stojí malý tím trénerov a organizátorov, ktorí udržiavajú KŠC v chode a pomáhajú mu rásť. Tu je krátky prehľad toho, odkiaľ prichádzame a kam smerujeme.",
     "action": {
       "title": "KŠC v akcii",
-      "description": "Tréningy, turnaje, semináre a sparring – takto vyzerá KŠC, keď si nasadíme masky a meče sa rozhýbu. Niekoľko fotiek nedokáže zachytiť celú atmosféru, ale aspoň ti ju trochu priblíži.",
+      "description": "Tréningy, turnaje, semináre a sparing – takto vyzerá KŠC, keď si nasadíme masky a meče sa rozhýbu. Niekoľko fotiek nedokáže zachytiť celú atmosféru, ale aspoň ti ju trochu priblíži.",
       "ctaPrefix": "Chceš vidieť viac? Sleduj nás na",
       "ctaFacebook": "Facebooku",
       "ctaAnd": "a",
@@ -55,7 +55,7 @@
     "content": [
       {
         "id": "slavo",
-        "paragraph": "KŠC vznikol ako malá, ale rýchlo rastúca skupina pod vedním Slavomíra Hubatku v roku 2016, trénujúc jednoducho pre to, že ich šerm bavil. Bohužiaľ, pandémia zastavila ďalší rozvoj a skupina prežila len s hŕstkou aktívnych šermiarov."
+        "paragraph": "KŠC vznikol ako malá, ale rýchlo rastúca skupina pod vedením Slavomíra Hubatku v roku 2016, trénujúc jednoducho pre radosť zo šermu. Bohužiaľ, pandémia zastavila ďalší rozvoj a skupina prežila len s hŕstkou aktívnych šermiarov."
       },
       {
         "id": "tomas",
@@ -97,7 +97,7 @@
     "header": "Vyber si svoju zbraň",
     "swordAndBuckler": {
       "name": "Meč a štít",
-      "description": "Šerm s mečom a štítkom má najbližšie k princípom šermu s rapírom a dýkou. Pri použití štítku však niektoré techniky fungujú odlišne, keďže sú prispôsobené jeho špecifickému tvaru a funkcii pri krytoch a odklonoch súperovej zbrane."
+      "description": "Šerm s mečom a štítkom má najbližšie k princípom šermu s rapierom a dýkou. Pri použití štítku však niektoré techniky fungujú odlišne, keďže sú prispôsobené jeho špecifickému tvaru a funkcii pri krytoch a odklonoch súperovej zbrane."
     },
     "longsword": {
       "name": "Dlhý meč",
@@ -107,9 +107,9 @@
       "name": "Šabľa",
       "description": "Šabľa zhromažďuje princípy šermu vedeného jednou rukou. V našom klube ide o druhý najrozšírenejší spôsob šermu. Technicky je menej náročná na zvládnutie než dlhý meč – je intuitívnejšia, no kladie väčší dôraz na taktiku. Predstavuje skvelý doplnok k šermu dlhým mečom."
     },
-    "rapier": {
-      "name": "Rapír",
-      "description": "Šerm s rapírom je veľmi špecifickou disciplínou historického šermu. Najčastejšie sa k rapíru pridáva dýka do druhej ruky, čím vzniká kombinácia obrany a útoku. Obe ruky pri šerme s týmito zbraňami pracujú súčasne a vzájomne sa dopĺňajú."
+    "íier": {
+      "name": "Rapier",
+      "description": "Šerm s rapierom je veľmi špecifickou disciplínou historického šermu. Najčastejšie sa k rapieru pridáva dýka do druhej ruky, čím vzniká kombinácia obrany a útoku. Obe ruky pri šerme s týmito zbraňami pracujú súčasne a vzájomne sa dopĺňajú."
     }
   },
   "support": {
@@ -118,7 +118,7 @@
     "actions": {
       "join": {
         "title": "Staň sa členom",
-        "body": "Každý nový člen nám pomáha sa vyvíjať a rásť.",
+        "body": "Každý nový člen nám pomáha vyvíjať sa a rásť.",
         "cta": "Pridaj sa"
       },
       "tax": {
@@ -184,14 +184,14 @@
       {
         "question": "Aké zbrane trénujete?",
         "answer": [
-          "V KŠC sa primárne zameriavame na šerm dlhým mečom a šabľou. Ak sa k nám pridáš počas náboru, prvé mesiace tvojho tréningového programu budú založené na princípoch nemeckej školy boja s dlhým mečom. Našich členov však podporujeme v experimentovaní s rôznymi zbraňami a v našich radoch máme šermiarov, ktorí často trénujú aj so šabľou, rapírom alebo mečom a štítom."
+          "V KŠC sa primárne zameriavame na šerm dlhým mečom a šabľou. Ak sa k nám pridáš počas náboru, prvé mesiace tvojho tréningového programu budú založené na princípoch nemeckej školy boja s dlhým mečom. Našich členov však podporujeme v experimentovaní s rôznymi zbraňami a v našich radoch máme šermiarov, ktorí často trénujú aj so šabľou, rapierom alebo mečom a štítom."
         ],
         "keywords": [
           "zbraň",
           "typ",
           "dlhý meč",
           "šabľa",
-          "rapír",
+          "rapier",
           "štít",
           "meč a štít",
           "škola"
@@ -200,7 +200,7 @@
       {
         "question": "Môžem trénovať s vlastnou zbraňou?",
         "answer": [
-          "Áno, ak máš vlastnú zbraň, môžeš ju priniesť na tréningy. Pri kontaktom šerme však musí spĺňať určité kritériá, jednak kvôli bezpečnosti ale aj kvôli zamedzeniu nadmerného opotrebovania oponentovej zbrane a/alebo výstroje. Ak si nie si istý, radi ti pomôžeme s výberom a kontrolou tvojej zbrane."
+          "Áno, ak máš vlastnú zbraň, môžeš ju priniesť na tréningy. Pri kontaktom šerme však musí spĺňať určité kritériá, jednak kvôli bezpečnosti, ale aj kvôli zamedzeniu nadmerného opotrebovania oponentovej zbrane a/alebo výstroje. Ak si nie si istý, radi ti pomôžeme s výberom a kontrolou tvojej zbrane."
         ],
         "keywords": ["vlastná", "priniesť", "zbraň", "bezpečnosť"]
       },
@@ -214,7 +214,7 @@
       {
         "question": "Koľko stojí výstroj?",
         "answer": [
-          "Kompletná výstroj pre HEMA nie je lacná záležitosť a môže sa vyšplhať na rádovo stovky eur v závislosti od kvality a značky vybavenia (na ktorej neodporúčame šetriť). Dobrá správa však je, že ako začiatočník v náborovej skupine však nemusíš hneď investovať do vlastnej výstroje, keďže základné vybavenie ti poskytneme my. Výstroj a zbraň si teda vieš dokúpiť postupne, podľa svojich možností."
+          "Kompletná výstroj pre HEMA nie je lacná záležitosť a môže sa vyšplhať na rádovo stovky eur v závislosti od kvality a značky vybavenia (na ktorej neodporúčame šetriť). Dobrá správa však je, že ako začiatočník v náborovej skupine nemusíš hneď investovať do vlastnej výstroje, keďže základné vybavenie ti poskytneme my. Výstroj a zbraň si teda vieš dokúpiť postupne, podľa svojich možností."
         ],
         "keywords": [
           "cena",
@@ -229,8 +229,8 @@
       {
         "question": "Je HEMA nebezpečná?",
         "answer": [
-          "Ako každý kontaktný šport, HEMA má inherentné riziká. Ale nemusíš sa obávať - na začiatočníckych tréningoch sú zranenia veľmi zriedkavé. Zo začiatku trénujeme postoj a techinky, zlepšujeme si kondíciu a voľné sparringy s penovými zbraňami sú dobrovoľné.",
-          "S pokrokom v zručnostiach a prechodom na oceľové zbrane sa kladie veľký dôraz na bezpečnosť. Všetci šermiarni musia pri kontaktnom tréningu nosiť ochrannú výstroj a používať zbrane spĺňajúce bezpečnostné štandardy."
+          "Ako každý kontaktný šport, HEMA má inherentné riziká. Ale nemusíš sa obávať - na začiatočníckych tréningoch sú zranenia veľmi zriedkavé. Zo začiatku trénujeme postoj a techniky, zlepšujeme si kondíciu a voľné sparingy s penovými zbraňami sú dobrovoľné.",
+          "S pokrokom v zručnostiach a prechodom na oceľové zbrane sa kladie veľký dôraz na bezpečnosť. Všetci šermiari musia pri kontaktnom tréningu nosiť ochrannú výstroj a používať zbrane spĺňajúce bezpečnostné štandardy."
         ],
         "keywords": [
           "bezpečné",
@@ -243,7 +243,7 @@
       {
         "question": "Ako často sú tréningy?",
         "answer": [
-          "Tréningy sa konajú trikrát týždenne: pondelok a streda od 17:00 do 18:30 a piatok od 17:00 do 20:00. V tréningoch sa snažíme nájsť rovnováhu medzi technickou výučbou pre začiatočníkov, pokročilých a voľným sparringom. Presný rozvrh je variabilný a môže sa meniť podľa ročného obdobia, dostupnosti tréningovej haly a potrieb členov."
+          "Tréningy sa konajú trikrát týždenne: pondelok a streda od 17:00 do 18:30 a piatok od 17:00 do 20:00. V tréningoch sa snažíme nájsť rovnováhu medzi technickou výučbou pre začiatočníkov, pokročilých a voľným sparingom. Presný rozvrh je variabilný a môže sa meniť podľa ročného obdobia, dostupnosti tréningovej haly a potrieb členov."
         ],
         "keywords": ["rozvrh", "tréning", "čas", "frekvencia", "kedy"]
       },
@@ -271,7 +271,7 @@
       {
         "question": "Robíte aj vystúpenia alebo ukážky?",
         "answer": [
-          "Hlavným zameraním KŠC je tréning a rozvoj šermiarskych zručností našich členov. Občas však organizujeme ukážky na historických podujatiach alebo školách, aby sme rošírili povedomie o športe a prilákali nových členov. Ak máš záujem o takéto vystúpenie, kontaktuj nás."
+          "Hlavným zameraním KŠC je tréning a rozvoj šermiarskych zručností našich členov. Občas však organizujeme ukážky na historických podujatiach alebo školách, aby sme rozšírili povedomie o športe a prilákali nových členov. Ak máš záujem o takéto vystúpenie, kontaktuj nás."
         ],
         "keywords": ["vystúpenie", "ukážka", "podujatie", "prezentácia"]
       }
