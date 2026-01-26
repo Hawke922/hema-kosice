@@ -2,5 +2,3 @@
 - remove animation lib if not necessary
 - broken logo v columns ked je viewport siroky ale nizky
 - broken en/sk prepinanie na telefone (zuzka)
-- scrolling na sekcie cez landing treba v niektorych pripadoch fixnut - ak je sekcia dlha vyscrolluje na stred
-- contact us overlay uhladit
