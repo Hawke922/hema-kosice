@@ -7,8 +7,9 @@
 }
 
 :root {
-  --font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Arial, sans-serif;
+  --font-family:
+    "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+    sans-serif;
 
   --max-width: 1600px;
 
@@ -42,6 +43,8 @@
   --color-light-gray: #666;
   --color-white: #f8f8f8;
   --color-text: #b6c0c8;
+
+  --color-panel-dark: #090909;
 
   --color-background-overlay: #00000099;
 }

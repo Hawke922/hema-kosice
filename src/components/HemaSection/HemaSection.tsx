@@ -178,14 +178,14 @@ const HemaSection = () => {
                 >
                   <Icon
                     name="chevron-left"
-                    size={32}
+                    size={50}
                     className={classes["chevron-icon"]}
                   />
                 </div>
                 <div
                   className={`${classes["swipe-indicator"]} ${classes["swipe-indicator--right"]}`}
                 >
-                  <Icon name="chevron-right" size={32} />
+                  <Icon name="chevron-right" size={50} />
                 </div>
               </>
             )}

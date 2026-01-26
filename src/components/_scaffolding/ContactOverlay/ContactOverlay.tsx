@@ -12,7 +12,7 @@ const ContactOverlay = () => {
   return (
     <div className={classes["contact-overlay"]}>
       <div className={classes["header-wrapper"]}>
-        <h2>{translations.contact.title}</h2>
+        <h3>{translations.contact.title}</h3>
         <p className={classes.subtitle}>{translations.contact.subtitle}</p>
       </div>
 

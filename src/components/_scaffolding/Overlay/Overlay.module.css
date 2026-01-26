@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,24 +13,40 @@
 }
 
 .overlay.open {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000000b3;
 }
 
 .content {
   position: relative;
-  background: var(--color-background, #1a1a1a);
+  background-color: var(--color-panel-dark);
+  border: 1px solid var(--color-gray);
   border-radius: var(--border-radius, 8px);
   max-width: 90vw;
   max-height: 90vh;
   overflow: auto;
   opacity: 0;
   transform: scale(0.95) translateY(-8px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .content.open {
   opacity: 1;
   transform: scale(1) translateY(0);
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  background-image: url("/logo-complex.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.02;
+  filter: invert(1);
+  pointer-events: none;
 }
 
 .close-button {
