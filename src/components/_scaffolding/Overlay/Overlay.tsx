@@ -78,7 +78,7 @@ const Overlay = ({ isOpen, onClose, children }: OverlayProps) => {
         {children}
       </div>
     </div>,
-    overlayRoot
+    overlayRoot,
   );
 };
 
